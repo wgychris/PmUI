@@ -124,11 +124,10 @@
 						<ul class="cl-vnavigation">
 
 							<li><a href="#"><i class="fa fa-money"></i><span>Revenue
-										</span></a>
+								</span></a>
 								<ul class="sub-menu">
 									<li><a href="anaTotRev.html">Total Revenue</a></li>
 									<li><a href="anaRevPerCat.html">Revenue Per Category</a></li>
-									<li><a href="anaRevPerPie.html">Revenue Per Piece</a></li>
 								</ul></li>
 
 							<li><a href="#"><i class="fa fa-table"></i><span>Customer
@@ -144,6 +143,10 @@
 									<li><a href="anaPopCus.html">Popularity of
 											Customization</a></li>
 								</ul></li>
+							<li><a href="anaCusInfo.html"><i class="fa fa-eye"></i><span>Customer
+										Info</span></a>
+							<li><a href="anaPriSta.html"><i class="fa fa-cogs"></i><span>Print
+										Station Analysis</span></a>
 						</ul>
 					</div>
 				</div>
@@ -233,8 +236,7 @@
 
 						<div class="block-flat">
 
-							<div id="colorPop">
-							</div>
+							<div id="colorPop"></div>
 						</div>
 
 					</div>
@@ -276,77 +278,82 @@
 		});
 	</script>
 
-<script>
-$(function () {
-        $('#colorPop').highcharts({
-            chart: {
-                type: 'column'
-            },
-            title: {
-                text: 'Popularity of color option'
-            },
-            xAxis: {
-                categories: ['07-15-14', '07-16-14', '07-17-14', '07-18-14', '07-19-14','07-20-14', '07-21-14']
-            },
-            yAxis: {
-                min: 0,
-                title: {
-                    text: 'Total fruit consumption'
-                },
-                stackLabels: {
-                    enabled: true,
-                    style: {
-                        fontWeight: 'bold',
-                        color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
-                    }
-                }
-            },
-            legend: {
-                align: 'right',
-                x: -70,
-                verticalAlign: 'top',
-                y: 20,
-                floating: true,
-                backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
-                borderColor: '#CCC',
-                borderWidth: 1,
-                shadow: false
-            },
-            tooltip: {
-                formatter: function() {
-                    return '<b>'+ this.x +'</b><br/>'+
-                        this.series.name +': '+ this.y +'<br/>'+
-                        'Total: '+ this.point.stackTotal;
-                }
-            },
-            plotOptions: {
-                column: {
-                    stacking: 'normal',
-                    dataLabels: {
-                        enabled: true,
-                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
-                        style: {
-                            textShadow: '0 0 3px black, 0 0 3px black'
-                        }
-                    }
-                }
-            },
-            series: [{
-                name: 'Blue',
-                data: [5, 3, 4, 7, 2, 4, 2]
-            }, {
-                name: 'Black',
-                data: [2, 2, 3, 2, 1, 0, 5]
-            }, {
-                name: 'Green',
-                data: [3, 4, 4, 2, 5, 4, 2]
-            }]
-        });
-    });
-    
-
-
-</script>   
+	<script>
+		$(function() {
+			$('#colorPop')
+					.highcharts(
+							{
+								chart : {
+									type : 'column'
+								},
+								title : {
+									text : 'Popularity of color option'
+								},
+								xAxis : {
+									categories : [ '07-15-14', '07-16-14',
+											'07-17-14', '07-18-14', '07-19-14',
+											'07-20-14', '07-21-14' ]
+								},
+								yAxis : {
+									min : 0,
+									title : {
+										text : 'Total fruit consumption'
+									},
+									stackLabels : {
+										enabled : true,
+										style : {
+											fontWeight : 'bold',
+											color : (Highcharts.theme && Highcharts.theme.textColor)
+													|| 'gray'
+										}
+									}
+								},
+								legend : {
+									align : 'right',
+									x : -70,
+									verticalAlign : 'top',
+									y : 20,
+									floating : true,
+									backgroundColor : (Highcharts.theme && Highcharts.theme.background2)
+											|| 'white',
+									borderColor : '#CCC',
+									borderWidth : 1,
+									shadow : false
+								},
+								tooltip : {
+									formatter : function() {
+										return '<b>' + this.x + '</b><br/>'
+												+ this.series.name + ': '
+												+ this.y + '<br/>' + 'Total: '
+												+ this.point.stackTotal;
+									}
+								},
+								plotOptions : {
+									column : {
+										stacking : 'normal',
+										dataLabels : {
+											enabled : true,
+											color : (Highcharts.theme && Highcharts.theme.dataLabelsColor)
+													|| 'white',
+											style : {
+												textShadow : '0 0 3px black, 0 0 3px black'
+											}
+										}
+									}
+								},
+								series : [ {
+									name : 'Blue',
+									data : [ 5, 3, 4, 7, 2, 4, 2 ]
+								}, {
+									name : 'Black',
+									data : [ 2, 2, 3, 2, 1, 0, 5 ]
+								}, {
+									name : 'Green',
+									data : [ 3, 4, 4, 2, 5, 4, 2 ]
+								} ]
+							});
+		});
+	</script>
 
 
 	<!-- Bootstrap core JavaScript

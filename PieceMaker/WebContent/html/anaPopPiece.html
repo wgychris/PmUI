@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="images/favicon.png">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="images/favicon.png">
 
-    <title>PieceMaker</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
+<title>PieceMaker</title>
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100'
+	rel='stylesheet' type='text/css'>
 
-    <!-- Bootstrap core CSS -->
-    <link href="js/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="js/bootstrap.switch/bootstrap-switch.min.css" />
-	<link rel="stylesheet" type="text/css" href="js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css" />
+<!-- Bootstrap core CSS -->
+<link href="js/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="js/bootstrap.switch/bootstrap-switch.min.css" />
+<link rel="stylesheet" type="text/css"
+	href="js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css" />
 
-	<!-- Select2 -->
-	<link rel="stylesheet" type="text/css" href="js/jquery.select2/select2.css" />
-	
-	
-	<!-- Slider -->
-	<link rel="stylesheet" type="text/css" href="js/bootstrap.slider/css/slider.css" />
-  
-  <!-- DateRange -->
-	<link rel="stylesheet" type="text/css" href="js/bootstrap.daterangepicker/daterangepicker-bs3.css" />
-  
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+<!-- Select2 -->
+<link rel="stylesheet" type="text/css"
+	href="js/jquery.select2/select2.css" />
 
-	<link rel="stylesheet" href="fonts/font-awesome-4/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/pygments.css">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+<!-- Slider -->
+<link rel="stylesheet" type="text/css"
+	href="js/bootstrap.slider/css/slider.css" />
+
+<!-- DateRange -->
+<link rel="stylesheet" type="text/css"
+	href="js/bootstrap.daterangepicker/daterangepicker-bs3.css" />
+
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet" />
+
+<link rel="stylesheet"
+	href="fonts/font-awesome-4/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/pygments.css">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-  <link rel="stylesheet" type="text/css" href="js/jquery.nanoscroller/nanoscroller.css" />
-  <link href="js/jquery.icheck/skins/square/blue.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="js/jquery.nanoscroller/nanoscroller.css" />
+<link href="js/jquery.icheck/skins/square/blue.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- Fixed navbar -->
-<div id="head-nav" class="navbar navbar-default navbar-fixed-top">
+	<!-- Fixed navbar -->
+	<div id="head-nav" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -114,11 +124,10 @@
 						<ul class="cl-vnavigation">
 
 							<li><a href="#"><i class="fa fa-money"></i><span>Revenue
-										</span></a>
+								</span></a>
 								<ul class="sub-menu">
 									<li><a href="anaTotRev.html">Total Revenue</a></li>
 									<li><a href="anaRevPerCat.html">Revenue Per Category</a></li>
-									<li><a href="anaRevPerPie.html">Revenue Per Piece</a></li>
 								</ul></li>
 
 							<li><a href="#"><i class="fa fa-table"></i><span>Customer
@@ -134,6 +143,10 @@
 									<li><a href="anaPopCus.html">Popularity of
 											Customization</a></li>
 								</ul></li>
+							<li><a href="anaCusInfo.html"><i class="fa fa-eye"></i><span>Customer
+										Info</span></a>
+							<li><a href="anaPriSta.html"><i class="fa fa-cogs"></i><span>Print
+										Station Analysis</span></a>
 						</ul>
 					</div>
 				</div>
@@ -154,29 +167,87 @@
 					<li class="active">Popularity</li>
 				</ol>
 			</div>
+
+
 			<div class="cl-mcont">
 				<div class="row">
+					<div class="col-sm-6 col-md-6">
+
+						<div class="block-flat">
+							<div id="poppie"
+								style="height: 350px; padding: 0px; position: relative;"></div>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-6">
+
+						<div class="content no-padding">
+							<br>
+							<h2>Top 5 Products Analysis</h2>
+							<table class="red">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th class="right"><span>Percentage</span>View</th>
+										<th class="right"><span>Percentage</span>Customize</th>
+										<th class="right"><span>Percentage</span>Finalize</th>
+									</tr>
+								</thead>
+								<tbody class="no-border-x">
+									<tr>
+										<td style="width: 40%;"><i class="fa fa-sitemap"></i>
+											Ring</td>
+										<td class="text-right">45</td>
+										<td class="text-right">40</td>
+										<td class="text-right">38</td>
+									</tr>
+									<tr>
+										<td><i class="fa fa-tasks"></i> Heart</td>
+										<td class="text-right">43</td>
+										<td class="text-right">40</td>
+										<td class="text-right">35</td>
+									</tr>
+									<tr>
+										<td><i class="fa fa-signal"></i> Skyline</td>
+										<td class="text-right">36</td>
+										<td class="text-right">34</td>
+										<td class="text-right">30</td>
+									</tr>
+									<tr>
+										<td><i class="fa fa-bolt"></i> Cross</td>
+										<td class="text-right">31</td>
+										<td class="text-right">29</td>
+										<td class="text-right">26</td>
+									</tr>
+									<tr>
+										<td><i class="fa fa-bolt"></i> Heart Pendant</td>
+										<td class="text-right">30</td>
+										<td class="text-right">25</td>
+										<td class="text-right">23</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
 					<div class="col-sm-12 col-md-12">
 
 						<div class="block-flat">
-							<div id="PopPiece" style="height: 350px; padding: 0px; position: relative;"></div>
-
+							<div id="PopPiece"
+								style="height: 350px; padding: 0px; position: relative;"></div>
 						</div>
-
-						
 					</div>
-
-					
-					
 				</div>
 			</div>
 		</div>
 
 	</div>
 
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://code.highcharts.com/highcharts.js"></script>
-<script src="http://code.highcharts.com/modules/exporting.js"></script>	<script type="text/javascript"
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+	<script type="text/javascript"
 		src="js/jquery.nanoscroller/jquery.nanoscroller.js"></script>
 	<script type="text/javascript"
 		src="js/jquery.sparkline/jquery.sparkline.min.js"></script>
@@ -195,7 +266,13 @@
 		type="text/javascript"></script>
 	<script type="text/javascript"
 		src="js/jquery.gritter/js/jquery.gritter.js"></script>
-		
+	<script type="text/javascript" src="js/jquery.flot/jquery.flot.js"></script>
+	<script type="text/javascript" src="js/jquery.flot/jquery.flot.pie.js"></script>
+	<script type="text/javascript"
+		src="js/jquery.flot/jquery.flot.resize.js"></script>
+	<script type="text/javascript"
+		src="js/jquery.flot/jquery.flot.labels.js"></script>
+
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -204,49 +281,120 @@
 			App.charts();
 		});
 	</script>
-	<script>
- $(function () {
-        $('#PopPiece').highcharts({
-            title: {
-                text: 'Popularity of Piece Heart',
-                x: -20 //center
-            },
-            xAxis: {
-                categories: ['07-10-14', '07-11-14', '07-12-14', '07-13-14', '07-14-14', '07-15-14',
-                    '07-16-14', '07-17-14', '07-18-14', '07-19-14', '07-20-14', '07-21-14']
-            },
-            yAxis: {
-                title: {
-                    text: 'Times'
-                },
-                plotLines: [{
-                    value: 0,
-                    width: 1,
-                    color: '#808080'
-                }]
-            },
-            legend: {
-                layout: 'vertical',
-                align: 'right',
-                verticalAlign: 'middle',
-                borderWidth: 0
-            },
-            series: [{
-                name: 'Viewed',
-                data: [17, 16, 19, 14, 18, 21, 25, 26, 23, 18, 13, 9]
-            }, {
-                name: 'Customized',
-                data: [12, 8, 5, 11, 17, 19, 24, 24, 20, 14, 8, 2]
-            }, {
-                name: 'Purchased',
-                data: [9, 6, 3, 8, 13, 17, 18, 17, 14, 9, 3, 1]
-            }]
-        });
-    });
-    
 
-</script>   
+
+	<script>
+		$(function() {
+
+			// Make monochrome colors and set them as default for all pies
+			Highcharts.getOptions().plotOptions.pie.colors = (function() {
+				var colors = [], base = Highcharts.getOptions().colors[0], i
+
+				for (i = 0; i < 10; i++) {
+					// Start out with a darkened base color (negative brighten), and end
+					// up with a much brighter color
+					colors.push(Highcharts.Color(base).brighten((i - 3) / 7)
+							.get());
+				}
+				return colors;
+			}());
+
+			// Build the chart
+			$('#poppie')
+					.highcharts(
+							{
+								chart : {
+									plotBackgroundColor : null,
+									plotBorderWidth : null,
+									plotShadow : false
+								},
+								title : {
+									text : 'Top 5 Products'
+								},
+								tooltip : {
+									pointFormat : '{series.name}: <b>{point.percentage:.1f}%</b>'
+								},
+								plotOptions : {
+									pie : {
+										allowPointSelect : true,
+										cursor : 'pointer',
+										dataLabels : {
+											enabled : true,
+											format : '<b>{point.name}</b>: {point.percentage:.1f} %',
+											style : {
+												color : (Highcharts.theme && Highcharts.theme.contrastTextColor)
+														|| 'black'
+											}
+										}
+									}
+								},
+								series : [ {
+									type : 'pie',
+									name : 'share',
+									data : [ [ 'Ring', 45.0 ],
+											[ 'Heart', 26.8 ], {
+												name : 'Skyline',
+												y : 12.8,
+												sliced : true,
+												selected : true
+											}, [ 'Cross', 8.5 ],
+											[ 'Heart Pendant', 6.9 ], ]
+								} ]
+							});
+		});
+	</script>
+	<script>
+		$(function() {
+			$('#PopPiece').highcharts(
+					{
+						title : {
+							text : 'Popularity of Piece Heart',
+							x : -20
+						//center
+						},
+						xAxis : {
+							categories : [ '07-10-14', '07-11-14', '07-12-14',
+									'07-13-14', '07-14-14', '07-15-14',
+									'07-16-14', '07-17-14', '07-18-14',
+									'07-19-14', '07-20-14', '07-21-14' ]
+						},
+						yAxis : {
+							title : {
+								text : 'Times'
+							},
+							plotLines : [ {
+								value : 0,
+								width : 1,
+								color : '#808080'
+							} ]
+						},
+						legend : {
+							layout : 'vertical',
+							align : 'right',
+							verticalAlign : 'middle',
+							borderWidth : 0
+						},
+						series : [
+								{
+									name : 'Viewed',
+									data : [ 17, 16, 19, 14, 18, 21, 25, 26,
+											23, 18, 13, 9 ]
+								},
+								{
+									name : 'Customized',
+									data : [ 12, 8, 5, 11, 17, 19, 24, 24, 20,
+											14, 8, 2 ]
+								},
+								{
+									name : 'Purchased',
+									data : [ 9, 6, 3, 8, 13, 17, 18, 17, 14, 9,
+											3, 1 ]
+								} ]
+					});
+		});
+	</script>
 	
+
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->

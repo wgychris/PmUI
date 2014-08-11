@@ -128,7 +128,6 @@
 								<ul class="sub-menu">
 									<li><a href="anaTotRev.html">Total Revenue</a></li>
 									<li><a href="anaRevPerCat.html">Revenue Per Category</a></li>
-									<li><a href="anaRevPerPie.html">Revenue Per Piece</a></li>
 								</ul></li>
 
 							<li><a href="#"><i class="fa fa-home"></i><span>Customer
@@ -141,8 +140,12 @@
 							<li><a href="#"><i class="fa fa-home"></i><span>Popularity</span></a>
 								<ul class="sub-menu">
 									<li><a href="anaPopPiece.html">Popularity of Piece</a></li>
-									<li><a href="anaPopCus.html">Popularity of Customization</a></li>
+									<li><a href="anaPopCus.html">Popularity of
+											Customization</a></li>
 								</ul></li>
+							<li><a href="anaCusInfo.html"><i class="fa fa-eye"></i><span>Customer
+										Info</span></a>
+							<li><a href="anaPriSta.html"><i class="fa fa-cogs"></i><span>Print Station Analysis</span></a>				
 						</ul>
 					</div>
 				</div>
@@ -166,7 +169,7 @@
 					<li class="active">Revenue Per Category</li>
 				</ol>
 			</div>
-			
+
 
 			<div class="cl-mcont">
 				<div class="row">
@@ -177,6 +180,17 @@
 						<div class="block-flat">
 
 							<div id="revenuePerCat">
+								<p>Chart of Piece</p>
+							</div>
+						</div>
+
+					</div>
+					
+						<div class="col-sm-12 col-md-12">
+
+						<div class="block-flat">
+
+							<div id="revPerPiece">
 								<p>Chart of Piece</p>
 							</div>
 						</div>
@@ -220,14 +234,15 @@
 		});
 	</script>
 
-<script src="http://code.highcharts.com/highcharts.js"></script>
-<script src="http://code.highcharts.com/modules/data.js"></script>
-<script src="http://code.highcharts.com/modules/drilldown.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/data.js"></script>
+	<script src="http://code.highcharts.com/modules/drilldown.js"></script>
 
-<div id="container" style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto"></div>
+	<div id="container"
+		style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto"></div>
 
-<!-- Data from www.netmarketshare.com. Select Browsers => Desktop share by version. Download as tsv. -->
-<pre id="tsv" style="display:none">Browser Version	Total Market Share
+	<!-- Data from www.netmarketshare.com. Select Browsers => Desktop share by version. Download as tsv. -->
+	<pre id="tsv" style="display: none">Browser Version	Total Market Share
 Jewery 8.0	26.61%
 Jewery 9.0	16.96%
 Popular 18.0	8.01%
@@ -265,114 +280,171 @@ Fashion 2.0	0.09%
 Popular 10.0	0.09%
 Jewery 8.0 - Tencent Traveler Edition	0.09%</pre>
 
-<script>
-	$(function () {
+	<script>
+		$(function() {
 
-    Highcharts.data({
-        csv: document.getElementById('tsv').innerHTML,
-        itemDelimiter: '\t',
-        parsed: function (columns) {
+			Highcharts
+					.data({
+						csv : document.getElementById('tsv').innerHTML,
+						itemDelimiter : '\t',
+						parsed : function(columns) {
 
-            var brands = {},
-                brandsData = [],
-                versions = {},
-                drilldownSeries = [];
-            
-            // Parse percentage strings
-            columns[1] = $.map(columns[1], function (value) {
-                if (value.indexOf('%') === value.length - 1) {
-                    value = parseFloat(value);
-                }
-                return value;
-            });
+							var brands = {}, brandsData = [], versions = {}, drilldownSeries = [];
 
-            $.each(columns[0], function (i, name) {
-                var brand,
-                    version;
+							// Parse percentage strings
+							columns[1] = $.map(columns[1], function(value) {
+								if (value.indexOf('%') === value.length - 1) {
+									value = parseFloat(value);
+								}
+								return value;
+							});
 
-                if (i > 0) {
+							$.each(columns[0], function(i, name) {
+								var brand, version;
 
-                    // Remove special edition notes
-                    name = name.split(' -')[0];
+								if (i > 0) {
 
-                    // Split into brand and version
-                    version = name.match(/([0-9]+[\.0-9x]*)/);
-                    if (version) {
-                        version = version[0];
-                    }
-                    brand = name.replace(version, '');
+									// Remove special edition notes
+									name = name.split(' -')[0];
 
-                    // Create the main data
-                    if (!brands[brand]) {
-                        brands[brand] = columns[1][i];
-                    } else {
-                        brands[brand] += columns[1][i];
-                    }
+									// Split into brand and version
+									version = name.match(/([0-9]+[\.0-9x]*)/);
+									if (version) {
+										version = version[0];
+									}
+									brand = name.replace(version, '');
 
-                    // Create the version data
-                    if (version !== null) {
-                        if (!versions[brand]) {
-                            versions[brand] = [];
-                        }
-                        versions[brand].push([ version, columns[1][i]]);
-                    }
-                }
-                
-            });
+									// Create the main data
+									if (!brands[brand]) {
+										brands[brand] = columns[1][i];
+									} else {
+										brands[brand] += columns[1][i];
+									}
 
-            $.each(brands, function (name, y) {
-                brandsData.push({ 
-                    name: name, 
-                    y: y,
-                    drilldown: versions[name] ? name : null
-                });
-            });
-            $.each(versions, function (key, value) {
-                drilldownSeries.push({
-                    name: key,
-                    id: key,
-                    data: value
-                });
-            });
+									// Create the version data
+									if (version !== null) {
+										if (!versions[brand]) {
+											versions[brand] = [];
+										}
+										versions[brand].push([ version,
+												columns[1][i] ]);
+									}
+								}
 
-            // Create the chart
-            $('#revenuePerCat').highcharts({
-                chart: {
-                    type: 'pie'
-                },
-                title: {
-                    text: 'Revenue Per Category'
-                },
-                plotOptions: {
-                    series: {
-                        dataLabels: {
-                            enabled: true,
-                            format: '{point.name}: {point.y:.1f}%'
-                        }
-                    }
-                },
+							});
 
-                tooltip: {
-                    headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-                    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
-                }, 
+							$.each(brands, function(name, y) {
+								brandsData.push({
+									name : name,
+									y : y,
+									drilldown : versions[name] ? name : null
+								});
+							});
+							$.each(versions, function(key, value) {
+								drilldownSeries.push({
+									name : key,
+									id : key,
+									data : value
+								});
+							});
 
-                series: [{
-                    name: 'Brands',
-                    colorByPoint: true,
-                    data: brandsData
-                }],
-                drilldown: {
-                    series: drilldownSeries
-                }
-            })
+							// Create the chart
+							$('#revenuePerCat')
+									.highcharts(
+											{
+												chart : {
+													type : 'pie'
+												},
+												title : {
+													text : 'Revenue Per Category'
+												},
+												plotOptions : {
+													series : {
+														dataLabels : {
+															enabled : true,
+															format : '{point.name}: {point.y:.1f}%'
+														}
+													}
+												},
 
-        }
-    });
-});
-    
-</script>
+												tooltip : {
+													headerFormat : '<span style="font-size:11px">{series.name}</span><br>',
+													pointFormat : '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+												},
 
+												series : [ {
+													name : 'Brands',
+													colorByPoint : true,
+													data : brandsData
+												} ],
+												drilldown : {
+													series : drilldownSeries
+												}
+											})
+
+						}
+					});
+		});
+	</script>
+
+	<script>
+		$(function() {
+			$('#revPerPiece').highcharts(
+					{
+						title : {
+							text : 'Revenue Per Piece',
+							x : -20
+						//center
+						},
+						xAxis : {
+							categories : [ '07-10-14', '07-11-14', '07-12-14',
+									'07-13-14', '07-14-14', '07-15-14',
+									'07-16-14', '07-17-14', '07-18-14',
+									'07-19-14', '07-20-14', '07-21-14' ]
+						},
+						yAxis : {
+							title : {
+								text : 'Revenue ($)'
+							},
+							plotLines : [ {
+								value : 0,
+								width : 1,
+								color : '#808080'
+							} ]
+						},
+						tooltip : {
+							valuePrefix : '$'
+						},
+						legend : {
+							layout : 'vertical',
+							align : 'right',
+							verticalAlign : 'middle',
+							borderWidth : 0
+						},
+						series : [
+								{
+									name : 'Heart Pendant',
+									data : [ 7.0, 6.9, 9.5, 14.5, 18.2, 21.5,
+											25.2, 26.5, 23.3, 18.3, 13.9, 9.6 ]
+								},
+								{
+									name : 'Skyline',
+									data : [ -0.2, 0.8, 5.7, 11.3, 17.0, 22.0,
+											24.8, 24.1, 20.1, 14.1, 8.6, 2.5 ]
+								},
+								{
+									name : 'Heart',
+									data : [ -0.9, 0.6, 3.5, 8.4, 13.5, 17.0,
+											18.6, 17.9, 14.3, 9.0, 3.9, 1.0 ]
+								},
+								{
+									name : 'Cross',
+									data : [ 3.9, 4.2, 5.7, 8.5, 11.9, 15.2,
+											17.0, 16.6, 14.2, 10.3, 6.6, 4.8 ]
+								} ]
+					});
+		});
+	</script>
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->

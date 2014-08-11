@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="images/favicon.png">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="images/favicon.png">
 
-    <title>PieceMaker</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
+<title>PieceMaker</title>
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100'
+	rel='stylesheet' type='text/css'>
 
-    <!-- Bootstrap core CSS -->
-    <link href="js/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="js/bootstrap.switch/bootstrap-switch.min.css" />
-	<link rel="stylesheet" type="text/css" href="js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css" />
+<!-- Bootstrap core CSS -->
+<link href="js/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="js/bootstrap.switch/bootstrap-switch.min.css" />
+<link rel="stylesheet" type="text/css"
+	href="js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css" />
 
-	<!-- Select2 -->
-	<link rel="stylesheet" type="text/css" href="js/jquery.select2/select2.css" />
-	
-	
-	<!-- Slider -->
-	<link rel="stylesheet" type="text/css" href="js/bootstrap.slider/css/slider.css" />
-  
-  <!-- DateRange -->
-	<link rel="stylesheet" type="text/css" href="js/bootstrap.daterangepicker/daterangepicker-bs3.css" />
-  
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+<!-- Select2 -->
+<link rel="stylesheet" type="text/css"
+	href="js/jquery.select2/select2.css" />
 
-	<link rel="stylesheet" href="fonts/font-awesome-4/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/pygments.css">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+<!-- Slider -->
+<link rel="stylesheet" type="text/css"
+	href="js/bootstrap.slider/css/slider.css" />
+
+<!-- DateRange -->
+<link rel="stylesheet" type="text/css"
+	href="js/bootstrap.daterangepicker/daterangepicker-bs3.css" />
+
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet" />
+
+<link rel="stylesheet"
+	href="fonts/font-awesome-4/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/pygments.css">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-  <link rel="stylesheet" type="text/css" href="js/jquery.nanoscroller/nanoscroller.css" />
-  <link href="js/jquery.icheck/skins/square/blue.css" rel="stylesheet">	
+<link rel="stylesheet" type="text/css"
+	href="js/jquery.nanoscroller/nanoscroller.css" />
+<link href="js/jquery.icheck/skins/square/blue.css" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- Fixed navbar -->
-<div id="head-nav" class="navbar navbar-default navbar-fixed-top">
+	<!-- Fixed navbar -->
+	<div id="head-nav" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -113,11 +123,10 @@
 						<ul class="cl-vnavigation">
 
 							<li><a href="#"><i class="fa fa-money"></i><span>Revenue
-										</span></a>
+								</span></a>
 								<ul class="sub-menu">
 									<li><a href="anaTotRev.html">Total Revenue</a></li>
 									<li><a href="anaRevPerCat.html">Revenue Per Category</a></li>
-									<li><a href="anaRevPerPie.html">Revenue Per Piece</a></li>
 								</ul></li>
 
 							<li><a href="#"><i class="fa fa-table"></i><span>Customer
@@ -130,8 +139,13 @@
 							<li><a href="#"><i class="fa fa-smile-o"></i><span>Popularity</span></a>
 								<ul class="sub-menu">
 									<li><a href="anaPopPiece.html">Popularity of Piece</a></li>
-									<li><a href="anaPopCus.html">Popularity of Customization</a></li>
+									<li><a href="anaPopCus.html">Popularity of
+											Customization</a></li>
 								</ul></li>
+							<li><a href="anaCusInfo.html"><i class="fa fa-eye"></i><span>Customer
+										Info</span></a>
+							<li><a href="anaPriSta.html"><i class="fa fa-cogs"></i><span>Print
+										Station Analysis</span></a>
 						</ul>
 					</div>
 				</div>
@@ -153,148 +167,271 @@
 					<li class="active">Total Store Revenue</li>
 				</ol>
 			</div>
-			<div class="cl-mcont">
-				<div class="row">
-					<div class="col-sm-12 col-md-12">
 
-						<div class="block-flat">
-							<select class="form-control">
-								<option>Weekly Revenue</option>
-								<option>Monthly Revenue</option>
-								<option>Annualy Revenue</option>
-							</select> <br>
-							
-							<div class="content">
-								<!--  <div id="site_statistics"
+
+			<div class="cl-mcont">
+				<div class="stats_bar">
+					<div class="butpro butstyle flat">
+						<div class="sub">
+							<h2>TOTAL CLIENTS</h2>
+							<span id="total_clientes">170</span>
+						</div>
+						<div class="stat">
+							<span class="spk1"><canvas
+									style="display: inline-block; width: 74px; height: 16px; vertical-align: top;"
+									width="74" height="16"></canvas></span>
+						</div>
+					</div>
+					<div class="butpro butstyle flat">
+						<div class="sub">
+							<h2>TOTAL REVENUE</h2>
+							<span>$11,611</span>
+						</div>
+						<div class="stat">
+							<span class="up"> 13,5%</span>
+						</div>
+					</div>
+					<div class="butpro butstyle flat">
+						<div class="sub">
+							<h2>TODAY REVENUE</h2>
+							<span>$611</span>
+						</div>
+						<div class="stat">
+							<span class="spk2"></span>
+						</div>
+					</div>
+					<div class="butpro butstyle flat">
+						<div class="sub">
+							<h2>TODAY VISITORS</h2>
+							<span>25</span>
+						</div>
+						<div class="stat">
+							<span class="down"> 20,7%</span>
+						</div>
+					</div>
+					<div class="butpro butstyle flat">
+						<div class="sub">
+							<h2>NEW USERS</h2>
+							<span>5</span>
+						</div>
+						<div class="stat">
+							<span class="equal"> 0%</span>
+						</div>
+					</div>
+
+					<div class="butpro butstyle flat">
+						<div class="sub">
+							<h2>ORDERS AMOUNT</h2>
+							<span>14</span>
+						</div>
+						<div class="stat">
+							<span class="spk3"></span>
+						</div>
+					</div>
+
+				</div>
+				<div class="cl-mcont">
+					<div class="row">
+						<div class="col-sm-12 col-md-12">
+
+							<div class="block-flat">
+								<select class="form-control">
+									<option>Weekly Revenue</option>
+									<option>Monthly Revenue</option>
+									<option>Annualy Revenue</option>
+								</select> <br>
+
+								<div class="content">
+									<!--  <div id="site_statistics"
 									style="height: 180px; padding: 0px; position: relative;">
 							</div>
 							-->
-							<div id="config-graph" style="height: 350px; padding: 0px; position: relative;"></div>
+									<div id="config-graph"
+										style="height: 350px; padding: 0px; position: relative;"></div>
+								</div>
+							</div>
 						</div>
-					</div>
 					</div>
 				</div>
 			</div>
+
 		</div>
 
-	</div>
+		<!--  <script src="js/jquery.js"></script> -->
+		<script
+			src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
 
-	<!--  <script src="js/jquery.js"></script> -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://code.highcharts.com/highcharts.js"></script>
-<script src="http://code.highcharts.com/modules/exporting.js"></script>
-   
-	<script type="text/javascript"
-		src="js/jquery.nanoscroller/jquery.nanoscroller.js"></script>
-	<script type="text/javascript"
-		src="js/jquery.sparkline/jquery.sparkline.min.js"></script>
-	<script type="text/javascript"
-		src="js/jquery.easypiechart/jquery.easy-pie-chart.js"></script>
-	<script type="text/javascript" src="js/behaviour/general.js"></script>
-	<script src="js/jquery.ui/jquery-ui.js" type="text/javascript"></script>
-	<script type="text/javascript"
-		src="js/jquery.nestable/jquery.nestable.js"></script>
-	<script type="text/javascript"
-		src="js/bootstrap.switch/bootstrap-switch.min.js"></script>
-	<script type="text/javascript"
-		src="js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-	<script src="js/jquery.select2/select2.min.js" type="text/javascript"></script>
-	<script src="js/bootstrap.slider/js/bootstrap-slider.js"
-		type="text/javascript"></script>
-	<script type="text/javascript"
-		src="js/jquery.gritter/js/jquery.gritter.js"></script>
+		<script type="text/javascript"
+			src="js/jquery.nanoscroller/jquery.nanoscroller.js"></script>
+		<script type="text/javascript"
+			src="js/jquery.sparkline/jquery.sparkline.min.js"></script>
+		<script type="text/javascript"
+			src="js/jquery.easypiechart/jquery.easy-pie-chart.js"></script>
+		<script type="text/javascript" src="js/behaviour/general.js"></script>
+		<script src="js/jquery.ui/jquery-ui.js" type="text/javascript"></script>
+		<script type="text/javascript"
+			src="js/jquery.nestable/jquery.nestable.js"></script>
+		<script type="text/javascript"
+			src="js/bootstrap.switch/bootstrap-switch.min.js"></script>
+		<script type="text/javascript"
+			src="js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+		<script src="js/jquery.select2/select2.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.slider/js/bootstrap-slider.js"
+			type="text/javascript"></script>
+		<script type="text/javascript"
+			src="js/jquery.gritter/js/jquery.gritter.js"></script>
 
-	<script type="text/javascript">
+		<!-- 	<script type="text/javascript">
 		$(document).ready(function() {
 			//initialize the javascript
 			App.init();
 			App.charts();
 		});
-	</script>
-	<script>
-$(function () {
-        $('#config-graph').highcharts({
-            chart: {
-                type: 'column'
-            },
-            title: {
-                text: 'Store total revenue'
-            },
-            xAxis: {
-                type: 'category',
-                labels: {
-                    rotation: -45,
-                    style: {
-                        fontSize: '13px',
-                        fontFamily: 'Verdana, sans-serif'
-                    }
-                }
-            },
-            yAxis: {
-                min: 0,
-                title: {
-                    text: 'Revenue ($)'
-                }
-            },
-            legend: {
-                enabled: false
-            },
-            tooltip: {
-                pointFormat: 'Revenue: <b>${point.y:.1f}</b>',
-            },
-            series: [{
-                name: 'Date',
-                data: [
-                    ['07-03-14', 23.7],
-                    ['07-04-14', 16,1],
-                    ['07-05-14', 14.2],
-                    ['07-06-14', 14.0],
-                    ['07-07-14', 12.5],
-                    ['07-08-14', 12.1],
-                    ['07-09-14', 11.8],
-                    ['07-10-14', 11.7],
-                    ['07-11-14', 11.1],
-                    ['07-12-14', 11.1],
-                    ['07-13-14', 10.5],
-                    ['07-14-14', 10.4],
-                    ['07-15-14', 10.0],
-                    ['07-16-14', 9.3],
-                    ['07-17-14', 9.3],
-                    ['07-18-14', 9.0],
-                    ['07-19-14', 8.9],
-                    ['07-20-14', 8.9],
-                    ['07-21-14', 8.9],
-                    ['07-22-14', 8.9]
-                ],
-                dataLabels: {
-                    enabled: true,
-                    rotation: -90,
-                    color: '#FFFFFF',
-                    align: 'right',
-                    x: 4,
-                    y: 10,
-                    style: {
-                        fontSize: '13px',
-                        fontFamily: 'Verdana, sans-serif',
-                        textShadow: '0 0 3px black'
-                    }
-                }
-            }]
-        });
-    });
-    
-</script>   
-	
-	<!-- Bootstrap core JavaScript
+	</script> -->
+		<script type="text/javascript">
+			$(document).ready(
+					function() {
+						//initialize the javascript
+						App.init();
+						//App.dashBoard();        
+						/*Sparklines*/
+						$(".spk1")
+								.sparkline(
+										[ 2, 4, 3, 6, 7, 5, 8, 9, 4, 2, 6, 8,
+												8, 9, 10 ], {
+											type : 'bar',
+											width : '80px',
+											barColor : '#4A8CF7'
+										});
+						$(".spk2").sparkline(
+								[ 4, 6, 7, 7, 4, 3, 2, 1, 4, 4, 5, 6, 5 ], {
+									type : 'discrete',
+									width : '80',
+									lineColor : '#4A8CF7',
+									thresholdValue : 4,
+									thresholdColor : '#ff0000'
+								});
+						$(".spk4").sparkline(
+								[ 2, 4, 3, 6, 7, 5, 8, 9, 4, 2, 10, ], {
+									type : 'bar',
+									width : '80px',
+									height : '30px',
+									barColor : '#EA6153'
+								});
+						$(".spk5").sparkline(
+								[ 5, 3, 5, 6, 5, 7, 4, 8, 6, 9, 8, ], {
+									type : 'bar',
+									width : '80px',
+									height : '30px',
+									barColor : '#4AA3DF'
+								});
+
+						$(".spk3").sparkline(
+								[ 5, 6, 7, 9, 9, 5, 3, 2, 2, 4, 6, 7 ], {
+									type : 'line',
+									lineColor : '#258FEC',
+									fillColor : '#4A8CF7',
+									spotColor : false,
+									width : '80px',
+									minSpotColor : false,
+									maxSpotColor : false,
+									highlightSpotColor : '#1e7ac6',
+									highlightLineColor : '#1e7ac6'
+								});
+
+						$("table td .legend").each(function() {
+							var el = $(this);
+							var color = el.data("color");
+							el.css("background", color);
+						});
+
+					});
+		</script>
+
+		<script>
+			$(function() {
+				$('#config-graph').highcharts(
+						{
+							chart : {
+								type : 'column'
+							},
+							title : {
+								text : 'Store total revenue'
+							},
+							xAxis : {
+								type : 'category',
+								labels : {
+									rotation : -45,
+									style : {
+										fontSize : '13px',
+										fontFamily : 'Verdana, sans-serif'
+									}
+								}
+							},
+							yAxis : {
+								min : 0,
+								title : {
+									text : 'Revenue ($)'
+								}
+							},
+							legend : {
+								enabled : false
+							},
+							tooltip : {
+								pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
+							},
+							series : [ {
+								name : 'Date',
+								data : [ [ '07-03-14', 23.7 ],
+										[ '07-04-14', 16, 1 ],
+										[ '07-05-14', 14.2 ],
+										[ '07-06-14', 14.0 ],
+										[ '07-07-14', 12.5 ],
+										[ '07-08-14', 12.1 ],
+										[ '07-09-14', 11.8 ],
+										[ '07-10-14', 11.7 ],
+										[ '07-11-14', 11.1 ],
+										[ '07-12-14', 11.1 ],
+										[ '07-13-14', 10.5 ],
+										[ '07-14-14', 10.4 ],
+										[ '07-15-14', 10.0 ],
+										[ '07-16-14', 9.3 ],
+										[ '07-17-14', 9.3 ],
+										[ '07-18-14', 9.0 ],
+										[ '07-19-14', 8.9 ],
+										[ '07-20-14', 8.9 ],
+										[ '07-21-14', 8.9 ],
+										[ '07-22-14', 8.9 ] ],
+								dataLabels : {
+									enabled : true,
+									rotation : -90,
+									color : '#FFFFFF',
+									align : 'right',
+									x : 4,
+									y : 10,
+									style : {
+										fontSize : '13px',
+										fontFamily : 'Verdana, sans-serif',
+										textShadow : '0 0 3px black'
+									}
+								}
+							} ]
+						});
+			});
+		</script>
+
+		<!-- Bootstrap core JavaScript
     ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="js/behaviour/voice-commands.js"></script>
-	<script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/jquery.flot/jquery.flot.js"></script>
-	<script type="text/javascript" src="js/jquery.flot/jquery.flot.pie.js"></script>
-	<script type="text/javascript"
-		src="js/jquery.flot/jquery.flot.resize.js"></script>
-	<script type="text/javascript"
-		src="js/jquery.flot/jquery.flot.labels.js"></script>
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/behaviour/voice-commands.js"></script>
+		<script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.flot/jquery.flot.js"></script>
+		<script type="text/javascript" src="js/jquery.flot/jquery.flot.pie.js"></script>
+		<script type="text/javascript"
+			src="js/jquery.flot/jquery.flot.resize.js"></script>
+		<script type="text/javascript"
+			src="js/jquery.flot/jquery.flot.labels.js"></script>
 </body>
 </html>
