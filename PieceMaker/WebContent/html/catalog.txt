@@ -1,0 +1,6319 @@
+ababa
+carouselItem {
+ id 2
+ filename {data/pm/stl/newpilot/lithodogsimple.stl}
+ title {Dog With Simple Border}
+ category {Lithophanes}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/lithophane/boxframedogwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Put this piece up to a light
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+to bring out man's best friend!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lighter colors work best.}
+ price {9}
+ vignette {3}
+ text {
+  group 0
+  scale {x 39.00000 y 10.40000 z 2.00000}
+  offset {x 0.00000 y -24.70000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 10
+  name {Front Text}
+  description {Enter Text for Front of Lithophane}
+ }
+}
+
+carouselItem {
+ id 3
+ filename {data/pm/stl/newpilot/lithomoonsimple.stl}
+ title {Moon With Simple Border}
+ category {Lithophanes}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/lithophane/boxframewithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Put this piece up to a light
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+to reveal this heavenly body!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lighter colors work best.}
+ price {9}
+ vignette {3}
+ text {
+  group 0
+  scale {x 39.00000 y 10.40000 z 2.00000}
+  offset {x 0.00000 y -24.70000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 10
+  name {Front Text}
+  description {Enter Text for Front of Lithophane}
+ }
+}
+
+carouselItem {
+ id 4
+ filename {data/pm/stl/newpilot/lithoskullsimple.stl}
+ title {Skull With Simple Border}
+ category {Lithophanes}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/lithophane/boxframeskullwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Put this piece up to a light to
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bring out this spooky hidden image!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lighter colors work best.}
+ price {9}
+ vignette {3}
+ text {
+  group 0
+  scale {x 39.00000 y 10.40000 z 2.00000}
+  offset {x 0.00000 y -24.70000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 10
+  name {Front Text}
+  description {Enter Text for Front of Lithophane}
+ }
+}
+
+carouselItem {
+ id 5
+ filename {data/pm/stl/newpilot/litholionsimple.stl}
+ title {Lion With Simple Border}
+ category {Lithophanes}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/lithophane/lionsimple.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Put this piece of to a light to
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bring out the king of the jungle!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lighter colors work best.}
+ price {9}
+ vignette {3}
+ text {
+  group 0
+  scale {x 38.00000 y 10.00000 z 2.00000}
+  offset {x 0.00000 y -20.20000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 10
+  name {Front Text}
+  description {Enter Text on Front of Lithophane}
+ }
+}
+
+carouselItem {
+ id 6
+ filename {data/pm/stl/newpilot/litholionvornoi.stl}
+ title {Lion With Voronoi Border}
+ category {Lithophanes}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/lithophane/vornoilion.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Put this piece of to a light to
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bring out the king of the jungle!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lighter colors work best.}
+ price {12}
+ vignette {3}
+ text {
+  group 0
+  scale {x 19.40000 y 5.00000 z 3.00000}
+  offset {x 0.00000 y -18.00000 z 2.70000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 6
+  name {Front Text}
+  description {Enter Text on Front of Lithophane}
+ }
+}
+
+carouselItem {
+ id 7
+ filename {data/pm/stl/newpilot/victorianlion2bool.stl}
+ title {Lion With Victorian Border}
+ category {Lithophanes}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/lithophane/lionvictoriantext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Find the king of the jungle!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Lighter colors work best.}
+ price {12}
+ vignette {3}
+ text {
+  group 0
+  scale {x 30.20000 y 9.00000 z 2.50000}
+  offset {x 0.00000 y -16.90000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 10
+  name {Front Text}
+  description {Enter Text on Front of Lithophane}
+ }
+}
+
+carouselItem {
+ id 8
+ filename {data/pm/stl/newpilot/lithodogvornoi.stl}
+ title {Dog With Voronoi Border}
+ category {Lithophanes}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/lithophane/vornoidogwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Put this piece up to a light
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+to bring out man's best friend!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lighter colors work best.}
+ price {12}
+ vignette {3}
+ text {
+  group 0
+  scale {x 14.30000 y 3.90000 z 3.00000}
+  offset {x 0.00000 y -21.30000 z 1.80000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 4
+  name {Front Text}
+  description {Enter Text on Front of Lithophane}
+ }
+}
+
+carouselItem {
+ id 9
+ filename {data/pm/stl/newpilot/lithoskullvornoi.stl}
+ title {Skull With Voronoi Border}
+ category {Lithophanes}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/lithophane/vornoiskullwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Put this piece up to a light to
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bring out this spooky hidden image!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lighter colors work best.}
+ price {12}
+ vignette {3}
+ text {
+  group 0
+  scale {x 13.90000 y 4.10000 z 3.00000}
+  offset {x 0.00000 y -21.30000 z 2.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 4
+  name {Front Text}
+  description {Enter Text on Front of Lithophane}
+ }
+}
+
+carouselItem {
+ id 10
+ filename {data/pm/stl/newpilot/lithomoonvornoi.stl}
+ title {Moon With Voronoi Border}
+ category {Lithophanes}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/lithophane/vornoimoonwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Put this piece up to a light
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+to reveal this heavenly body!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lighter colors work best.}
+ price {12}
+ vignette {3}
+ text {
+  group 0
+  scale {x 13.00000 y 4.00000 z 3.00000}
+  offset {x 0.00000 y -21.20000 z 2.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 4
+  name {Front Text}
+  description {Enter Text on Front of Lithophane}
+ }
+}
+
+carouselItem {
+ id 11
+ filename {data/pm/stl/newpilot/victoriandog2.stl}
+ title {Dog With Victorian Border}
+ category {Lithophanes}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/lithophane/victoriandogwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Put this piece up to a light
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+to bring out man's best friend!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lighter colors work best.}
+ price {12}
+ vignette {3}
+ text {
+  group 0
+  scale {x 27.30000 y 9.50000 z 2.50000}
+  offset {x 0.00000 y -18.30000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 10
+  name {Front Text}
+  description {Enter Text on Front of Lithophane}
+ }
+}
+
+carouselItem {
+ id 12
+ filename {data/pm/stl/newpilot/victorianmoon6.stl}
+ title {Moon With Victorian Border}
+ category {Lithophanes}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/lithophane/victorianmoonwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Put this piece up to a light
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+to reveal this heavenly body!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lighter colors work best.}
+ price {12}
+ vignette {3}
+ text {
+  group 0
+  scale {x 28.00000 y 8.80000 z 2.50000}
+  offset {x 0.00000 y -18.70000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 10
+  name {Front Text}
+  description {Enter Text on Front of Lithophane}
+ }
+}
+
+carouselItem {
+ id 13
+ filename {data/pm/stl/newpilot/victorianskull2.stl}
+ title {Skull With Victorian Border}
+ category {Lithophanes}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/lithophane/victorianskullwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Put this piece up to a light to
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bring out this spooky hidden image!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lighter colors work best.}
+ price {12}
+ vignette {3}
+ text {
+  group 0
+  scale {x 28.00000 y 9.30000 z 2.50000}
+  offset {x 0.00000 y -18.60000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 10
+  name {Front Text}
+  description {Enter Text on Front of Lithophane}
+ }
+}
+
+carouselItem {
+ id 14
+ filename {data/pm/stl/newpilot/gearpendantbool23.stl}
+ title {Moving Gear}
+ category {Jewelry: Fancy Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/gears/gearpendant.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Get into gear with this spinning piece!}
+ price {12}
+ vignette {2}
+}
+
+carouselItem {
+ id 15
+ filename {data/pm/stl/newpilot/victorianoval.stl}
+ title {Victorian Oval}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/victorianovalstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Go back in time by wearing this historic style!}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 20.50000 y 20.50000 z 2.50000}
+  offset {x 0.00000 y -6.50000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Oval} }
+}
+
+carouselItem {
+ id 16
+ filename {data/pm/stl/newpilot/pennsylvania061714.stl}
+ title {Pennsylvania}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/states/patext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {You're in Pennsylvania. Wear it too!}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 36.00000 y 5.00000 z 3.00000}
+  offset {x -1.60000 y -3.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 10
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 36.00000 y 5.00000 z 3.00000}
+  offset {x -1.60000 y -9.70000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 10
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 17
+ filename {data/pm/stl/newpilot/earthpendant062614.stl}
+ title {Earth}
+ category {Jewelry: Element Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/elements/earth.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Wear this pendant to show your earth power!}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 18
+ filename {data/pm/stl/newpilot/firependant062414.stl}
+ title {Fire With Stencil}
+ category {Jewelry: Element Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/elements/firewithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Wear this pendant to show your fire power!}
+ price {7}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 12.60000 y 12.60000 z 3.50000}
+  offset {x 0.00000 y -12.30000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 180.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Fire} }
+}
+
+carouselItem {
+ id 19
+ filename {data/pm/stl/newpilot/firependant062414.stl}
+ title {Fire With Text}
+ category {Jewelry: Element Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/elements/firewithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Wear this pendant to show your fire power!}
+ price {7}
+ vignette {2}
+ text {
+  group 0
+  scale {x 29.90000 y 8.80000 z 3.50000}
+  offset {x 0.00000 y -12.60000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 180.00000}
+  characters 5
+  name {Front Text}
+  description {Enter Text for Front of Pendant}
+ }
+}
+
+carouselItem {
+ id 20
+ filename {data/pm/stl/newpilot/waterpendant061914.stl}
+ title {Water With Stencil}
+ category {Jewelry: Element Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/elements/waterwithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Wear this pendant to show your water power!}
+ price {7}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 24.50000 y 24.50000 z 3.50000}
+  offset {x 0.00000 y -10.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Water} }
+}
+
+carouselItem {
+ id 21
+ filename {data/pm/stl/newpilot/waterpendant061914.stl}
+ title {Water With Text}
+ category {Jewelry: Element Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/elements/waterwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Wear this pendant to show your water power!}
+ price {7}
+ vignette {2}
+ text {
+  group 0
+  scale {x 23.10000 y 7.20000 z 3.50000}
+  offset {x 0.00000 y 0.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 3
+  name {Text Line 1}
+  description {Enter Text for Top Line}
+ }
+ text {
+  group 0
+  scale {x 35.00000 y 7.20000 z 3.50000}
+  offset {x 0.00000 y -10.70000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Text Line 2}
+  description {Enter Text for Middle Line}
+ }
+ text {
+  group 0
+  scale {x 23.10000 y 7.20000 z 3.50000}
+  offset {x 0.00000 y -21.50000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 3
+  name {Text Line 3}
+  description {Enter Text for Bottom Line}
+ }
+}
+
+carouselItem {
+ id 22
+ filename {data/pm/stl/newpilot/windpendant062614.stl}
+ title {Wind}
+ category {Jewelry: Element Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/elements/wind.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Wear this pendant to show your wind power!}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 23
+ filename {data/pm/stl/newpilot/_heart_ 06_23_2014.stl}
+ title {BLANK loves BLANK With Stencil}
+ category {Jewelry: Love Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/iheart/_heart_withstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Do you love something? Show the World!.}
+ price {12}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 10.50000 y 10.50000 z 3.00000}
+  offset {x -22.80000 y -1.90000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Left Stencil}
+  desc {Select Stencil for Left Side} }
+ stencil {
+  group 0
+  scale {x 10.50000 y 10.50000 z 3.00000}
+  offset {x 22.80000 y -1.90000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Right Stencil}
+  desc {Select Stencil for Right Side} }
+}
+
+carouselItem {
+ id 24
+ filename {data/pm/stl/newpilot/_heart_ 06_23_2014.stl}
+ title {BLANK loves BLANK WIth Text}
+ category {Jewelry: Love Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/iheart/_heart_withtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Do you love something? Show the World!}
+ price {12}
+ vignette {2}
+ text {
+  group 0
+  scale {x 10.50000 y 10.50000 z 3.00000}
+  offset {x -22.80000 y -1.80000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 2
+  name {Left Text}
+  description {Enter Text for Left Side}
+ }
+ text {
+  group 0
+  scale {x 10.50000 y 10.50000 z 3.00000}
+  offset {x 22.80000 y -1.80000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 2
+  name {Right Text}
+  description {Enter Text for Right Side}
+ }
+}
+
+carouselItem {
+ id 25
+ filename {data/pm/stl/newpilot/iheartnew.stl}
+ title {I Heart Blank With Stencil}
+ category {Jewelry: Love Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/iheart/iheartwithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {I 'heart' 3D Printing. What do you 'heart'?}
+ price {12}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 15.00000 y 15.00000 z 3.00000}
+  offset {x 0.00000 y -2.90000 z 2.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Bottom Stencil}
+  desc {Select Stencil to Appear in Heart} }
+}
+
+carouselItem {
+ id 26
+ filename {data/pm/stl/newpilot/iheartnew.stl}
+ title {I Heart Blank With Text}
+ category {Jewelry: Love Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/iheart/iheartwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {I 'heart' 3D printing. What do you 'heart'?}
+ price {12}
+ vignette {2}
+ text {
+  group 0
+  scale {x 15.00000 y 15.00000 z 3.00000}
+  offset {x 0.00000 y -3.20000 z 2.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 2
+  name {Bottom Text}
+  description {Enter Text to Appear in Heart}
+ }
+}
+
+carouselItem {
+ id 27
+ filename {data/pm/stl/newpilot/butterfly pendant 06_09_2014.stl}
+ title {Butterfly}
+ category {Jewelry: Animal Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/animal/butterfly.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Flutter into style and wear this pendant!}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 28
+ filename {data/pm/stl/newpilot/dove pendant 06_09_2014.stl}
+ title {Dove}
+ category {Jewelry: Animal Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/animal/dove.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Fly into style and wear this pendant!}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 29
+ filename {data/pm/stl/newpilot/panda head pendant 06_10_2014.stl}
+ title {Panda}
+ category {Jewelry: Animal Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/animal/panda.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Climb into style and wear this pendant!}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 30
+ filename {data/pm/stl/newpilot/rabbit pendant 06_09_2014.stl}
+ title {Rabbit}
+ category {Jewelry: Animal Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/animal/rabbit.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Hop into style and wear this pendant!}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 31
+ filename {data/pm/stl/newpilot/shark pendant  06_09_2014.stl}
+ title {Shark}
+ category {Jewelry: Animal Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/animal/shark.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Swim into style and wear this pendant!}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 32
+ filename {data/pm/stl/newpilot/guitar pick  06_10_2014.stl}
+ title {Guitar Pick}
+ category {Music: Guitar Picks}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/guitarpickwithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Create a guitar pick that hasn't been seen yet!}
+ price {6}
+ vignette {0}
+ stencil {
+  group 0
+  scale {x 14.00000 y 14.00000 z 2.00000}
+  offset {x 0.00000 y 4.00000 z 2.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Pick} }
+}
+
+carouselItem {
+ id 33
+ filename {data/pm/stl/newpilot/guitar pick  06_10_2014.stl}
+ title {Guitar Pick}
+ category {Music: Guitar Picks}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/guitarpickwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Create a guitar pick that hasn't been seen yet!}
+ price {6}
+ vignette {0}
+ text {
+  group 0
+  scale {x 20.00000 y 7.50000 z 2.00000}
+  offset {x 0.00000 y 6.20000 z 2.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 4
+  name {Front Text}
+  description {Enter Text for Front of Pick}
+ }
+}
+
+carouselItem {
+ id 34
+ filename {data/pm/stl/newpilot/rectangle 06_19_2014.stl}
+ title {Rectangle}
+ category {Jewelry: Beads}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/rectanglewithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Use text to personalize your bead!}
+ price {4}
+ vignette {0}
+ text {
+  group 0
+  scale {x 10.00000 y 10.00000 z 3.00000}
+  offset {x 0.00000 y -8.00000 z 15.00000}
+  rotation {x 90.00000 y 360.00000 z 360.00000}
+  characters 1
+  name {Front Text}
+  description {Enter Text for Front Face}
+ }
+ text {
+  group 0
+  scale {x 10.00000 y 10.00000 z 3.00000}
+  offset {x 8.00000 y -0.00000 z 15.00000}
+  rotation {x 360.00000 y 90.00000 z 90.00000}
+  characters 1
+  name {Right Text}
+  description {Enter Text for Right Face}
+ }
+ text {
+  group 0
+  scale {x 10.00000 y 10.00000 z 3.00000}
+  offset {x 0.00000 y 8.00000 z 15.00000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  characters 1
+  name {Back Text}
+  description {Enter Text for Back Face}
+ }
+ text {
+  group 0
+  scale {x 10.00000 y 10.00000 z 3.00000}
+  offset {x -8.00000 y 0.00000 z 15.00000}
+  rotation {x 0.00000 y 270.00000 z 270.00000}
+  characters 1
+  name {Left Text}
+  description {Enter Text for Left Face}
+ }
+}
+
+carouselItem {
+ id 35
+ filename {data/pm/stl/newpilot/club 06_19_2014.stl}
+ title {Club}
+ category {Jewelry: Beads}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/clubbeadwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Use text to personalize your bead!}
+ price {4}
+ vignette {0}
+ text {
+  group 0
+  scale {x 5.00000 y 5.00000 z 3.00000}
+  offset {x 0.00000 y 0.00000 z 6.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Front Text}
+  description {Enter Text for Front of Club}
+ }
+}
+
+carouselItem {
+ id 36
+ filename {data/pm/stl/newpilot/square 06_19_2014.stl}
+ title {Cube}
+ category {Jewelry: Beads}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/cubewithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Use text to personalize your bead!}
+ price {4}
+ vignette {0}
+ text {
+  group 0
+  scale {x 10.00000 y 10.00000 z 2.00000}
+  offset {x 0.00000 y -8.00000 z 8.00000}
+  rotation {x 90.00000 y 360.00000 z 0.00000}
+  characters 1
+  name {Front Text}
+  description {Enter Text for Front Face}
+ }
+ text {
+  group 0
+  scale {x 10.00000 y 10.00000 z 2.00000}
+  offset {x 8.00000 y 0.00000 z 8.00000}
+  rotation {x 0.00000 y 90.00000 z 90.00000}
+  characters 1
+  name {Right Text}
+  description {Enter Text for Right Face}
+ }
+ text {
+  group 0
+  scale {x 10.00000 y 10.00000 z 2.00000}
+  offset {x 0.00000 y 8.00000 z 8.00000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  characters 1
+  name {Back Text}
+  description {Enter Text for Back Face}
+ }
+ text {
+  group 0
+  scale {x 10.00000 y 10.00000 z 2.00000}
+  offset {x -8.00000 y 0.00000 z 8.00000}
+  rotation {x 0.00000 y 270.00000 z 270.00000}
+  characters 1
+  name {Left Text}
+  description {Enter Text for Left Face}
+ }
+}
+
+carouselItem {
+ id 37
+ filename {data/pm/stl/newpilot/diamond 06_19_2014.stl}
+ title {Diamond}
+ category {Jewelry: Beads}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/diamondwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Use text to personalize your bead!}
+ price {4}
+ vignette {0}
+ text {
+  group 0
+  scale {x 10.50000 y 10.50000 z 2.00000}
+  offset {x 0.00000 y 0.00000 z 6.40000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Top Text}
+  description {Enter Text for Top of Diamond}
+ }
+}
+
+carouselItem {
+ id 38
+ filename {data/pm/stl/newpilot/cylinder 06_19_2014.stl}
+ title {Disc}
+ category {Jewelry: Beads}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/diskwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Use text to personalize your bead!}
+ price {4}
+ vignette {0}
+ text {
+  group 0
+  scale {x 7.50000 y 7.50000 z 2.00000}
+  offset {x 0.00000 y 0.00000 z 6.40000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Top Text}
+  description {Enter Text for Top of Disc}
+ }
+}
+
+carouselItem {
+ id 39
+ filename {data/pm/stl/newpilot/heart 06_19_2014.stl}
+ title {Heart}
+ category {Jewelry: Beads}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/heartwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Use text to personalize your bead!}
+ price {4}
+ vignette {0}
+ text {
+  group 0
+  scale {x 10.00000 y 10.00000 z 2.00000}
+  offset {x 0.00000 y 0.30000 z 6.40000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Top Text}
+  description {Enter Text for Top of Heart}
+ }
+}
+
+carouselItem {
+ id 40
+ filename {data/pm/stl/newpilot/triangle 06_19_2014.stl}
+ title {Pyramid}
+ category {Jewelry: Beads}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/pyramid.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Choose a color to match your personality.}
+ price {4}
+ vignette {0}
+}
+
+carouselItem {
+ id 41
+ filename {data/pm/stl/newpilot/spade 06_19_2014.stl}
+ title {Spade}
+ category {Jewelry: Beads}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/spadewithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Use text to personalize your bead!}
+ price {4}
+ vignette {0}
+ text {
+  group 0
+  scale {x 9.00000 y 9.00000 z 2.00000}
+  offset {x 0.00000 y 1.00000 z 6.40000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Top Text}
+  description {Enter Text for Top of Spade}
+ }
+}
+
+carouselItem {
+ id 42
+ filename {Data/PM/STL/NewPilot/bone 06262014.stl}
+ title {Dog Bone}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/NewPilot/Pendant Basic Shape/bonewithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Get a matching one for you and your dog.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Choose color and customize with text!}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 37.80000 y 10.30000 z 3.50000}
+  offset {x -0.00000 y 0.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 8
+  name {Top Text}
+  description {Enter Text for Top of Bone}
+ }
+}
+
+carouselItem {
+ id 43
+ filename {Data/PM/STL/NewPilot/1CircleWith disc connect.stl}
+ title {Circle}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/Pendant Basic Shape/circlewithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Choose a color and select your stencil.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The options are almost limitless!}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 30.40000 y 30.40000 z 3.50000}
+  offset {x -0.00000 y -4.50000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Circle} }
+}
+
+carouselItem {
+ id 44
+ filename {Data/PM/STL/NewPilot/1circlewith disc connect.stl}
+ title {Circle}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/Pendant Basic Shape/circlewithText.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Choose a color and enter your text.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The options are almost limitless!}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 31.00000 y 10.00000 z 3.50000}
+  offset {x 0.00000 y 6.30000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 41.20000 y 10.00000 z 3.50000}
+  offset {x -0.00000 y -5.70000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Middle Text}
+  description {Enter Text in Middle Line}
+ }
+ text {
+  group 0
+  scale {x 31.00000 y 10.00000 z 3.50000}
+  offset {x 0.00000 y -17.60000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 45
+ filename {Data/Pm/STL/NewPilot/diamond 06262014 (2).stl}
+ title {Diamond}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/Pendant Basic Shape/diamondwithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 32.00000 y 32.00000 z 3.50000}
+  offset {x 0.00000 y -5.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Diamond} }
+}
+
+carouselItem {
+ id 46
+ filename {Data/Pm/STL/NewPilot/diamond 06262014 (2).stl}
+ title {Diamond}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/Pendant Basic Shape/diamondwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Diamonds are a girls bestfriend.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Choose a color and enter your text.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The options are almost limitless!}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 20.60000 y 14.30000 z 3.50000}
+  offset {x 0.00000 y 12.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 2
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 46.00000 y 14.30000 z 3.50000}
+  offset {x -0.00000 y -5.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Middle Text}
+  description {Enter Text in Middle Line}
+ }
+ text {
+  group 0
+  scale {x 20.30000 y 14.30000 z 3.50000}
+  offset {x 0.00000 y -22.60000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 3
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 47
+ filename {Data/PM/STL/NewPilot/1fish 06262014.stl}
+ title {Fish}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/Pendant Basic Shape/fishwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Go for a swim!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Choose a color and enter your text.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The options are almost limitless!}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 67.00000 y 12.40000 z 3.50000}
+  offset {x -2.60000 y -4.50000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 15
+  name {Front Text}
+  description {Insert Text on Front of Fish}
+ }
+}
+
+carouselItem {
+ id 48
+ filename {Data/Pm/Stl/NewPilot/1gyro with disc.stl}
+ title {Gyro}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/Pendant Basic Shape/gyrowithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 17.00000 y 17.00000 z 3.50000}
+  offset {x 0.00000 y -7.90000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Gyro} }
+}
+
+carouselItem {
+ id 49
+ filename {Data/Pm/STL/NewPilot/1gyro with disc.stl}
+ title {Gyro}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {Data/Pm/icons/newpilot/pendant basic shape/gyrowithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Get ready for hours of spinning.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Choose a color and enter your text.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The options are almost limitless!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 17.50000 y 7.30000 z 3.50000}
+  offset {x 0.00000 y -3.30000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 17.50000 y 7.30000 z 3.50000}
+  offset {x 0.00000 y -12.70000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 50
+ filename {Data/Pm/STL/NewPilot/1heartwithdisc connecter.stl}
+ title {Heart}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/Pm/icons/newpilot/pendant basic shape/heartwithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 26.00000 y 19.40000 z 3.50000}
+  offset {x 0.00000 y -2.30000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Heart} }
+}
+
+carouselItem {
+ id 51
+ filename {Data/PM/STL/NewPilot/1heartwithdisc connecter.stl}
+ title {Heart}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {Data/Pm/icons/newpilot/pendant basic shape/heartwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Steal that special someone's heart.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Choose a color and enter your text.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ The options are almost limitless!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 42.20000 y 7.00000 z 3.50000}
+  offset {x 0.00000 y 3.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 10
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 33.70000 y 7.00000 z 3.50000}
+  offset {x 0.00000 y -4.70000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Middle Text}
+  description {Enter Text in Middle Line}
+ }
+ text {
+  group 0
+  scale {x 18.00000 y 7.00000 z 3.50000}
+  offset {x 0.00000 y -12.50000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 3
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 52
+ filename {Data/PM/STL/NewPilot/1hexagon 06262014.stl}
+ title {Hexagon}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/Pm/icons/newpilot/pendant basic shape/hexagonWithStencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 36.00000 y 36.00000 z 3.50000}
+  offset {x 0.00000 y -4.90000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Hexagon} }
+}
+
+carouselItem {
+ id 53
+ filename {Data/PM/STL/NewPilot/1hexagon 06262014.stl}
+ title {Hexagon}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {Data/Pm/icons/newpilot/pendant basic shape/hexagonWithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 38.40000 y 10.00000 z 3.50000}
+  offset {x 0.00000 y 8.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 46.30000 y 10.00000 z 3.50000}
+  offset {x 0.00000 y -4.90000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Middle Text}
+  description {Enter Text in Middle Line}
+ }
+ text {
+  group 0
+  scale {x 38.40000 y 10.00000 z 3.50000}
+  offset {x 0.00000 y -17.40000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 54
+ filename {Data/Pm/STL/NewPilot/1rectangle 06262014.stl}
+ title {Rectangle}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/PM/icons/newpilot/pendant basic shape/rectanglewithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 32.20000 y 32.20000 z 3.50000}
+  offset {x -0.00000 y -7.60000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Rectangle} }
+}
+
+carouselItem {
+ id 55
+ filename {Data/PM/stl/NewPilot/1rectangle 06262014.stl}
+ title {Rectangle}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/icons/newpilot/pendant basic shape/rectanglewithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 74.80000 y 29.90000 z 3.50000}
+  offset {x 0.00000 y -7.40000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Front Text}
+  description {Enter Text on Front of Rectangle}
+ }
+}
+
+carouselItem {
+ id 56
+ filename {Data/Pm/STL/NEwPilot/1rectangle 06262014.stl}
+ title {Rectangle}
+ category {Jewelry: Fancy Pendants}
+ subcategory {}
+ config {}
+ icon {Data/PM/icons/newpilot/pendant basic shape/rectanglewithtextStencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 27.60000 y 18.00000 z 3.50000}
+  offset {x -24.70000 y -5.20000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Left Text}
+  description {Enter Text on Left Side}
+ }
+ text {
+  group 0
+  scale {x 27.60000 y 18.00000 z 3.50000}
+  offset {x 24.80000 y -5.20000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Right Text}
+  description {Enter Text on Right Side}
+ }
+ stencil {
+  group 0
+  scale {x 18.00000 y 18.00000 z 3.50000}
+  offset {x 0.00000 y -5.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Middle Stencil}
+  desc {Select Stencil in the Middle} }
+}
+
+carouselItem {
+ id 57
+ filename {Data/PM/stl/Newpilot/1rounded rectangle 06262014.stl}
+ title {Rounded Rectangle}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/pm/icons/newpilot/pendant basic shape/roundedrectanglewithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 33.00000 y 33.00000 z 3.50000}
+  offset {x 0.00000 y -7.90000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Rectangle} }
+}
+
+carouselItem {
+ id 58
+ filename {Data/Pm/stl/newpilot/1rounded square 06262014.stl}
+ title {Rounded Square}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/pm/icons/newpilot/pendant basic shape/roundedsquarewithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 33.00000 y 33.00000 z 3.50000}
+  offset {x 0.00000 y -7.60000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Square} }
+}
+
+carouselItem {
+ id 59
+ filename {Data/PM/STL/NEWpilot/1rounded square 06262014.stl}
+ title {Rounded Square}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {Data/pm/icons/newpilot/pendant basic shape/roundedsquarewithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 36.50000 y 9.10000 z 3.50000}
+  offset {x 0.00000 y 3.70000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 36.50000 y 9.10000 z 3.50000}
+  offset {x 0.00000 y -6.70000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Middle Text}
+  description {Enter Text in Middle Line}
+ }
+ text {
+  group 0
+  scale {x 36.50000 y 9.10000 z 3.50000}
+  offset {x 0.00000 y -17.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 60
+ filename {Data/pm/stl/newpilot/1shield with disc.stl}
+ title {Shield}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/pm/icons/newpilot/pendant basic shape/shieldwithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 19.00000 y 19.00000 z 3.50000}
+  offset {x 0.30000 y -6.50000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Enter Text for Front of Shield} }
+}
+
+carouselItem {
+ id 61
+ filename {Data/pm/stl/newpilot/1shield with disc.stl}
+ title {Shield}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {Data/pm/icons/newpilot/pendant basic shape/shieldwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 27.80000 y 8.80000 z 3.50000}
+  offset {x 0.20000 y -2.20000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 16.00000 y 10.20000 z 3.50000}
+  offset {x 0.20000 y -13.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 3
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 62
+ filename {data/pm/stl/newpilot/skull 06272014 (2).stl}
+ title {Skull}
+ category {Jewelry: Fancy Pendants}
+ subcategory {}
+ config {}
+ icon {Data/pm/icons/newpilot/pendant basic shape/skull.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+}
+
+carouselItem {
+ id 63
+ filename {Data/Pm/stl/newpilot/1square 06262014.stl}
+ title {Square}
+ category {Jewerly: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/pm/icons/newpilot/pendant basic shape/squarewithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 33.00000 y 33.00000 z 3.50000}
+  offset {x 0.00000 y -7.80000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Square} }
+}
+
+carouselItem {
+ id 64
+ filename {data/pm/stl/newpilot/1square 06262014.stl}
+ title {Square}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {Data/pm/icons/newpilot/pendant basic shape/squarewithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 36.50000 y 9.10000 z 3.50000}
+  offset {x 0.00000 y 4.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 36.50000 y 9.10000 z 3.50000}
+  offset {x 0.00000 y -7.30000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Middle Text}
+  description {Enter Text in Middle Line}
+ }
+ text {
+  group 0
+  scale {x 36.50000 y 9.10000 z 3.50000}
+  offset {x 0.00000 y -18.80000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 65
+ filename {Data/PM/stl/newpilot/1star with disc.stl}
+ title {Star}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/pm/icons/newpilot/pendant basic shape/starwithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 14.90000 y 14.90000 z 3.50000}
+  offset {x 0.40000 y -9.40000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Star} }
+}
+
+carouselItem {
+ id 66
+ filename {data/pm/stl/newpilot/1star with disc.stl}
+ title {Star}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {Data/pm/icons/newpilot/pendant basic shape/starwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 14.90000 y 14.90000 z 3.50000}
+  offset {x 0.40000 y -9.40000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 3
+  name {Front Text}
+  description {Enter Text on Front of Star}
+ }
+}
+
+carouselItem {
+ id 67
+ filename {data/pm/stl/Newpilot/1yin yang with disc.stl}
+ title {Yin Yang}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/pendant basic shape/yinyangstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 11.30000 y 11.30000 z 3.50000}
+  offset {x -8.90000 y -13.70000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Yin Yang} }
+}
+
+carouselItem {
+ id 68
+ filename {data/pm/stl/newpilot/1yin yang with disc.stl}
+ title {Yin Yang}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/pendant basic shape/yinyangtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 14.20000 y 7.30000 z 3.50000}
+  offset {x -9.40000 y -12.50000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 3
+  name {Front Text}
+  description {Enter Text on Front of Yin Yang}
+ }
+}
+
+carouselItem {
+ id 69
+ filename {Data/pm/stl/newpilot/peacesign with disc 07082014.stl}
+ title {Peace Sign}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/pendant basic shape/peacesignwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 33.20000 y 4.30000 z 3.50000}
+  offset {x 0.00000 y -8.60000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 90.00000}
+  characters 3
+  name {Middle Text}
+  description {Enter Text for Middle of Pendant}
+ }
+}
+
+carouselItem {
+ id 70
+ filename {data/pm/stl/newpilot/3x2brick06272014.stl}
+ title {Brick Piece 3x2}
+ category {Toys: Brick Pieces}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/3x2.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {4}
+}
+
+carouselItem {
+ id 71
+ filename {data/pm/stl/newpilot/3x3brickpiece06262014.stl}
+ title {Brick Piece 3x3}
+ category {Toys: Brick Pieces}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/3x3.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {4}
+}
+
+carouselItem {
+ id 72
+ filename {data/pm/stl/newpilot/3x3crosspiece06262014.stl}
+ title {Cross Brick Piece 3x3}
+ category {Toys: Brick Pieces}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/3x3crosswithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Create a custom plaque for your brick creations. Make
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+them unique by adding your own text to the piece.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Works with all major brick toy brands.}
+ price {9}
+ vignette {4}
+ text {
+  group 0
+  scale {x 21.70000 y 6.70000 z 3.00000}
+  offset {x 0.00000 y -15.80000 z 3.70000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Bottom Text}
+  description {Enter Text at Bottom of Piece}
+ }
+ text {
+  group 0
+  scale {x 21.70000 y 6.70000 z 3.00000}
+  offset {x 0.00000 y 15.80000 z 3.70000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Top Text}
+  description {Enter Text at Top of Piece}
+ }
+ text {
+  group 0
+  scale {x 21.70000 y 6.70000 z 3.00000}
+  offset {x -15.80000 y 0.00000 z 3.70000}
+  rotation {x 0.00000 y 0.00000 z 270.00000}
+  characters 5
+  name {Left Text}
+  description {Enter Text on Left Side of Piece}
+ }
+ text {
+  group 0
+  scale {x 21.70000 y 6.70000 z 3.00000}
+  offset {x 15.80000 y 0.00000 z 3.70000}
+  rotation {x 0.00000 y 0.00000 z 90.00000}
+  characters 5
+  name {Right Text}
+  description {Enter Text on Right Side of Piece}
+ }
+}
+
+carouselItem {
+ id 73
+ filename {data/pm/stl/newpilot/7x3bot7x2toprectpiece06262014.stl}
+ title {Bumpy Rectangle Brick 7x2}
+ category {Toys: Brick Pieces}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/3x7withtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Create a custom plaque for your brick creations. Make
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+them unique by adding your own text to the piece.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Works with all major brick toy brands.}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 51.90000 y 6.00000 z 3.20000}
+  offset {x 0.00000 y -8.10000 z 3.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 10
+  name {Bottom Text}
+  description {Enter Text at Bottom of Piece}
+ }
+}
+
+carouselItem {
+ id 74
+ filename {data/pm/stl/newpilot/9x3brick061114.stl}
+ title {Bumpy Rectangle Brick 9x2}
+ category {Toys: Brick Pieces}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/3x9withtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {Create a custom plaque for your brick creations. Make
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ them unique by adding your own text to the piece.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Works with all major brick toy brands.}
+ price {9}
+ vignette {4}
+ text {
+  group 0
+  scale {x 68.00000 y 6.90000 z 3.00000}
+  offset {x 0.00000 y -7.60000 z 3.70000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 15
+  name {Bottom Text}
+  description {Enter Text at Bottom of Piece}
+ }
+}
+
+carouselItem {
+ id 75
+ filename {data/pm/stl/newpilot/9x3botrectpiece06262014.stl}
+ title {Flat Rectangle Brick 9x2}
+ category {Toys: Brick Pieces}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/3x9flatwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc { Create a custom plaque for your brick creations. Make
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ them unique by adding your own text to the piece.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Works with all major brick toy brands.}
+ price {9}
+ vignette {4}
+ text {
+  group 0
+  scale {x 67.10000 y 9.50000 z 3.00000}
+  offset {x 0.00000 y 5.30000 z 3.70000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 15
+  name {Top Line}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 67.10000 y 9.50000 z 3.00000}
+  offset {x 0.00000 y -5.30000 z 3.70000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 15
+  name {Bottom Line}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 76
+ filename {data/pm/stl/newpilot/4x13bot2x13toprectpiece06262014.stl}
+ title {Brick Piece 2x13}
+ category {Toys: Brick Pieces}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/3x13legowithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {4}
+ text {
+  group 0
+  scale {x 99.50000 y 13.70000 z 3.00000}
+  offset {x -0.00000 y -7.10000 z 3.70000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 20
+  name {Bottom Text}
+  description {Enter Text at Bottom of Piece}
+ }
+}
+
+carouselItem {
+ id 77
+ filename {data/pm/stl/newpilot/rookmeshbottom061214.stl}
+ title {Rook}
+ category {Toys: Chess Pieces}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/rook.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 78
+ filename {data/pm/stl/newpilot/bishopmeshbottom061214.stl}
+ title {Bishop}
+ category {Toys: Chess Pieces}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/bishop.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 79
+ filename {data/pm/stl/newpilot/kingmeshbottom061214.stl}
+ title {King}
+ category {Toys: Chess Pieces}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/king.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 80
+ filename {data/pm/stl/newpilot/knight061814meshbottomv7.stl}
+ title {Knight}
+ category {Toys: Chess Pieces}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/knight.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 81
+ filename {data/pm/stl/newpilot/pawnmesh061214v2bottomunited.stl}
+ title {Pawn}
+ category {Toys: Chess Pieces}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/pawn.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 82
+ filename {data/pm/stl/newpilot/queenmeshbottom061214.stl}
+ title {Queen}
+ category {Toys: Chess Pieces}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/queen.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 83
+ filename {data/pm/stl/newpilot/throwing star speed.stl}
+ title {Modern Coaster With Text }
+ category {Household: Coasters}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/throwingstarspeedwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 6.00000 y 6.00000 z 3.00000}
+  offset {x 0.00000 y 0.00000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Middle Text}
+  description {Enter Text in Middle of Coaster}
+ }
+}
+
+carouselItem {
+ id 84
+ filename {data/pm/stl/newpilot/throwing star speed.stl}
+ title {Modern Coaster With Stencil}
+ category {Household: Coasters}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/throwingstarspeedwithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ stencil {
+  group 0
+  scale {x 6.00000 y 6.00000 z 3.00000}
+  offset {x 0.00000 y 0.00000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Middle Stencil}
+  desc {Select Stencil for Middle of Coaster} }
+}
+
+carouselItem {
+ id 85
+ filename {data/pm/stl/newpilot/throwingstaracc062314.stl}
+ title {Futuristic Coaster With Text}
+ category {Household: Coasters}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/throwingstaraccuracywithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 8.00000 y 8.00000 z 3.00000}
+  offset {x 0.00000 y 0.00000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Middle Text}
+  description {Enter Text in Middle of Coaster}
+ }
+}
+
+carouselItem {
+ id 86
+ filename {data/pm/stl/newpilot/throwingstaracc062314.stl}
+ title {Futuristic Coaster With Stencil}
+ category {Household: Coasters}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/throwingstaraccuracywithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ stencil {
+  group 0
+  scale {x 8.00000 y 8.00000 z 3.00000}
+  offset {x 0.00000 y 0.00000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Middle Stencil}
+  desc {Select Stencil for Middle of Coaster} }
+}
+
+carouselItem {
+ id 87
+ filename {data/pm/stl/newpilot/throwingstarbalanced062314.stl}
+ title {Advanced Coaster With Text}
+ category {Household: Coasters}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/throwingstarbalancewithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 10.00000 y 10.00000 z 2.00000}
+  offset {x 0.00000 y 0.00000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Middle Text}
+  description {Enter Text in Middle of Coaster}
+ }
+}
+
+carouselItem {
+ id 88
+ filename {data/pm/stl/newpilot/throwingstarbalanced062314.stl}
+ title {Advanced Coaster With Stencil}
+ category {Household: Coasters}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/throwingstarbalancewithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ stencil {
+  group 0
+  scale {x 10.00000 y 10.00000 z 2.00000}
+  offset {x 0.00000 y 0.00000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Middle Stencil}
+  desc {Select Stencil for Middle of Coaster} }
+}
+
+carouselItem {
+ id 89
+ filename {data/pm/stl/newpilot/tribal frisbee 06_23_2014.stl}
+ title {Ancient Coaster}
+ category {Household: Coasters}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/printdisctribal.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 90
+ filename {data/pm/stl/newpilot/99 life spin down 06272014 centered.stl}
+ title {TCG Spin Down}
+ category {Toys: Trading Card Game}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/tcg.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {14}
+ vignette {0}
+}
+
+carouselItem {
+ id 91
+ filename {data/pm/stl/newpilot/circle stencil spin pendant.stl}
+ title {Spinning Circle}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/designer/circlestencilspinpendant.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 13.70000 y 13.70000 z 3.00000}
+  offset {x 0.00000 y -8.30000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Pendant} }
+}
+
+carouselItem {
+ id 92
+ filename {data/pm/stl/newpilot/circle stencil spin pendant.stl}
+ title {Spinning Circle}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/designer/spinpendantwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 16.50000 y 5.00000 z 3.00000}
+  offset {x 0.00000 y -5.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 16.50000 y 5.00000 z 3.00000}
+  offset {x 0.00000 y -11.60000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 93
+ filename {data/pm/stl/newpilot/stencil spin pendant 07112014.stl}
+ title {Spinning Stencil}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/designer/stencilspinpendant.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 10.80000 y 18.70000 z 5.00000}
+  offset {x 0.00000 y -8.10000 z 2.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Middle Stencil}
+  desc {Select Stencil to Spin in Middle} }
+}
+
+carouselItem {
+ id 94
+ filename {data/pm/stl/newpilot/aquarius pendant 06_05_2014.stl}
+ title {Aquarius}
+ category {Jewelry: Zodiac Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/zodiac/aquarius.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 95
+ filename {data/pm/stl/newpilot/aries pendant 06_06_2014.stl}
+ title {Aries}
+ category {Jewelry: Zodiac Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/zodiac/aries.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 96
+ filename {data/pm/stl/newpilot/cancer pendant 06_06_2014.stl}
+ title {Cancer}
+ category {Jewelry: Zodiac Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/zodiac/cancer.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 97
+ filename {data/pm/stl/newpilot/capricorn pendant 06-05_2014.stl}
+ title {Capricorn}
+ category {Jewelry: Zodiac Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/zodiac/capricorn.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 98
+ filename {data/pm/stl/newpilot/gemini pendant 06_06_2014.stl}
+ title {Gemini}
+ category {Jewelry: Zodiac Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/zodiac/gemini.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 99
+ filename {data/pm/stl/newpilot/leo pendant 06_06_2014.stl}
+ title {Leo}
+ category {Jewelry: Zodiac Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/zodiac/leo.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 100
+ filename {data/pm/stl/newpilot/libra pendant 06_05_2014.stl}
+ title {Libra}
+ category {Jewelry: Zodiac Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/zodiac/libra.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 101
+ filename {data/pm/stl/newpilot/pisces pendant.stl}
+ title {Pisces}
+ category {Jewelry: Zodiac Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/zodiac/pisces.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 102
+ filename {data/pm/stl/newpilot/sagittarius pendant 06_05_2014.stl}
+ title {Sagittarius}
+ category {Jewelry: Zodiac Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/zodiac/sagittarius.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 103
+ filename {data/pm/stl/newpilot/scorpio pendant 06_05_2014.stl}
+ title {Scorpio}
+ category {Jewelry: Zodiac Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/zodiac/scorpio.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 104
+ filename {data/pm/stl/newpilot/taurus pendant 06_06_2014.stl}
+ title {Taurus}
+ category {Jewelry: Zodiac Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/zodiac/taurus.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 105
+ filename {data/pm/stl/newpilot/virgo pendant 06_06_2014.stl}
+ title {Virgo}
+ category {Jewelry: Zodiac Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/zodiac/virgo.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 106
+ filename {data/pm/stl/newpilot/cloud070214.stl}
+ title {Cloud}
+ category {Jewelry: Weather Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/weather/cloud.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 107
+ filename {data/pm/stl/newpilot/lightning070214.stl}
+ title {Lightning}
+ category {Jewelry: Weather Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/weather/lightning.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 108
+ filename {data/pm/stl/newpilot/rainbow070214.stl}
+ title {Rainbow}
+ category {Jewelry: Weather Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/weather/rainbow.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 109
+ filename {data/pm/stl/newpilot/snowflake070214.stl}
+ title {Snowflake}
+ category {Jewelry: Weather Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/weather/snowflake.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 110
+ filename {data/pm/stl/newpilot/sun070214.stl}
+ title {Sun}
+ category {Jewelry: Weather Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/weather/sun.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 111
+ filename {data/pm/stl/newpilot/baseball061714.stl}
+ title {Baseball}
+ category {Jewelry: Sports Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/sports/baseball.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+}
+
+carouselItem {
+ id 112
+ filename {data/pm/stl/newpilot/basketballl061714.stl}
+ title {Basketball}
+ category {Jewelry: Sports Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/sports/basketball.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+}
+
+carouselItem {
+ id 113
+ filename {data/pm/stl/newpilot/bike061714.stl}
+ title {Bike}
+ category {Jewelry: Sports Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/sports/bike.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+}
+
+carouselItem {
+ id 114
+ filename {data/pm/stl/newpilot/football061714.stl}
+ title {Football}
+ category {Jewelry: Sports Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/sports/football.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+}
+
+carouselItem {
+ id 115
+ filename {data/pm/stl/newpilot/soccerball061714.stl}
+ title {Soccer}
+ category {Jewelry: Sports Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/sports/soccerball.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+}
+
+carouselItem {
+ id 116
+ filename {data/pm/stl/newpilot/flyingfoot061714.stl}
+ title {Track and Field}
+ category {Jewelry: Sports Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/sports/trackandfield.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+}
+
+carouselItem {
+ id 117
+ filename {data/pm/stl/newpilot/buddist lodus pendant 06_06_2014.stl}
+ title {The Lotus}
+ category {Jewelry: Religion Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/religion/buddedlotus.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 118
+ filename {data/pm/stl/newpilot/cross pendant 06_06_2014.stl}
+ title {The Cross}
+ category {Jewelry: Religion Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/religion/cross.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 119
+ filename {data/pm/stl/newpilot/islam pendant.stl}
+ title {The Star and Crescent}
+ category {Jewelry: Religion Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/religion/islamicstar.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 120
+ filename {data/pm/stl/newpilot/pranava pendant.stl}
+ title {The Om}
+ category {Jewelry: Religion Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/religion/pranava.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 121
+ filename {data/pm/stl/newpilot/star of david pendant 06_06_2014.stl}
+ title {The Star of David}
+ category {Jewelry: Religion Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/religion/starofdavid.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {7}
+ vignette {2}
+}
+
+carouselItem {
+ id 122
+ filename {data/pm/stl/newpilot/speechbubblependant061814.stl}
+ title {Speech Bubble}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/speechbubble/speechbubblewithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 34.80000 y 6.50000 z 3.50000}
+  offset {x 0.00000 y -1.70000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 26.00000 y 6.50000 z 3.50000}
+  offset {x 0.00000 y -9.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 123
+ filename {data/pm/stl/newpilot/speechbubblependant061814.stl}
+ title {Speech Bubble}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/speechbubble/speechbubblewithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 15.10000 y 15.10000 z 3.50000}
+  offset {x 0.00000 y -6.20000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Speech Bubble} }
+}
+
+carouselItem {
+ id 124
+ filename {data/pm/stl/newpilot/Guitar Pick pendant  06_10_2014.stl}
+ title {Guitar Pick}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/music/guitarpickpendantwithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {6}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 14.00000 y 14.00000 z 2.50000}
+  offset {x 0.00000 y 2.40000 z 1.60000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Pick} }
+}
+
+carouselItem {
+ id 125
+ filename {data/pm/stl/newpilot/guitar pick pendant  06_10_2014.stl}
+ title {Guitar Pick}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/music/guitarpickpendantwithtextl.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {6}
+ vignette {2}
+ text {
+  group 0
+  scale {x 14.00000 y 14.00000 z 2.50000}
+  offset {x 0.00000 y 2.70000 z 1.60000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 2
+  name {Front Text}
+  description {Enter Text on Front of Guitar Pick}
+ }
+}
+
+carouselItem {
+ id 126
+ filename {data/pm/stl/newpilot/brokenheart.stl}
+ title {Broken Heart}
+ category {Jewelry: Best Friends Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/bestfriends/bestfriendbrokenhearttext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 6.50000 y 6.50000 z 3.50000}
+  offset {x -5.00000 y -2.60000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Left Text}
+  description {Enter Text for Left Side of Heart}
+ }
+ text {
+  group 0
+  scale {x 6.50000 y 6.50000 z 3.50000}
+  offset {x 8.00000 y -2.60000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Right Text}
+  description {Enter Text for Right Side of Heart}
+ }
+}
+
+carouselItem {
+ id 127
+ filename {data/pm/stl/newpilot/hearttwoarrow.stl}
+ title {Arrow Through Heart for Two}
+ category {Jewelry: Best Friends Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/bestfriends/bestfriends2arrowtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 11.40000 y 11.40000 z 3.50000}
+  offset {x -12.70000 y 1.30000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Left Text}
+  description {Enter Text for Left Heart}
+ }
+ text {
+  group 0
+  scale {x 9.00000 y 9.00000 z 3.50000}
+  offset {x 16.20000 y 0.20000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 270.00000}
+  characters 1
+  name {Right Text}
+  description {Enter Text for Right Heart}
+ }
+}
+
+carouselItem {
+ id 128
+ filename {data/pm/stl/newpilot/hearttwopuzzle.stl}
+ title {Heart Puzzle for Two}
+ category {Jewelry: Best Friends Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/bestfriends/bestfriends2puzzletext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 11.40000 y 11.40000 z 3.50000}
+  offset {x -10.40000 y 0.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Left Text}
+  description {Enter Text for Left Heart}
+ }
+ text {
+  group 0
+  scale {x 9.00000 y 9.00000 z 3.50000}
+  offset {x 16.90000 y -9.80000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 270.00000}
+  characters 1
+  name {Right Text}
+  description {Enter Text for Right Heart}
+ }
+}
+
+carouselItem {
+ id 129
+ filename {data/pm/stl/newpilot/heartthreearrow.stl}
+ title {Arrow Through Heart for Three}
+ category {Jewelry: Best Friends Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/bestfriends/bestfriends3arrowtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 11.40000 y 11.40000 z 3.50000}
+  offset {x -14.40000 y -12.10000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 90.00000}
+  characters 1
+  name {Left Text}
+  description {Enter Text for Left Heart}
+ }
+ text {
+  group 0
+  scale {x 8.00000 y 7.50000 z 3.50000}
+  offset {x 2.00000 y 18.50000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Middle Text}
+  description {Enter Text for Middle Heart}
+ }
+ text {
+  group 0
+  scale {x 8.00000 y 7.50000 z 3.50000}
+  offset {x 17.80000 y -16.50000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 270.00000}
+  characters 1
+  name {Right Text}
+  description {Enter Text for Right Heart}
+ }
+}
+
+carouselItem {
+ id 130
+ filename {data/pm/stl/newpilot/heartthreepuzzle.stl}
+ title {Heart Puzzle for Three}
+ category {Jewelry: Best Friends Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/bestfriends/bestfriends3puzzletext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 10.50000 y 10.50000 z 3.50000}
+  offset {x -11.60000 y -11.60000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 90.00000}
+  characters 1
+  name {Left Text}
+  description {Enter Text for Left Heart}
+ }
+ text {
+  group 0
+  scale {x 9.00000 y 9.00000 z 3.50000}
+  offset {x -2.60000 y 16.50000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Middle Text}
+  description {Enter Text for Middle Heart}
+ }
+ text {
+  group 0
+  scale {x 9.00000 y 9.00000 z 3.50000}
+  offset {x 16.50000 y -11.60000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 270.00000}
+  characters 1
+  name {Right Text}
+  description {Enter Text for Right Heart}
+ }
+}
+
+carouselItem {
+ id 131
+ filename {data/pm/stl/newpilot/heartfourarrow.stl}
+ title {Arrow Through Heart for Four}
+ category {Jewelry: Best Friends Pendant}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/bestfriends/bestfriends4arrowtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 7.50000 y 7.50000 z 3.50000}
+  offset {x -21.00000 y -2.30000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 90.00000}
+  characters 1
+  name {Bottom Left Text}
+  description {Enter Text for Bottom Left Heart}
+ }
+ text {
+  group 0
+  scale {x 7.50000 y 7.50000 z 3.50000}
+  offset {x -3.80000 y 22.60000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Top Left Text}
+  description {Enter Text for Top Left Heart}
+ }
+ text {
+  group 0
+  scale {x 7.50000 y 7.50000 z 3.50000}
+  offset {x 20.90000 y 3.60000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 270.00000}
+  characters 1
+  name {Top Right Text}
+  description {Enter Text for Top Right Heart}
+ }
+ text {
+  group 0
+  scale {x 7.50000 y 7.50000 z 3.50000}
+  offset {x 3.90000 y -21.80000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 180.00000}
+  characters 1
+  name {Bottom Right Text}
+  description {Enter Text for Bottom Right Heart}
+ }
+}
+
+carouselItem {
+ id 132
+ filename {data/pm/stl/newpilot/heartfourpuzzle.stl}
+ title {Heart Puzzle for Four}
+ category {Jewelry: Best Friends Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/bestfriends/bestfriends4puzzletext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 8.50000 y 8.50000 z 3.50000}
+  offset {x -19.20000 y -6.30000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 90.00000}
+  characters 1
+  name {Bottom Left Text}
+  description {Enter Text for Bottom Left Heart}
+ }
+ text {
+  group 0
+  scale {x 8.50000 y 8.50000 z 3.50000}
+  offset {x -6.90000 y 16.20000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 1
+  name {Top Left Text}
+  description {Enter Text for Top Left Heart}
+ }
+ text {
+  group 0
+  scale {x 8.50000 y 8.50000 z 3.50000}
+  offset {x 18.70000 y 6.10000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 270.00000}
+  characters 1
+  name {Top Right Text}
+  description {Enter Text for Top Right Heart}
+ }
+ text {
+  group 0
+  scale {x 8.50000 y 8.50000 z 3.50000}
+  offset {x 5.50000 y -17.30000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 180.00000}
+  characters 1
+  name {Bottom Right Text}
+  description {Enter Text for Bottom Right}
+ }
+}
+
+carouselItem {
+ id 133
+ filename {data/pm/stl/newpilot/3x7 brick pendant.stl}
+ title {Brick Plaque 3x7}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/brick/brickkeychainwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 52.40000 y 6.50000 z 2.50000}
+  offset {x 8.60000 y -7.70000 z 3.90000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 10
+  name {Front Text}
+  description {Enter Text for Front of Plaque}
+ }
+}
+
+carouselItem {
+ id 134
+ filename {data/pm/stl/newpilot/3x2 brick pendant 06272014.stl}
+ title {Brick Plaque 3x2}
+ category {Jewelry: Fancy Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/brick/brickpendant.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+}
+
+carouselItem {
+ id 135
+ filename {data/pm/stl/newpilot/organicshapeoriginalpendant062714.stl}
+ title {Two Helix Twist}
+ category {Jewelry: Fancy Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/designer/2helix.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+}
+
+carouselItem {
+ id 136
+ filename {data/pm/stl/newpilot/fourcoilspendant062614.stl}
+ title {Four Helix Twist}
+ category {Jewelry: Fancy Pendants}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/designer/4helix.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+}
+
+carouselItem {
+ id 137
+ filename {data/pm/stl/newpilot/1 all seeing moving eye 06_26_2014.stl}
+ title {All Seeing Eye}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/designer/allseeingeyewithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 32.40000 y 5.90000 z 3.50000}
+  offset {x 0.00000 y -22.30000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Front Text}
+  description {Enter Text on Front of Pendant}
+ }
+}
+
+carouselItem {
+ id 138
+ filename {data/PM/STL/NewPilot/ChainLinks3.stl}
+ title {Square Chain Earrings}
+ category {Jewelry: Fancy Earrings}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/NewPilot/square3Chain.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {12}
+ vignette {0}
+}
+
+carouselItem {
+ id 139
+ filename {Data/PM/STL/NewPilot/3x2 brick earrings 06272014.stl}
+ title {Brick Earrings}
+ category {Jewelry: Fancy Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/brickEarrings.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {12}
+ vignette {0}
+}
+
+carouselItem {
+ id 140
+ filename {Data/PM/STL/NewPilot/25mmOrganicSHapeTwo062714.stl}
+ title {Four Helix Earrings}
+ category {Jewelry: Fancy Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/4Helix.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {12}
+ vignette {0}
+}
+
+carouselItem {
+ id 141
+ filename {Data/PM/STL/NewPilot/30mmOrganicShapeOriginal062714.stl}
+ title {Two Helix Earrings}
+ category {Jewelry: Fancy Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/2Helix.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {12}
+ vignette {0}
+}
+
+carouselItem {
+ id 142
+ filename {Data/PM/STL/NewPilot/Aquarius earing 06_26_2014.stl}
+ title {Aquarius Earrings}
+ category {Jewelry: Zodiac Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/aquariuss.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 143
+ filename {Data/PM/STL/NewPilot/aries earing 06_26_2014.stl}
+ title {Aries Earrings}
+ category {Jewelry: Zodiac Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/aries.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 144
+ filename {Data/PM/STL/NewPilot/cancer earing 06_26_2014.stl}
+ title {Cancer Earrings}
+ category {Jewelry: Zodiac Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/cancer.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 145
+ filename {Data/PM/STL/NewPilot/capricorn earing 06_26_2014.stl}
+ title {Capricorn Earrings}
+ category {Jewelry: Zodiac Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/capricorn.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 146
+ filename {Data/PM/STL/NewPilot/Gemini earing 06_26_2014.stl}
+ title {Gemini Earrings}
+ category {Jewelry: Zodiac Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/Gemini.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 147
+ filename {Data/PM/STL/NewPilot/circle 06272014.stl}
+ title {Circle Earrings}
+ category {Jewelry: Earrings With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/circleWIthText60.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 8.70000 y 9.10000 z 3.00000}
+  offset {x -9.40000 y -2.30000 z 1.70000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  characters 2
+  name {Left Text}
+  description {Enter Text for Left Earring}
+ }
+ text {
+  group 0
+  scale {x 8.70000 y 9.10000 z 3.00000}
+  offset {x 9.40000 y -2.30000 z 1.70000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  characters 2
+  name {Right Text}
+  description {Enter Text for Right Earring}
+ }
+}
+
+carouselItem {
+ id 148
+ filename {Data/PM/STL/NewPilot/diamond 06262014.stl}
+ title {Diamond Earring}
+ category {Jewelry: Earrings With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/diamondWithtext.62.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 11.30000 y 10.20000 z 3.00000}
+  offset {x -12.30000 y -2.00000 z 1.70000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  characters 2
+  name {Left Text}
+  description {Enter Text For Left Earring}
+ }
+ text {
+  group 0
+  scale {x 11.30000 y 10.20000 z 3.00000}
+  offset {x 12.30000 y -2.00000 z 1.70000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  characters 2
+  name {Right Text}
+  description {Enter Text for Right Earring}
+ }
+}
+
+carouselItem {
+ id 149
+ filename {Data/PM/STL/NewPilot/Guitar Pick earring 06_10_2014.stl}
+ title {Guitar Pick Earrings}
+ category {Jewelry: Earrings With Text}
+ subcategory {}
+ config {}
+ icon {data/pm/icons/newpilot/guitarpickearring.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 12.60000 y 13.80000 z 3.00000}
+  offset {x -15.50000 y 1.20000 z 1.70000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  characters 2
+  name {Left Text}
+  description {Enter Text for Left Earring}
+ }
+ text {
+  group 0
+  scale {x 12.60000 y 13.80000 z 3.00000}
+  offset {x 15.50000 y 1.20000 z 1.70000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  characters 2
+  name {Right Text}
+  description {Enter Text for Right Earring}
+ }
+}
+
+carouselItem {
+ id 150
+ filename {Data/PM/STL/NewPilot/heart 06272014.stl}
+ title {Heart Earrings}
+ category {Jewelry: Earrings With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/heartwithtext69.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 9.80000 y 10.00000 z 3.00000}
+  offset {x -12.20000 y -0.60000 z 1.70000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  characters 2
+  name {Left Text}
+  description {Enter Text for Left Earring}
+ }
+ text {
+  group 0
+  scale {x 9.80000 y 10.00000 z 3.00000}
+  offset {x 12.20000 y -0.60000 z 1.70000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  characters 2
+  name {Right Text}
+  description {Enter Text for Right Earring}
+ }
+}
+
+carouselItem {
+ id 151
+ filename {Data/PM/STL/NewPilot/leo earing 06_05_2014.stl}
+ title {Leo Earrings}
+ category {Jewelry: Zodiac Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/leo.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 152
+ filename {Data/PM/STL/NewPilot/libra earing 06_05_2014.stl}
+ title {Libra Earrings}
+ category {Jewelry: Zodiac Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/libra.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 153
+ filename {Data/PM/STL/NewPilot/peace sign 06272014.stl}
+ title {Peace Sign Earrings}
+ category {Jewelry: Fancy Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/peaceSign67.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 154
+ filename {Data/PM/STL/NewPilot/Pisces 06_26_2014.stl}
+ title {Pisces Earrings}
+ category {Jewelry: Zodiac Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/pisces.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 155
+ filename {Data/PM/STL/NewPilot/rectangle 06272014.stl}
+ title {Rectangle Earrings}
+ category {Jewelry: Earrings With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/rectangleWithText.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 12.10000 y 25.60000 z 2.00000}
+  offset {x 2.10000 y -9.00000 z 1.70000}
+  rotation {x 0.00000 y 0.00000 z 90.00000}
+  characters 4
+  name {Top Text}
+  description {Enter Text on Top Earring}
+ }
+ text {
+  group 0
+  scale {x 12.10000 y 25.60000 z 2.00000}
+  offset {x 2.10000 y 9.00000 z 1.70000}
+  rotation {x 0.00000 y 0.00000 z 90.00000}
+  characters 4
+  name {Bottom Text}
+  description {Enter Text on Bottom Earring}
+ }
+}
+
+carouselItem {
+ id 156
+ filename {Data/PM/STL/NewPilot/sagittarius earing 06_26_2014.stl}
+ title {Sagittarius Earrings}
+ category {Jewelry: Zodiac Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/sagittarius.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 157
+ filename {Data/PM/STL/NewPilot/scorpio earing 06_05_2014.stl}
+ title {Scorpio Earrings}
+ category {Jewelry: Zodiac Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/scorpio.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 158
+ filename {Data/PM/STL/NewPilot/square 06272014.stl}
+ title {Square Earrings}
+ category {Jewelry: Earrings With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareWithText.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 12.60000 y 12.00000 z 2.00000}
+  offset {x -9.20000 y -2.30000 z 1.70000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 2
+  name {Left Text}
+  description {Enter Text on Left Earring}
+ }
+ text {
+  group 0
+  scale {x 12.60000 y 12.00000 z 2.00000}
+  offset {x 9.20000 y -2.30000 z 1.70000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 2
+  name {Right Text}
+  description {Enter Text on Right Earring}
+ }
+}
+
+carouselItem {
+ id 159
+ filename {Data/PM/STL/NewPilot/star 06272014.stl}
+ title {Star Earrings}
+ category {Jewelry: Fancy Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/star68.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 160
+ filename {Data/PM/STL/NewPilot/Taurus earing 06_26_2014.stl}
+ title {Taurus Earrings}
+ category {Jewelry: Zodiac Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/taurus.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 161
+ filename {Data/PM/STL/NewPilot/virgo earing 06_26_2014.stl}
+ title {Virgo Earrings}
+ category {Jewelry: Zodiac Earrings}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/virgo.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+}
+
+carouselItem {
+ id 162
+ filename {Data/PM/STL/NewPilot/RingSquareSize6.stl}
+ title {Square Ring 6}
+ category {Jewelry: Rings With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingwithText6.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ text {
+  group 0
+  etch
+  scale {x 10.50000 y 9.80000 z 2.00000}
+  offset {x 0.00000 y 9.80000 z 5.30000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  characters 3
+  name {Face Text}
+  description {Enter Text for Ring Face}
+ }
+}
+
+carouselItem {
+ id 163
+ filename {Data/PM/STL/NewPilot/RingSquareSize6.stl}
+ title {Square Ring 6}
+ category {Jewelry: Rings With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingwithStencil6.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ stencil {
+  group 0
+  scale {x 10.50000 y 9.80000 z 2.00000}
+  offset {x 0.00000 y 10.30000 z 5.30000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  name {Face Stencil}
+  desc {Select Stencil for Ring Face} }
+}
+
+carouselItem {
+ id 164
+ filename {Data/PM/STL/NewPilot/RingSquareSize7.stl}
+ title {Square Ring 7}
+ category {Jewelry: Rings With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingwithStencil7.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ stencil {
+  group 0
+  scale {x 11.20000 y 10.20000 z 2.00000}
+  offset {x 0.00000 y 10.80000 z 5.50000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  name {Face Stencil}
+  desc {Select Stencil for Ring Face} }
+}
+
+carouselItem {
+ id 165
+ filename {Data/PM/STL/NewPilot/RingSquareSize7.stl}
+ title {Square Ring 7}
+ category {Jewelry: Rings With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingWithText7.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ text {
+  group 0
+  etch
+  scale {x 11.20000 y 10.20000 z 2.00000}
+  offset {x -0.00000 y 10.50000 z 5.50000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  characters 3
+  name {Face Text}
+  description {Enter Text on Ring Face}
+ }
+}
+
+carouselItem {
+ id 166
+ filename {Data/PM/STL/NewPilot/RingSquareSize8.stl}
+ title {Square Ring 8}
+ category {Jewelry: Rings With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingWithText8.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ text {
+  group 0
+  etch
+  scale {x 11.90000 y 10.90000 z 2.00000}
+  offset {x 0.00000 y 10.90000 z 5.80000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  characters 3
+  name {Face Text}
+  description {Enter Text on Ring Face}
+ }
+}
+
+carouselItem {
+ id 167
+ filename {Data/PM/STL/NewPilot/RingSquareSize8.stl}
+ title {Square Ring 8}
+ category {Jewelry: Rings With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingWithStencil8.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ stencil {
+  group 0
+  scale {x 11.90000 y 10.90000 z 2.00000}
+  offset {x -0.00000 y 11.30000 z 5.80000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  name {Face Stencil}
+  desc {Select Stencil for Ring Face} }
+}
+
+carouselItem {
+ id 168
+ filename {Data/PM/STL/NewPilot/RingSquareSize9.stl}
+ title {Square Ring 9}
+ category {Jewelry: Rings With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingwithStencil9.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ stencil {
+  group 0
+  scale {x 12.30000 y 11.20000 z 2.00000}
+  offset {x 0.00000 y 11.80000 z 6.10000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  name {Face Stencil}
+  desc {Select Stencil for Ring Face} }
+}
+
+carouselItem {
+ id 169
+ filename {Data/PM/STL/NewPilot/RingSquareSize9.stl}
+ title {Square Ring 9}
+ category {Jewelry: Rings With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingwithText9.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ text {
+  group 0
+  etch
+  scale {x 12.30000 y 11.20000 z 2.00000}
+  offset {x 0.00000 y 11.50000 z 6.10000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  characters 3
+  name {Face Text}
+  description {Enter Text on Ring Face}
+ }
+}
+
+carouselItem {
+ id 170
+ filename {Data/PM/STL/NeWPilot/RingSquareSize10.stl}
+ title {Square Ring 10}
+ category {Jewelry: Rings With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingwithText10.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ text {
+  group 0
+  etch
+  scale {x 12.80000 y 11.90000 z 2.00000}
+  offset {x 0.00000 y 12.20000 z 6.30000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  characters 3
+  name {Face Text}
+  description {Enter Text on Ring Face}
+ }
+}
+
+carouselItem {
+ id 171
+ filename {Data/PM/STL/NewPilot/RingSquareSize10.stl}
+ title {Square Ring 10}
+ category {Jewelry: Rings With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingWithStencil10.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ stencil {
+  group 0
+  scale {x 12.80000 y 11.90000 z 2.00000}
+  offset {x 0.00000 y 12.30000 z 6.30000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  name {Face Stencil}
+  desc {Select Stencil for Ring Face} }
+}
+
+carouselItem {
+ id 172
+ filename {Data/PM/STL/NewPilot/RingSquareSize11.stl}
+ title {Square Ring 11}
+ category {Jewelry: Rings With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingWithStencil11.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ stencil {
+  group 0
+  scale {x 13.20000 y 12.40000 z 2.00000}
+  offset {x -0.00000 y 12.70000 z 6.60000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  name {Face Stencil}
+  desc {Select Stencil for Ring Face} }
+}
+
+carouselItem {
+ id 173
+ filename {Data/PM/STL/NewPilot/RingSquareSize11.stl}
+ title {Square Ring 11}
+ category {Jewelry: Rings With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingWithText11.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ text {
+  group 0
+  etch
+  scale {x 13.20000 y 12.40000 z 2.00000}
+  offset {x -0.00000 y 12.50000 z 6.60000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  characters 3
+  name {Face Text}
+  description {Enter Text on Ring Face}
+ }
+}
+
+carouselItem {
+ id 174
+ filename {Data/PM/STL/NewPilot/RingSquareSize12.stl}
+ title {Square Ring 12}
+ category {Jewelry: Rings With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingWithText12.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ text {
+  group 0
+  etch
+  scale {x 13.60000 y 12.80000 z 2.00000}
+  offset {x 0.00000 y 13.20000 z 6.90000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  characters 3
+  name {Face Text}
+  description {Enter Text on Ring Face}
+ }
+}
+
+carouselItem {
+ id 175
+ filename {Data/PM/STL/NewPilot/RingSquareSize12.stl}
+ title {Square Ring 12}
+ category {Jewelry: Rings With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingWithStencil12.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ stencil {
+  group 0
+  scale {x 13.60000 y 12.80000 z 2.00000}
+  offset {x 0.00000 y 14.10000 z 7.00000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  name {Face Stencil}
+  desc {Select Stencil for Ring Face} }
+}
+
+carouselItem {
+ id 176
+ filename {Data/PM/STL/NewPilot/RingSquareSize13.stl}
+ title {Square Ring 13}
+ category {Jewelry: Rings With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingWithStencil13.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ stencil {
+  group 0
+  scale {x 14.40000 y 13.40000 z 2.00000}
+  offset {x -0.00000 y 14.10000 z 7.10000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  name {Face Stencil}
+  desc {Select Stencil for Ring Face} }
+}
+
+carouselItem {
+ id 177
+ filename {Data/PM/STL/NewPilot/RingSquareSize13.stl}
+ title {Square Ring 13}
+ category {Jewelry: Rings With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingWithText13.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ text {
+  group 0
+  etch
+  scale {x 14.40000 y 13.40000 z 2.00000}
+  offset {x 0.00000 y 13.60000 z 7.10000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  characters 3
+  name {Face Text}
+  description {Enter Text on Ring Face}
+ }
+}
+
+carouselItem {
+ id 178
+ filename {Data/PM/STL/NewPilot/RingSquareSize14.stl}
+ title {Square Ring 14}
+ category {Jewelry: Rings with Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingWithText14.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ text {
+  group 0
+  etch
+  scale {x 14.80000 y 13.80000 z 2.00000}
+  offset {x 0.00000 y 14.10000 z 7.30000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  characters 3
+  name {Face Text}
+  description {Enter Text on Ring Face}
+ }
+}
+
+carouselItem {
+ id 179
+ filename {Data/PM/STL/NewPilot/RingSquareSize14.stl}
+ title {Square Ring 14}
+ category {Jewelry: Rings With Stencil}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/squareRingWithStencil14.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {1}
+ stencil {
+  group 0
+  scale {x 14.80000 y 13.80000 z 2.00000}
+  offset {x 0.00000 y 14.20000 z 7.40000}
+  rotation {x 270.00000 y 0.00000 z 180.00000}
+  name {Face Stencil}
+  desc {Select Stencil for Ring Face} }
+}
+
+carouselItem {
+ id 180
+ filename {Data/PM/STL/NewPilot/1AlternateTalkLabel061814.stl}
+ title {Loud Speaker}
+ category {Household: Signs With Images}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/loudSpeakerSignStencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ stencil {
+  group 0
+  scale {x 18.50000 y 15.40000 z 3.00000}
+  offset {x 9.90000 y 21.00000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Sign} }
+}
+
+carouselItem {
+ id 181
+ filename {Data/PM/STL/NewPilot/1AlternateTalkLabel061814.stl}
+ title {Loud Speaker}
+ category {Household: Signs With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/loudSpeakerSignWithText.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 33.80000 y 10.60000 z 3.00000}
+  offset {x 1.50000 y 20.90000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  characters 7
+  name {Front Text}
+  description {Enter Text on Front of Object}
+ }
+}
+
+carouselItem {
+ id 182
+ filename {Data/PM/STL/NewPilot/1garden labels 06_11_2014.stl}
+ title {Rounded Sign}
+ category {Household: Signs With Images}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/roundedSignWithStencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ stencil {
+  group 0
+  scale {x 17.40000 y 17.40000 z 3.00000}
+  offset {x 0.00000 y 22.80000 z 4.30000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Sign} }
+}
+
+carouselItem {
+ id 183
+ filename {Data/PM/STL/NewPilot/1garden labels 06_11_2014.stl}
+ title {Rounded Sign}
+ category {Household: Signs With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/roundedSignWithText.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 36.50000 y 7.50000 z 2.50000}
+  offset {x -0.10000 y 26.50000 z 4.30000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  characters 7
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 36.50000 y 7.50000 z 2.50000}
+  offset {x 0.00000 y 17.80000 z 4.30000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 184
+ filename {Data/PM/STL/NewPilot/1TalkBubbleLabel061814.stl}
+ title {Speech Bubble}
+ category {Household: Signs With Images}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/speechBubbleWithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ stencil {
+  group 0
+  scale {x 17.40000 y 17.40000 z 3.00000}
+  offset {x -0.00000 y 22.20000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Sign} }
+}
+
+carouselItem {
+ id 185
+ filename {Data/PM/STL/NewPilot/1TalkBubbleLabel061814.stl}
+ title {Speech Bubble}
+ category {Household: Signs With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/speechBubbleWithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 35.60000 y 5.00000 z 3.00000}
+  offset {x 0.00000 y 24.90000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 25.50000 y 5.00000 z 3.00000}
+  offset {x 0.00000 y 17.80000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 186
+ filename {Data/PM/STL/NewPilot/1stop sign.stl}
+ title {Stop Sign}
+ category {Household: Signs With Images}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/stopSignWithStencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ stencil {
+  group 0
+  scale {x 19.70000 y 19.70000 z 3.00000}
+  offset {x 0.00000 y 21.50000 z 4.30000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Sign} }
+}
+
+carouselItem {
+ id 187
+ filename {Data/PM/STL/NewPilot/1stop sign.stl}
+ title {Stop Sign}
+ category {Household: Signs With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/stopSignWithText.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 27.00000 y 12.00000 z 3.00000}
+  offset {x 0.00000 y 21.70000 z 4.30000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Front Text}
+  description {Enter Text on Front of Object}
+ }
+}
+
+carouselItem {
+ id 188
+ filename {Data/PM/STL/NewPilot/1ThoughtBubbleLabel061814.stl}
+ title {Thought Bubble}
+ category {Household: Signs With Images}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/thoughtBubbleWithStencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ stencil {
+  group 0
+  scale {x 18.60000 y 18.60000 z 3.00000}
+  offset {x 0.00000 y 26.30000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Sign} }
+}
+
+carouselItem {
+ id 189
+ filename {data/pm/stl/newpilot/1thoughtbubblelabel061814.stl}
+ title {Thought Bubble}
+ category {Household: Signs With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/thoughtBubbleWithStencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 31.70000 y 10.80000 z 3.00000}
+  offset {x 0.00000 y 26.60000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Front Text}
+  description {Enter Text on Front of Object}
+ }
+}
+
+carouselItem {
+ id 190
+ filename {Data/PM/STL/NewPilot/yieldnew.stl}
+ title {Yield Sign}
+ category {Household: Signs With Images}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/yieldsignwithstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ stencil {
+  group 0
+  scale {x 17.10000 y 17.10000 z 2.50000}
+  offset {x 0.00000 y 27.40000 z 4.30000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Sign} }
+}
+
+carouselItem {
+ id 191
+ filename {Data/PM/STL/NewPilot/yieldnew.stl}
+ title {Yield Sign}
+ category {Household: Signs With Text}
+ subcategory {}
+ config {}
+ icon {Data/PM/Icons/NewPilot/yieldsignwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 24.40000 y 9.50000 z 3.00000}
+  offset {x 0.10000 y 31.50000 z 4.30000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  characters 5
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 17.30000 y 6.40000 z 3.00000}
+  offset {x 0.10000 y 21.90000 z 4.30000}
+  rotation {x 0.00000 y 0.00000 z 360.00000}
+  characters 3
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 192
+ filename {data/pm/stl/newpilot/victorianheart.stl}
+ title {Victorian Heart}
+ category {Jewelry: Pendants with Stencil}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/victorianheartstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 14.50000 y 14.50000 z 2.50000}
+  offset {x 0.00000 y -6.10000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Heat} }
+}
+
+carouselItem {
+ id 193
+ filename {data/pm/stl/newpilot/victorianheart.stl}
+ title {Victorian Heart}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/victorianhearttext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 22.60000 y 5.00000 z 2.50000}
+  offset {x 0.00000 y -0.90000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 6
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 18.70000 y 5.00000 z 2.50000}
+  offset {x 0.00000 y -7.80000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 4
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 194
+ filename {data/pm/stl/newpilot/victoriansquare.stl}
+ title {Victorian Square}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/victoriansquarestencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 20.00000 y 20.00000 z 2.50000}
+  offset {x 0.00000 y -6.70000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Square} }
+}
+
+carouselItem {
+ id 195
+ filename {data/pm/stl/newpilot/victoriansquare.stl}
+ title {Victorian Square}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/victoriansquaretext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 20.00000 y 13.60000 z 2.50000}
+  offset {x 0.00000 y 0.50000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 20.00000 y 13.60000 z 2.50000}
+  offset {x 0.00000 y -14.40000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 196
+ filename {data/pm/stl/newpilot/vornoioutlinewhole3.stl}
+ title {Voronoi Oval}
+ category {Jewelry: Pendants With Stencil}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/vornoiovalstencil.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ stencil {
+  group 0
+  scale {x 12.00000 y 12.00000 z 2.50000}
+  offset {x 0.00000 y -8.80000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  name {Front Stencil}
+  desc {Select Stencil for Front of Oval} }
+}
+
+carouselItem {
+ id 197
+ filename {data/pm/stl/newpilot/vornoioutlinewhole3.stl}
+ title {Voronoi Oval}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/vornoiovaltext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 12.50000 y 5.00000 z 2.50000}
+  offset {x 0.00000 y -5.50000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 4
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 12.50000 y 5.00000 z 2.50000}
+  offset {x 0.00000 y -12.10000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 4
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 198
+ filename {data/pm/stl/newpilot/victorianoval.stl}
+ title {Victorian Oval}
+ category {Jewelry: Pendants With Text}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/victorianovalwithtext.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 23.00000 y 7.00000 z 2.50000}
+  offset {x 0.00000 y -2.40000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Top Text}
+  description {Enter Text in Top Line}
+ }
+ text {
+  group 0
+  scale {x 23.00000 y 7.00000 z 2.50000}
+  offset {x 0.00000 y -11.10000 z 3.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 7
+  name {Bottom Text}
+  description {Enter Text in Bottom Line}
+ }
+}
+
+carouselItem {
+ id 199
+ filename {data/pm/stl/newpilot/bestfriendsrectangle.stl}
+ title {Break Away Rectangle}
+ category {Jewelry: Best Friends Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/bestfriendbreakaway.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {2}
+ text {
+  group 0
+  scale {x 6.50000 y 6.50000 z 2.50000}
+  offset {x -7.80000 y -1.90000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 2
+  name {Left Text}
+  description {Enter Text for Left Rectangle}
+ }
+ text {
+  group 0
+  scale {x 6.50000 y 6.50000 z 2.50000}
+  offset {x 7.80000 y -1.90000 z 1.50000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 2
+  name {Right Text}
+  description {Enter Text for Right Rectangle}
+ }
+}
+
+carouselItem {
+ id 200
+ filename {data/pm/stl/newpilot/skyline.stl}
+ title {Pittsburgh Skyline}
+ category {Souvenirs}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/skyline2.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 80.00000 y 7.00000 z 3.00000}
+  offset {x -9.70000 y -12.50000 z 5.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 15
+  name {Front Text}
+  description {Enter Text on Front of Skyline}
+ }
+}
+
+carouselItem {
+ id 201
+ filename {data/pm/stl/newpilot/pointbridgewithbase.stl}
+ title {The Point Bridge}
+ category {Souvenirs}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/skyline1.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 13.90000 y 7.20000 z 3.00000}
+  offset {x -30.00000 y -7.60000 z 2.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Left Text}
+  description {Enter Text on Left Side}
+ }
+ text {
+  group 0
+  scale {x 32.90000 y 7.20000 z 3.00000}
+  offset {x 0.00000 y -7.50000 z 2.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 10
+  name {Middle Text}
+  description {Enter Text in Middle}
+ }
+ text {
+  group 0
+  scale {x 13.90000 y 7.20000 z 3.00000}
+  offset {x 30.00000 y -7.60000 z 2.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 5
+  name {Right Text}
+  description {Enter Text on Right Side}
+ }
+}
+
+carouselItem {
+ id 202
+ filename {data/pm/stl/newpilot/ohiobridgewithbase_low_res.stl}
+ title {The Ohio Bridge}
+ category {Souvenirs}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/ohiobridge.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {9}
+ vignette {0}
+ text {
+  group 0
+  scale {x 53.80000 y 6.80000 z 3.00000}
+  offset {x 0.00000 y -8.30000 z 2.00000}
+  rotation {x 0.00000 y 0.00000 z 0.00000}
+  characters 12
+  name {Front Text}
+  description {Enter Text on Front of Bridge}
+ }
+}
+
+carouselItem {
+ id 203
+ filename {data/pm/stl/newpilot/hand 07022014.stl}
+ title {Moveable Hand}
+ category {Jewelry: Fancy Pendants}
+ subcategory {}
+ config {}
+ icon {data/PM/icons/newpilot/hand.png}
+ rotation {x 0.00000 y 0.00000 z 0.00000}
+ camera {x 0.00000 y 0.00000 z 0.00000}
+ position {x 0.00000 y 0.00000 z 0.00000}
+ scale {x 0.00000 y 0.00000 z 0.00000}
+ desc {}
+ price {12}
+ vignette {0}
+}
+
