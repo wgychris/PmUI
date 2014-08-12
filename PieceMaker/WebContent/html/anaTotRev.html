@@ -235,28 +235,55 @@
 				<div class="cl-mcont">
 					<div class="row">
 						<div class="col-sm-12 col-md-12">
+							<div class="form-group">
+								<div class="col-sm-4">
+									<select class="form-control" >
+										<option>Weekly Revenue</option>
+										<option>Monthly Revenue</option>
+										<option>Annualy Revenue</option>
+									</select>
+								</div>
+							</div>
 
-							<div class="block-flat">
-								<div class="form-group">
-									<label class="col-sm-3 control-label">Select Date Range</label>
-									<div class="col-sm-4">
-										<div id="reportrange" class="pull-left"
-											style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
-											<i class="glyphicon glyphicon-calendar fa fa-calendar"></i> <span></span>
-											<b class="caret"></b>
-										</div>
+							<div class="form-group">
+								<div class="col-sm-4">
+									<label class="col-sm-4 control-label">Start Date</label>
+									<div class="input-group date datetime col-md-7 col-xs-7"
+										data-min-view="2" data-date-format="yyyy-mm-dd">
+										<input class="form-control" size="14" type="text" value=""
+											readonly> <span
+											class="input-group-addon btn btn-primary"><span
+											class="glyphicon glyphicon-th"></span></span>
 									</div>
 								</div>
-								<br>
-								<!-- <select class="form-control">
-									<option>Weekly Revenue</option>
-									<option>Monthly Revenue</option>
-									<option>Annualy Revenue</option>
-								</select> <br> -->
+							</div>
+							<div class="form-group">
+								<div class="col-sm-4">
+									<label class="col-sm-4 control-label">End Date</label>
+									<div class="input-group date datetime col-md-7 col-xs-7"
+										data-min-view="2" data-date-format="yyyy-mm-dd">
+										<input class="form-control" size="14" type="text" value=""
+											readonly> <span
+											class="input-group-addon btn btn-primary"><span
+											class="glyphicon glyphicon-th"></span></span>
+									</div>
+								</div>
+							</div> 				
+							<!-- <div class="form-group">
+								<label class="col-sm-3 control-label">Date & Time Picker</label>
+								<div class="col-sm-4">
+									<div id="reportrange" class="pull-left"
+										style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+										<i class="glyphicon glyphicon-calendar fa fa-calendar"></i> <span></span>
+										<b class="caret"></b>
+									</div>
+								</div>
+							</div> -->
+
+							<br> <br>
 
 
-
-
+							<div class="block-flat">
 								<div class="content">
 									<div id="config-graph"
 										style="height: 350px; padding: 0px; position: relative;"></div>
@@ -435,7 +462,6 @@
 			$(document)
 					.ready(
 							function() {
-								
 
 								$('#reservation').daterangepicker();
 								$('#reservationtime').daterangepicker({
