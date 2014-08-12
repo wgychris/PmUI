@@ -1,0 +1,149 @@
+8-6-2014,3:19:13,460610353,Log Initialized
+8-6-2014,3:23:37,460610617,--- Log Reloaded: `C:/Wamp/www/kr2/logs/daily-6-8-2014.txt`
+8-6-2014,3:25:13,460610713,--- Log Reloaded: `C:/Wamp/www/kr2/logs/daily-6-8-2014.txt`
+8-6-2014,3:31:28,460611088,--- Log Reloaded: `C:/Wamp/www/kr2/logs/daily-6-8-2014.txt`
+8-6-2014,3:33:12,460611192,KioskGrid Item ID 74 Browsed
+8-6-2014,3:33:33,460611213,KioskGrid Item ID 184 Browsed
+8-6-2014,3:33:36,460611216,KioskVignette CarouselItem ID 184
+8-6-2014,3:33:40,460611220,Color picked: Yellow
+8-6-2014,3:33:40,460611220,Color code: 1.00000 0.92157 0.12549 1.00000
+8-6-2014,3:33:44,460611224,Color picked: Orange
+8-6-2014,3:33:44,460611224,Color code: 1.00000 0.45098 0.00000 1.00000
+8-6-2014,3:33:46,460611226,Panel Selector Pressed 2 `Personalize With A Stencil`
+8-6-2014,3:33:47,460611227,Stencil Selected: `data/PM/STL/NewPilot/Stencils/Icons/Capricorn.png`
+8-6-2014,3:34:0,460611240,Constructive Task Started (OpenGL)
+8-6-2014,3:34:0,460611240,Adding Stencil
+8-6-2014,3:34:0,460611240,Rebuild Preview
+8-6-2014,3:34:1,460611241,Constructive Task Ended (OpenGL)
+8-6-2014,3:34:1,460611241,`Next` Button
+8-6-2014,3:34:1,460611241,Next to `Review and Confirm` (now visible)
+8-6-2014,3:34:10,460611250,`Back` Button
+8-6-2014,3:34:10,460611250,Back to `Personalize With A Stencil` (now visible)
+8-6-2014,3:34:12,460611252,`Back` Button
+8-6-2014,3:34:12,460611252,Back to `Choose Color` (now visible)
+8-6-2014,3:35:33,460611333,KioskPanel Timed Out, Returning to Catalog
+8-6-2014,3:35:59,460611359,KioskPanel Timed Out, Returning to Catalog
+8-6-2014,3:37:6,460611426,--- Log Reloaded: `C:/Wamp/www/kr2/logs/daily-6-8-2014.txt`
+8-6-2014,3:37:54,460611474,KioskGrid Item ID 77 Browsed
+8-6-2014,3:38:0,460611480,KioskGrid Item ID 24 Browsed
+8-6-2014,3:38:2,460611482,KioskVignette CarouselItem ID 24
+8-6-2014,3:38:16,460611496,Color picked: Orange
+8-6-2014,3:38:16,460611496,Color code: 1.00000 0.45098 0.00000 1.00000
+8-6-2014,3:39:14,460611554,KioskPanel Timed Out, Returning to Catalog
+8-6-2014,3:40:19,460611619,--- Log Reloaded: `C:/Wamp/www/kr2/logs/daily-6-8-2014.txt`
+8-6-2014,4:3:30,460613010,--- Log Reloaded: `C:/Wamp/www/kr2/logs/daily-6-8-2014.txt`
+8-6-2014,4:4:16,460613056,KioskGrid Item ID 202 Browsed
+8-6-2014,4:4:19,460613059,KioskGrid Item ID 200 Browsed
+8-6-2014,4:4:20,460613060,KioskVignette CarouselItem ID 200
+8-6-2014,4:4:34,460613074,Color picked: Purple
+8-6-2014,4:4:34,460613074,Color code: 1.00000 0.25098 1.00000 1.00000
+8-6-2014,4:4:36,460613076,Panel Selector Pressed 2 `Personalize Your Text`
+8-6-2014,4:4:41,460613081,Keyboard: W
+8-6-2014,4:4:42,460613082,Keyboard: A
+8-6-2014,4:4:44,460613084,Keyboard: BKSP
+8-6-2014,4:4:46,460613086,Keyboard: 3
+8-6-2014,4:4:47,460613087,Keyboard: Y
+8-6-2014,4:4:53,460613093,Keyboard: N
+8-6-2014,4:4:58,460613098,Keyboard: X
+8-6-2014,4:5:6,460613106,Constructive Task Started (OpenGL)
+8-6-2014,4:5:6,460613106,Adding Text
+8-6-2014,4:5:6,460613106,Rebuild Preview
+8-6-2014,4:5:8,460613108,Constructive Task Ended (OpenGL)
+8-6-2014,4:5:8,460613108,`Next` Button
+8-6-2014,4:5:8,460613108,Next to `Review and Confirm` (now visible)
+8-6-2014,4:6:4,460613164,KioskPanel Timed Out, Returning to Catalog
+8-6-2014,4:6:18,460613178,KioskGrid Item ID 73 Browsed
+8-6-2014,4:6:20,460613180,KioskVignette CarouselItem ID 73
+8-6-2014,4:7:51,460613271,KioskPanel Timed Out, Returning to Catalog
+8-6-2014,4:12:22,460613542,Timed out
+8-6-2014,4:13:29,460613609,User Initiated Session
+8-6-2014,4:13:38,460613618,KioskGrid Item ID 48 Browsed
+8-6-2014,4:13:40,460613620,KioskVignette CarouselItem ID 48
+8-6-2014,4:13:45,460613625,Color picked: Purple
+8-6-2014,4:13:45,460613625,Color code: 1.00000 0.25098 1.00000 1.00000
+8-6-2014,4:13:51,460613631,`Next` Button
+8-6-2014,4:13:51,460613631,Next to `Personalize With A Stencil` (now visible)
+8-6-2014,4:13:53,460613633,Stencil Selected: `data/PM/STL/NewPilot/Stencils/Icons/cross.png`
+8-6-2014,4:13:57,460613637,Stencil Selected: `data/PM/STL/NewPilot/Stencils/Icons/soccerball06091014.png`
+8-6-2014,4:14:1,460613641,Stencil Selected: `data/PM/STL/NewPilot/Stencils/Icons/fire.png`
+8-6-2014,4:14:8,460613648,Stencil Selected: `data/PM/STL/NewPilot/Stencils/Icons/Pranava.png`
+8-6-2014,4:14:15,460613655,Constructive Task Started (OpenGL)
+8-6-2014,4:14:15,460613655,Adding Stencil
+8-6-2014,4:14:18,460613658,Rebuild Preview
+8-6-2014,4:14:18,460613658,Constructive Task Ended (OpenGL)
+8-6-2014,4:14:18,460613658,`Next` Button
+8-6-2014,4:14:18,460613658,Next to `Review and Confirm` (now visible)
+8-6-2014,4:14:23,460613663,`Confirm Purchase` Button
+8-6-2014,4:14:25,460613665,Keyboard: J
+8-6-2014,4:14:25,460613665,Keyboard: O
+8-6-2014,4:14:26,460613666,Keyboard: E
+8-6-2014,4:14:27,460613667,Selected `Email Address` Textbox
+8-6-2014,4:14:28,460613668,Keyboard: J
+8-6-2014,4:14:28,460613668,Keyboard: O
+8-6-2014,4:14:29,460613669,Keyboard: E
+8-6-2014,4:14:30,460613670,Keyboard: @
+8-6-2014,4:14:31,460613671,Keyboard: J
+8-6-2014,4:14:31,460613671,Keyboard: O
+8-6-2014,4:14:32,460613672,Keyboard: E
+8-6-2014,4:14:33,460613673,Keyboard: .
+8-6-2014,4:14:38,460613678,Keyboard: J
+8-6-2014,4:14:38,460613678,Keyboard: O
+8-6-2014,4:14:50,460613690,Keyboard: J
+8-6-2014,4:14:51,460613691,Keyboard: G
+8-6-2014,4:14:51,460613691,Keyboard: D
+8-6-2014,4:14:52,460613692,Keyboard: N
+8-6-2014,4:14:52,460613692,Keyboard: *
+8-6-2014,4:14:53,460613693,Keyboard: N
+8-6-2014,4:14:54,460613694,Keyboard: K
+8-6-2014,4:14:54,460613694,Keyboard: .
+8-6-2014,4:14:56,460613696,Keyboard: @
+8-6-2014,4:14:56,460613696,Keyboard: @
+8-6-2014,4:14:57,460613697,Keyboard: 1
+8-6-2014,4:14:57,460613697,Keyboard: ;
+8-6-2014,4:14:58,460613698,Keyboard: V
+8-6-2014,4:14:58,460613698,Keyboard: S
+8-6-2014,4:14:59,460613699,Keyboard: Q
+8-6-2014,4:15:1,460613701,Selected `Nickname` Textbox
+8-6-2014,4:15:4,460613704,Keyboard:  
+8-6-2014,4:15:7,460613707,`Complete My Order` Button
+8-6-2014,4:15:28,460613728,HTTP
+8-6-2014,4:15:28,460613728,http://192.168.1.6/kr2_print_request.php?c=6820144157
+8-6-2014,4:15:28,460613728,RESPONSE
+8-6-2014,4:15:28,460613728,
+8-6-2014,4:15:28,460613728,HTTP END
+8-6-2014,4:15:28,460613728,Receipt Created for `JOE ` Email `JOE@JOE.JOJGDN*NK.@@1;VSQ` Order# `6820144157` Ticket# `0`
+8-6-2014,4:16:47,460613807,User Initiated Session
+8-6-2014,4:17:13,460613833,KioskGrid Item ID 159 Browsed
+8-6-2014,4:17:17,460613837,KioskGrid Item ID 160 Browsed
+8-6-2014,4:17:24,460613844,KioskGrid Item ID 149 Browsed
+8-6-2014,4:17:30,460613850,KioskVignette CarouselItem ID 149
+8-6-2014,4:17:37,460613857,Color picked: Orange
+8-6-2014,4:17:37,460613857,Color code: 1.00000 0.45098 0.00000 1.00000
+8-6-2014,4:17:40,460613860,Color picked: Red
+8-6-2014,4:17:40,460613860,Color code: 1.00000 0.12549 0.12549 1.00000
+8-6-2014,4:17:44,460613864,Color picked: Black
+8-6-2014,4:17:44,460613864,Color code: 0.25098 0.25098 0.25098 1.00000
+8-6-2014,4:17:46,460613866,Color picked: Blue
+8-6-2014,4:17:46,460613866,Color code: 0.25098 0.25098 1.00000 1.00000
+8-6-2014,4:17:48,460613868,Color picked: Orange
+8-6-2014,4:17:48,460613868,Color code: 1.00000 0.45098 0.00000 1.00000
+8-6-2014,4:17:58,460613878,`Next` Button
+8-6-2014,4:17:58,460613878,Next to `Personalize Your Text` (now visible)
+8-6-2014,4:18:2,460613882,Keyboard: H
+8-6-2014,4:18:3,460613883,Keyboard: 3
+8-6-2014,4:18:9,460613889,Panel Selector Pressed 3 `Personalize Your Text`
+8-6-2014,4:18:11,460613891,Keyboard: R
+8-6-2014,4:18:13,460613893,Keyboard: B
+8-6-2014,4:18:21,460613901,Constructive Task Started (OpenGL)
+8-6-2014,4:18:21,460613901,Adding Text
+8-6-2014,4:18:23,460613903,Adding Text
+8-6-2014,4:18:27,460613907,Rebuild Preview
+8-6-2014,4:18:29,460613909,Constructive Task Ended (OpenGL)
+8-6-2014,4:18:29,460613909,Panel Selector Pressed $ `Review and Confirm`
+8-6-2014,4:19:33,460613973,KioskPanel Timed Out, Returning to Catalog
+8-6-2014,4:22:35,460614155,KioskGrid Item ID 199 Browsed
+8-6-2014,4:22:37,460614157,KioskGrid Item ID 136 Browsed
+8-6-2014,4:22:40,460614160,KioskGrid Item ID 201 Browsed
+8-6-2014,4:22:42,460614162,KioskGrid Item ID 200 Browsed
+8-6-2014,4:22:45,460614165,KioskGrid Item ID 131 Browsed
+8-6-2014,4:25:35,460614335,Timed out
