@@ -235,8 +235,13 @@
 				<div class="cl-mcont">
 					<div class="row">
 						<div class="col-sm-12 col-md-12">
+							
 							<div class="form-group">
-								<label class="col-sm-3 control-label">Date & Time Picker</label>
+								
+							</div>
+							
+							<div class="form-group">
+								<label class="col-sm-2 control-label">Date & Time Picker</label>
 								<div class="col-sm-4">
 									<div id="reportrange" class="pull-left"
 										style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
@@ -248,14 +253,16 @@
 
 
 							<div class="form-group">
+							<label class="col-sm-2 control-label"></label>
 								<label class="col-sm-1 control-label">Select</label>
 								<div class="col-sm-3">
-									<select class="form-control"
-										style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
-										<option>Weekly Revenue</option>
-										<option>Monthly Revenue</option>
-										<option>Annually Revenue</option>
-									</select>
+									
+									<select class="form-control" 
+									style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc" onChange="selectRevenueChange()" id="selectRevenueOpt">
+									<option>Daily Revenue</option>
+									<option>Weekly Revenue</option>
+									<option>Monthly Revenue</option>
+								</select>
 								</div>
 							</div>
 
@@ -267,7 +274,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
 				</div>
 			</div>
 
@@ -365,75 +371,111 @@
 		</script>
 
 		<script>
-			$(function() {
-				$('#config-graph').highcharts(
-						{
-							chart : {
-								type : 'column'
-							},
+			
+			$(document).ready(function() {
+	            var options = {
+	                chart: {
+	                    renderTo: 'config-graph'
+	                    
+	                },
+	                title : {
+						text : 'Store total revenue'
+					},
+					xAxis : {
+						type : 'category',
+						labels : {
+							rotation : -45,
+							style : {
+								fontSize : '13px',
+								fontFamily : 'Verdana, sans-serif'
+							}
+						}
+					},
+					yAxis : {
+						min : 0,
+						title : {
+							text : 'Revenue ($)'
+						}
+					},
+					legend : {
+						enabled : false
+					},
+					tooltip : {
+						pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
+					},
+	                series: [{
+	                	type : 'column',
+	                    name: 'Date',
+	                    data: []
+	                }]
+	            };
+	            
+	            $.getJSON("./getRevenue.php", function(json) {
+	                options.series[0].data = json;
+	                chart = new Highcharts.Chart(options);
+	            });
+	            
+	            
+	            
+	        }); 
+			
+			
+			function selectRevenueChange(){
+				
+				var options = {
+		                chart: {
+		                    renderTo: 'config-graph'
+		                    
+		                },
+		                title : {
+							text : 'Store total revenue'
+						},
+						xAxis : {
+							type : 'category',
+							labels : {
+								rotation : -45,
+								style : {
+									fontSize : '13px',
+									fontFamily : 'Verdana, sans-serif'
+								}
+							}
+						},
+						yAxis : {
+							min : 0,
 							title : {
-								text : 'Store total revenue'
-							},
-							xAxis : {
-								type : 'category',
-								labels : {
-									rotation : -45,
-									style : {
-										fontSize : '13px',
-										fontFamily : 'Verdana, sans-serif'
-									}
-								}
-							},
-							yAxis : {
-								min : 0,
-								title : {
-									text : 'Revenue ($)'
-								}
-							},
-							legend : {
-								enabled : false
-							},
-							tooltip : {
-								pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
-							},
-							series : [ {
-								name : 'Date',
-								data : [ [ '07-03-14', 23.7 ],
-										[ '07-04-14', 16, 1 ],
-										[ '07-05-14', 14.2 ],
-										[ '07-06-14', 14.0 ],
-										[ '07-07-14', 12.5 ],
-										[ '07-08-14', 12.1 ],
-										[ '07-09-14', 11.8 ],
-										[ '07-10-14', 11.7 ],
-										[ '07-11-14', 11.1 ],
-										[ '07-12-14', 11.1 ],
-										[ '07-13-14', 10.5 ],
-										[ '07-14-14', 10.4 ],
-										[ '07-15-14', 10.0 ],
-										[ '07-16-14', 9.3 ],
-										[ '07-17-14', 9.3 ],
-										[ '07-18-14', 9.0 ],
-										[ '07-19-14', 8.9 ],
-										[ '07-20-14', 8.9 ],
-										[ '07-21-14', 8.9 ],
-										[ '07-22-14', 8.9 ] ],
-								dataLabels : {
-									enabled : true,
-									rotation : -90,
-									color : '#FFFFFF',
-									align : 'right',
-									x : 4,
-									y : 10,
-									style : {
-										fontSize : '13px',
-										fontFamily : 'Verdana, sans-serif',
-										textShadow : '0 0 3px black'
-									}
-								}
-							} ]
-						});
-			});
+								text : 'Revenue ($)'
+							}
+						},
+						legend : {
+							enabled : false
+						},
+						tooltip : {
+							pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
+						},
+		                series: [{
+		                	type : 'column',
+		                    name: 'Date',
+		                    data: []
+		                }]
+				};
+				
+				  var myselect = document.getElementById("selectRevenueOpt");
+				  var option = myselect.options[myselect.selectedIndex].label;
+				  switch (option) {
+				  case 'Weekly Revenue': $.getJSON("./getWeeklyRevenue.php", function(json) {
+		                options.series[0].data = json;
+		                chart = new Highcharts.Chart(options);
+		            }); break;
+				  case 'Monthly Revenue': $.getJSON("./getMonthlyRevenue.php", function(json) {
+		                options.series[0].data = json;
+		                chart = new Highcharts.Chart(options);
+		            }); break;
+				  case 'Daily Revenue': $.getJSON("./getRevenue.php", function(json) {
+		                options.series[0].data = json;
+		                chart = new Highcharts.Chart(options);
+		            }); break;
+				  }
+				}
 		</script>
 		<script type="text/javascript">
 			$(document)
@@ -455,10 +497,9 @@
 															+ ' - '
 															+ end
 																	.format('MMMM D, YYYY'));
-									alert("Callback has fired: ["
-											+ start.format('MMMM D, YYYY')
-											+ " to "
-											+ end.format('MMMM D, YYYY') + "]");
+									
+									refreshGraph(start.format('YYYY-MM-DD'), end.format('YYYY-MM-DD'));
+									
 								}
 
 								var optionSet1 = {
@@ -509,6 +550,52 @@
 										cb);
 
 							});
+			
+			
+			function refreshGraph(startDate, endDate) {
+
+				var options = {
+		                chart: {
+		                    renderTo: 'config-graph'
+		                    
+		                },
+		                title : {
+							text : 'Store total revenue'
+						},
+						xAxis : {
+							type : 'category',
+							labels : {
+								rotation : -45,
+								style : {
+									fontSize : '13px',
+									fontFamily : 'Verdana, sans-serif'
+								}
+							}
+						},
+						yAxis : {
+							min : 0,
+							title : {
+								text : 'Revenue ($)'
+							}
+						},
+						legend : {
+							enabled : false
+						},
+						tooltip : {
+							pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
+						},
+		                series: [{
+		                	type : 'column',
+		                    name: 'Date',
+		                    data: []
+		                }]
+				};
+				var url = "./getRevenue.php?startDate="+startDate+"&endDate="+endDate;
+				$.getJSON(url, function(json) {
+	                options.series[0].data = json;
+	                chart = new Highcharts.Chart(options);
+				});
+			}
 		</script>
 
 

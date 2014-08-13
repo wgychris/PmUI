@@ -67,26 +67,6 @@
 				<ul class="nav navbar-nav">
 					<li><a href="#">Home</a></li>
 				</ul>
-				<!-- <ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">Contact <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="dropdown-submenu"><a href="#">Sub menu</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-								</ul></li>
-						</ul></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">Dashboard <b class="caret"></b></a>
-						</li>
-				</ul> -->
 				<ul class="nav navbar-nav navbar-right user-nav">
 					<li><a href="#">Dashboard</a></li>
 					<li class="dropdown profile_menu"><a href="#"
@@ -169,69 +149,44 @@
 					<li class="active">Customer Behavior</li>
 				</ol>
 			</div>
-			<!-- <div class="cl-mcont">
-				<div class="row">
-					
-					<div class="col-sm-4 col-md-4">
-						<div class="page-aside app filters">
-							<div>
-								<div class="content">
-									<button class="navbar-toggle" data-target=".app-nav"
-										data-toggle="collapse" type="button">
-										<span class="fa fa-chevron-down"></span>
-									</button>
-									<h2 class="page-title">Filters</h2>
-									<p class="description">Service description</p>
-
-								</div>
-								<div class="app-nav collapse">
-									<div class="content">
-										<div class="form-group">
-											<label class="control-label">By Category:</label> <select
-												class="select2">
-												<optgroup label="Category 1">
-													<option value="AK">Piece 1</option>
-													<option value="HI">Piece 2</option>
-												</optgroup>
-												<optgroup label="Category 2">
-													<option value="CA">Piece 1</option>
-													<option value="NV">Piece 2</option>
-												</optgroup>
-											</select>
-										</div>
-										<div class="form-group">
-											<label class="control-label">Filter by Color:</label> <input
-												class="tags" type="hidden" value="brown,blue,green" />
-										</div>
-
-										<div class="form-group">
-											<label class="control-label">Filter By price:</label>
-											<p>
-												Values between <strong id="price1">$250</strong> and <strong
-													id="price2">$450</strong>
-											</p>
-											<input id="price-range" class="bslider form-control"
-												type="text" data-slider-tooltip="hide"
-												data-slider-value="[250,450]" data-slider-step="5"
-												data-slider-max="1000" data-slider-min="10" value="" />
-										</div>
-									</div>
-
-
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					
-      		 	</div>
-      		 </div> -->
-
+			
 			<div class="cl-mcont">
 				<div class="row">
 
 
 					<div class="col-sm-12 col-md-12">
+
+					<div class="form-group">
+								
+							</div>
+							
+							<div class="form-group">
+								<label class="col-sm-2 control-label">Date & Time Picker</label>
+								<div class="col-sm-4">
+									<div id="reportrange" class="pull-left"
+										style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+										<i class="glyphicon glyphicon-calendar fa fa-calendar"></i> <span></span>
+										<b class="caret"></b>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="form-group">
+							<label class="col-sm-2 control-label"></label>
+								<label class="col-sm-1 control-label">Select</label>
+								<div class="col-sm-3">
+									
+									<select class="form-control" 
+									style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc" onChange="selectRevenueChange()" id="selectRevenueOpt">
+									<option>Daily Revenue</option>
+									<option>Weekly Revenue</option>
+									<option>Monthly Revenue</option>
+								</select>
+								</div>
+							</div>
+
+							<br> <br> 
 
 						<div class="block-flat">
 
@@ -268,74 +223,320 @@
 		type="text/javascript"></script>
 	<script type="text/javascript"
 		src="js/jquery.gritter/js/jquery.gritter.js"></script>
+		
+		<script type="text/javascript"
+			src="js/bootstrap.daterangepicker/moment.min.js"></script>
+		<script type="text/javascript"
+			src="js/bootstrap.daterangepicker/daterangepicker.js"></script>
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-			//initialize the javascript
-			App.init();
-			App.charts();
-		});
-	</script>
 
 	<script>
 	$(function () {
-	    $('#CBTPer').highcharts({
-	        chart: {
-	            type: 'column'
-	        },
-	        title: {
-	            text: 'Customer Behaviour Analysis'
-	        },
-	        xAxis: {
-	            categories: [
-	                'Jan',
-	                'Feb',
-	                'Mar',
-	                'Apr',
-	                'May',
-	                'Jun',
-	                'Jul',
-	                'Aug'
-	            ]
-	        },
-	        yAxis: {
-	            min: 0,
-	            max: 100,
-	            title: {
-	                text: 'Percentage (%)'
-	            }
-	        },
-	        tooltip: {
-	            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-	            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-	                '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
-	            footerFormat: '</table>',
-	            shared: true,
-	            useHTML: true
-	        },
-	        plotOptions: {
-	            column: {
-	                pointPadding: 0.11,
-	                borderWidth: 0
-	            }
-	        },
-	        series: [{
-	            name: 'Conversion Rates',
-	            data: [49.9, 71.5, 96.4, 29.2, 44.0, 76.0, 35.6, 48.5]
+		
+		var options = {
+				chart: {
+					 renderTo: 'CBTPer',
+					 type: 'column'
+				},
+		            
+		        title: {
+		            text: 'Customer Behaviour Analysis'
+		        },
+		        xAxis: {
+		            categories: [
+		                'Jan',
+		                'Feb',
+		                'Mar',
+		                'Apr',
+		                'May',
+		                'Jun',
+		                'Jul',
+		                'Aug'
+		            ]
+		        },
+		        yAxis: {
+		            min: 0,
+		            max: 100,
+		            title: {
+		                text: 'Percentage (%)'
+		            }
+		        },
+		        tooltip: {
+		            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+		            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+		                '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+		            footerFormat: '</table>',
+		            shared: true,
+		            useHTML: true
+		        },
+		        plotOptions: {
+		            column: {
+		                pointPadding: 0.11,
+		                borderWidth: 0
+		            }
+		        },
+		        series: [{
+		            name: 'Conversion Rates',
+		            data: []
 
-	        }, {
-	            name: 'Customization Rates',
-	            data: [83.6, 78.8, 98.5, 93.4, 84.5, 91.2, 83.5, 92.3]
+		        }, {
+		            name: 'Customization Rates',
+		            data: []
 
-	        }, {
-	            name: 'Finalization Rates',
-	            data: [48.9, 38.8, 39.3, 41.4, 52.4, 65.2, 59.3, 51.2]
+		        }, {
+		            name: 'Finalization Rates',
+		            data: []
 
-	        }]
-	    });
+		        }]
+		   
+		};
+		
+		$.getJSON("./getBehaviour.php", function(result) {
+			options.xAxis.categories = result.dateArr;
+  			options.series[0].data = result.coversionArr;
+            options.series[1].data = result.customizationArr;
+            options.series[2].data = result.finalizationArr;
+             chart = new Highcharts.Chart(options);
+        });
+		
+		
+		
+	   
 	});
+	
+	function selectRevenueChange(){
+		
+		var options = {
+				chart: {
+					 renderTo: 'CBTPer',
+					 type: 'column'
+				},
+		            
+		        title: {
+		            text: 'Customer Behaviour Analysis'
+		        },
+		        xAxis: {
+		            categories: [
+		                'Jan',
+		                'Feb',
+		                'Mar',
+		                'Apr',
+		                'May',
+		                'Jun',
+		                'Jul',
+		                'Aug'
+		            ]
+		        },
+		        yAxis: {
+		            min: 0,
+		            max: 100,
+		            title: {
+		                text: 'Percentage (%)'
+		            }
+		        },
+		        tooltip: {
+		            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+		            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+		                '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+		            footerFormat: '</table>',
+		            shared: true,
+		            useHTML: true
+		        },
+		        plotOptions: {
+		            column: {
+		                pointPadding: 0.11,
+		                borderWidth: 0
+		            }
+		        },
+		        series: [{
+		            name: 'Conversion Rates',
+		            data: []
+
+		        }, {
+		            name: 'Customization Rates',
+		            data: []
+
+		        }, {
+		            name: 'Finalization Rates',
+		            data: []
+
+		        }]
+		   
+		};
+		
+		  var myselect = document.getElementById("selectRevenueOpt");
+		  var option = myselect.options[myselect.selectedIndex].label;
+		  switch (option) {
+		  case 'Weekly Revenue': $.getJSON("./getWeeklyBehaviour.php", function(result) {
+			  options.xAxis.categories = result.dateArr;
+	  			options.series[0].data = result.coversionArr;
+	            options.series[1].data = result.customizationArr;
+	            options.series[2].data = result.finalizationArr;
+                chart = new Highcharts.Chart(options);
+            }); break;
+		  case 'Monthly Revenue': $.getJSON("./getMonthlyBehaviour.php", function(result) {
+			  options.xAxis.categories = result.dateArr;
+	  			options.series[0].data = result.coversionArr;
+	            options.series[1].data = result.customizationArr;
+	            options.series[2].data = result.finalizationArr;
+                chart = new Highcharts.Chart(options);
+            }); break;
+		  case 'Daily Revenue': $.getJSON("./getBehaviour.php", function(result) {
+			  options.xAxis.categories = result.dateArr;
+	  			options.series[0].data = result.coversionArr;
+	            options.series[1].data = result.customizationArr;
+	            options.series[2].data = result.finalizationArr;
+                chart = new Highcharts.Chart(options);
+            }); break;
+		  }
+		}
 	</script>
 
+
+	<script type="text/javascript">
+			$(document)
+					.ready(
+							function() {
+								//initialize the javascript
+
+								$('#reservation').daterangepicker();
+								$('#reservationtime').daterangepicker({
+									timePicker : true,
+									timePickerIncrement : 30,
+									format : 'MM/DD/YYYY h:mm A'
+								});
+								var cb = function(start, end) {
+									$('#reportrange span')
+											.html(
+													start
+															.format('MMMM D, YYYY')
+															+ ' - '
+															+ end
+																	.format('MMMM D, YYYY'));
+									
+									refreshGraph(start.format('YYYY-MM-DD'), end.format('YYYY-MM-DD'));
+									
+								}
+
+								var optionSet1 = {
+									startDate : moment().subtract('days', 29),
+									endDate : moment(),
+									minDate : '01/01/2012',
+									maxDate : '12/31/2014',
+									dateLimit : {
+										days : 60
+									},
+									showDropdowns : true,
+									showWeekNumbers : true,
+									timePicker : false,
+									timePickerIncrement : 1,
+									timePicker12Hour : true,
+									opens : 'left',
+									buttonClasses : [ 'btn' ],
+									applyClass : 'btn-small btn-primary',
+									cancelClass : 'btn-small',
+									format : 'MM/DD/YYYY',
+									separator : ' to ',
+									locale : {
+										applyLabel : 'Submit',
+										cancelLabel : 'Clear',
+										fromLabel : 'From',
+										toLabel : 'To',
+										customRangeLabel : 'Custom',
+										daysOfWeek : [ 'Su', 'Mo', 'Tu', 'We',
+												'Th', 'Fr', 'Sa' ],
+										monthNames : [ 'January', 'February',
+												'March', 'April', 'May',
+												'June', 'July', 'August',
+												'September', 'October',
+												'November', 'December' ],
+										firstDay : 1
+									}
+								};
+
+							
+								$('#reportrange span').html(
+										moment().subtract('days', 29).format(
+												'MMMM D, YYYY')
+												+ ' - '
+												+ moment().format(
+														'MMMM D, YYYY'));
+
+								$('#reportrange').daterangepicker(optionSet1,
+										cb);
+
+							});
+			
+			
+			function refreshGraph(startDate, endDate) {
+
+				var options = {
+						chart: {
+							 renderTo: 'CBTPer',
+							 type: 'column'
+						},
+				            
+				        title: {
+				            text: 'Customer Behaviour Analysis'
+				        },
+				        xAxis: {
+				            categories: [
+				                'Jan',
+				                'Feb',
+				                'Mar',
+				                'Apr',
+				                'May',
+				                'Jun',
+				                'Jul',
+				                'Aug'
+				            ]
+				        },
+				        yAxis: {
+				            min: 0,
+				            max: 100,
+				            title: {
+				                text: 'Percentage (%)'
+				            }
+				        },
+				        tooltip: {
+				            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+				            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+				                '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+				            footerFormat: '</table>',
+				            shared: true,
+				            useHTML: true
+				        },
+				        plotOptions: {
+				            column: {
+				                pointPadding: 0.11,
+				                borderWidth: 0
+				            }
+				        },
+				        series: [{
+				            name: 'Conversion Rates',
+				            data: []
+
+				        }, {
+				            name: 'Customization Rates',
+				            data: []
+
+				        }, {
+				            name: 'Finalization Rates',
+				            data: []
+
+				        }]
+				   
+				};
+				var url = "./getBehaviour.php?startDate="+startDate+"&endDate="+endDate;
+				$.getJSON(url, function(result) {
+					options.xAxis.categories = result.dateArr;
+		  			options.series[0].data = result.coversionArr;
+		            options.series[1].data = result.customizationArr;
+		            options.series[2].data = result.finalizationArr;
+	                chart = new Highcharts.Chart(options);
+				});
+			}
+		</script>
 
 
 	<!-- Bootstrap core JavaScript
