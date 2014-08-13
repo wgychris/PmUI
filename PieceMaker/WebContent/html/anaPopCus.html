@@ -45,8 +45,7 @@
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <![endif]-->
-<link rel="stylesheet" type="text/css"
-	href="js/jquery.nanoscroller/nanoscroller.css" />
+
 <link href="js/jquery.icheck/skins/square/blue.css" rel="stylesheet">
 
 </head>
@@ -411,70 +410,48 @@
 											[ 'Heart Pendant', 6.9 ], ]
 								} ]
 							});
+			
+
+    $('#ColorPiece').highcharts(
+			{
+				chart: {
+					type: 'column'
+                    
+                },
+                title : {
+					text : 'Store total revenue'
+				},
+				xAxis : {
+					type : 'category',
+					labels : {
+						rotation : -45,
+						style : {
+							fontSize : '13px',
+							fontFamily : 'Verdana, sans-serif'
+						}
+					}
+				},
+				yAxis : {
+					min : 0,
+					title : {
+						text : 'Revenue ($)'
+					}
+				},
+				legend : {
+					enabled : false
+				},
+				tooltip : {
+					pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
+				},
+                series: [{
+                    name: 'Date',
+                    data: [1,2,3,4,5]
+                }]
+
+		});
 		});
 	</script>
-	<script>
-		$(function() {
-			$('#ColorPiece')
-					.highcharts(
-							{
-								chart : {
-									type : 'bar'
-								},
-								title : {
-									text : 'Historic World Population by Region'
-								},
-								subtitle : {
-									text : 'Source: Wikipedia.org'
-								},
-								xAxis : {
-									categories : [ 'Africa', 'America', 'Asia',
-											'Europe', 'Oceania' ],
-									title : {
-										text : null
-									}
-								},
-								yAxis : {
-									min : 0,
-									title : {
-										text : 'Population (millions)',
-										align : 'high'
-									},
-									labels : {
-										overflow : 'justify'
-									}
-								},
-								tooltip : {
-									valueSuffix : ' millions'
-								},
-								plotOptions : {
-									bar : {
-										dataLabels : {
-											enabled : true
-										}
-									}
-								},
-								legend : {
-									layout : 'vertical',
-									align : 'right',
-									verticalAlign : 'top',
-									x : -40,
-									y : 100,
-									floating : true,
-									borderWidth : 1,
-									backgroundColor : ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
-									shadow : true
-								},
-								credits : {
-									enabled : false
-								},
-								series : [ {
-									name : 'Year 2008',
-									data : [ 973, 914, 4054, 732, 34 ]
-								} ]
-							});
-		});
-	</script>
+
 
 	<!-- Bootstrap core JavaScript
     ================================================== -->

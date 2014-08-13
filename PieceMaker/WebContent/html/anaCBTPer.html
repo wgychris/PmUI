@@ -6,6 +6,8 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="shortcut icon" href="images/favicon.png">
+<link rel="stylesheet" type="text/css"
+	href="js/bootstrap.daterangepicker/daterangepicker-bs3.css" />
 
 <title>PieceMaker</title>
 <link
@@ -48,7 +50,6 @@
 <link rel="stylesheet" type="text/css"
 	href="js/jquery.nanoscroller/nanoscroller.css" />
 <link href="js/jquery.icheck/skins/square/blue.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -67,6 +68,7 @@
 				<ul class="nav navbar-nav">
 					<li><a href="#">Home</a></li>
 				</ul>
+
 				<ul class="nav navbar-nav navbar-right user-nav">
 					<li><a href="#">Dashboard</a></li>
 					<li class="dropdown profile_menu"><a href="#"
@@ -125,17 +127,12 @@
 								</ul></li>
 							<li><a href="anaCusInfo.html"><i class="fa fa-eye"></i><span>Customer
 										Info</span></a>
-							<li><a href="anaPriSta.html"><i class="fa fa-cogs"></i><span>Print Station Analysis</span></a>				
+							<li><a href="anaPriSta.html"><i class="fa fa-cogs"></i><span>Print
+										Station Analysis</span></a>
 						</ul>
 					</div>
 				</div>
-				<div class="text-right collapse-button" style="padding: 7px 9px;">
-					<input type="text" class="form-control search"
-						placeholder="Search..." />
-					<button id="sidebar-collapse" class="btn btn-default" style="">
-						<i style="color: #fff;" class="fa fa-angle-left"></i>
-					</button>
-				</div>
+				
 			</div>
 		</div>
 
@@ -179,9 +176,9 @@
 									
 									<select class="form-control" 
 									style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc" onChange="selectRevenueChange()" id="selectRevenueOpt">
-									<option>Daily Revenue</option>
-									<option>Weekly Revenue</option>
-									<option>Monthly Revenue</option>
+									<option>Daily Status</option>
+									<option>Weekly Status</option>
+									<option>Monthly Status</option>
 								</select>
 								</div>
 							</div>
@@ -229,13 +226,14 @@
 		<script type="text/javascript"
 			src="js/bootstrap.daterangepicker/daterangepicker.js"></script>
 
-	<script type="text/javascript">
+<script type="text/javascript">
 		$(document).ready(function() {
 			//initialize the javascript
 			App.init();
 			App.charts();
 		});
 	</script>
+
 
 	<script>
 	$(function () {
@@ -374,21 +372,21 @@
 		  var myselect = document.getElementById("selectRevenueOpt");
 		  var option = myselect.options[myselect.selectedIndex].label;
 		  switch (option) {
-		  case 'Weekly Revenue': $.getJSON("./getWeeklyBehaviour.php", function(result) {
+		  case 'Weekly Status': $.getJSON("./getWeeklyBehaviour.php", function(result) {
 			  options.xAxis.categories = result.dateArr;
 	  			options.series[0].data = result.coversionArr;
 	            options.series[1].data = result.customizationArr;
 	            options.series[2].data = result.finalizationArr;
                 chart = new Highcharts.Chart(options);
             }); break;
-		  case 'Monthly Revenue': $.getJSON("./getMonthlyBehaviour.php", function(result) {
+		  case 'Monthly Status': $.getJSON("./getMonthlyBehaviour.php", function(result) {
 			  options.xAxis.categories = result.dateArr;
 	  			options.series[0].data = result.coversionArr;
 	            options.series[1].data = result.customizationArr;
 	            options.series[2].data = result.finalizationArr;
                 chart = new Highcharts.Chart(options);
             }); break;
-		  case 'Daily Revenue': $.getJSON("./getBehaviour.php", function(result) {
+		  case 'Daily Status': $.getJSON("./getBehaviour.php", function(result) {
 			  options.xAxis.categories = result.dateArr;
 	  			options.series[0].data = result.coversionArr;
 	            options.series[1].data = result.customizationArr;
