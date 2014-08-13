@@ -236,40 +236,6 @@
 					<div class="row">
 						<div class="col-sm-12 col-md-12">
 							<div class="form-group">
-								<div class="col-sm-4">
-									<select class="form-control" >
-										<option>Weekly Revenue</option>
-										<option>Monthly Revenue</option>
-										<option>Annualy Revenue</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<div class="col-sm-4">
-									<label class="col-sm-4 control-label">Start Date</label>
-									<div class="input-group date datetime col-md-7 col-xs-7"
-										data-min-view="2" data-date-format="yyyy-mm-dd">
-										<input class="form-control" size="14" type="text" value=""
-											readonly> <span
-											class="input-group-addon btn btn-primary"><span
-											class="glyphicon glyphicon-th"></span></span>
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<div class="col-sm-4">
-									<label class="col-sm-4 control-label">End Date</label>
-									<div class="input-group date datetime col-md-7 col-xs-7"
-										data-min-view="2" data-date-format="yyyy-mm-dd">
-										<input class="form-control" size="14" type="text" value=""
-											readonly> <span
-											class="input-group-addon btn btn-primary"><span
-											class="glyphicon glyphicon-th"></span></span>
-									</div>
-								</div>
-							</div> 				
-							<!-- <div class="form-group">
 								<label class="col-sm-3 control-label">Date & Time Picker</label>
 								<div class="col-sm-4">
 									<div id="reportrange" class="pull-left"
@@ -278,11 +244,22 @@
 										<b class="caret"></b>
 									</div>
 								</div>
-							</div> -->
-
-							<br> <br>
+							</div>
 
 
+							<div class="form-group">
+								<label class="col-sm-1 control-label">Select</label>
+								<div class="col-sm-3">
+									<select class="form-control"
+										style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+										<option>Weekly Revenue</option>
+										<option>Monthly Revenue</option>
+										<option>Annually Revenue</option>
+									</select>
+								</div>
+							</div>
+
+							<br> <br> 
 							<div class="block-flat">
 								<div class="content">
 									<div id="config-graph"
@@ -462,6 +439,7 @@
 			$(document)
 					.ready(
 							function() {
+								//initialize the javascript
 
 								$('#reservation').daterangepicker();
 								$('#reservationtime').daterangepicker({
@@ -496,26 +474,6 @@
 									timePicker : false,
 									timePickerIncrement : 1,
 									timePicker12Hour : true,
-									ranges : {
-										'Today' : [ moment(), moment() ],
-										'Yesterday' : [
-												moment().subtract('days', 1),
-												moment().subtract('days', 1) ],
-										'Last 7 Days' : [
-												moment().subtract('days', 6),
-												moment() ],
-										'Last 30 Days' : [
-												moment().subtract('days', 29),
-												moment() ],
-										'This Month' : [
-												moment().startOf('month'),
-												moment().endOf('month') ],
-										'Last Month' : [
-												moment().subtract('month', 1)
-														.startOf('month'),
-												moment().subtract('month', 1)
-														.endOf('month') ]
-									},
 									opens : 'left',
 									buttonClasses : [ 'btn' ],
 									applyClass : 'btn-small btn-primary',
@@ -539,32 +497,7 @@
 									}
 								};
 
-								var optionSet2 = {
-									startDate : moment().subtract('days', 7),
-									endDate : moment(),
-									opens : 'left',
-									ranges : {
-										'Today' : [ moment(), moment() ],
-										'Yesterday' : [
-												moment().subtract('days', 1),
-												moment().subtract('days', 1) ],
-										'Last 7 Days' : [
-												moment().subtract('days', 6),
-												moment() ],
-										'Last 30 Days' : [
-												moment().subtract('days', 29),
-												moment() ],
-										'This Month' : [
-												moment().startOf('month'),
-												moment().endOf('month') ],
-										'Last Month' : [
-												moment().subtract('month', 1)
-														.startOf('month'),
-												moment().subtract('month', 1)
-														.endOf('month') ]
-									}
-								};
-
+							
 								$('#reportrange span').html(
 										moment().subtract('days', 29).format(
 												'MMMM D, YYYY')
@@ -577,6 +510,8 @@
 
 							});
 		</script>
+
+
 		<!-- Bootstrap core JavaScript
     ================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
