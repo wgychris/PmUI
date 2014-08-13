@@ -170,85 +170,84 @@
 					<li class="active">Popularity of Color Option</li>
 				</ol>
 			</div>
-			<!-- <div class="cl-mcont">
-				<div class="row">
-					
-					<div class="col-sm-4 col-md-4">
-						<div class="page-aside app filters">
-							<div>
-								<div class="content">
-									<button class="navbar-toggle" data-target=".app-nav"
-										data-toggle="collapse" type="button">
-										<span class="fa fa-chevron-down"></span>
-									</button>
-									<h2 class="page-title">Filters</h2>
-									<p class="description">Service description</p>
 
-								</div>
-								<div class="app-nav collapse">
-									<div class="content">
-										<div class="form-group">
-											<label class="control-label">By Category:</label> <select
-												class="select2">
-												<optgroup label="Category 1">
-													<option value="AK">Piece 1</option>
-													<option value="HI">Piece 2</option>
-												</optgroup>
-												<optgroup label="Category 2">
-													<option value="CA">Piece 1</option>
-													<option value="NV">Piece 2</option>
-												</optgroup>
-											</select>
-										</div>
-										<div class="form-group">
-											<label class="control-label">Filter by Color:</label> <input
-												class="tags" type="hidden" value="brown,blue,green" />
-										</div>
-
-										<div class="form-group">
-											<label class="control-label">Filter By price:</label>
-											<p>
-												Values between <strong id="price1">$250</strong> and <strong
-													id="price2">$450</strong>
-											</p>
-											<input id="price-range" class="bslider form-control"
-												type="text" data-slider-tooltip="hide"
-												data-slider-value="[250,450]" data-slider-step="5"
-												data-slider-max="1000" data-slider-min="10" value="" />
-										</div>
-									</div>
-
-
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					
-      		 	</div>
-      		 </div> -->
 
 			<div class="cl-mcont">
 				<div class="row">
-
-
 					<div class="col-sm-12 col-md-12">
+						<div id="colorPop"></div>
+					</div>
 
-						<div class="block-flat">
-
-							<div id="colorPop"></div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-12">
+				<div class="col-sm-6 col-md-6">
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Select Range</label>
+						<div class="col-sm-5">
+							<select class="form-control">
+								<option>Weekly Revenue</option>
+								<option>Monthly Revenue</option>
+								<option>Annually Revenue</option>
+							</select>
 						</div>
+					</div>
+					<br> <br>
+					<div class="block-flat">
+						<div id="poppie"
+							style="height: 350px; padding: 0px; position: relative;"></div>
+					</div>
+				</div>
 
+
+
+				<div class="col-sm-6 col-md-6">
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Select Range</label>
+						<div class="col-sm-5">
+							<select class="select2">
+								<optgroup label="Alaskan/Hawaiian Time Zone">
+									<option value="AK">Alaska</option>
+									<option value="HI">Hawaii</option>
+								</optgroup>
+								<optgroup label="Pacific Time Zone">
+									<option value="CA">California</option>
+									<option value="NV">Nevada</option>
+									<option value="OR">Oregon</option>
+									<option value="WA">Washington</option>
+								</optgroup>
+								<optgroup label="Mountain Time Zone">
+									<option value="AZ">Arizona</option>
+									<option value="CO">Colorado</option>
+									<option value="ID">Idaho</option>
+									<option value="MT">Montana</option>
+									<option value="NE">Nebraska</option>
+									<option value="NM">New Mexico</option>
+									<option value="ND">North Dakota</option>
+									<option value="UT">Utah</option>
+									<option value="WY">Wyoming</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+					<br> <br>
+					<div class="block-flat">
+						<div id="ColorPiece"
+							style="height: 350px; padding: 0px; position: relative;"></div>
 					</div>
 				</div>
 			</div>
-		</div>
+		
 
+
+		</div>
 	</div>
+
 	<script
 		src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://code.highcharts.com/highcharts.js"></script>
 	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+	<script src="js/jquery.select2/select2.min.js" type="text/javascript"></script>
 
 	<script type="text/javascript"
 		src="js/jquery.nanoscroller/jquery.nanoscroller.js"></script>
@@ -354,7 +353,128 @@
 							});
 		});
 	</script>
+	<script>
+		$(function() {
 
+			// Make monochrome colors and set them as default for all pies
+			Highcharts.getOptions().plotOptions.pie.colors = (function() {
+				var colors = [], base = Highcharts.getOptions().colors[0], i
+
+				for (i = 0; i < 10; i++) {
+					// Start out with a darkened base color (negative brighten), and end
+					// up with a much brighter color
+					colors.push(Highcharts.Color(base).brighten((i - 3) / 7)
+							.get());
+				}
+				return colors;
+			}());
+
+			// Build the chart
+			$('#poppie')
+					.highcharts(
+							{
+								chart : {
+									plotBackgroundColor : null,
+									plotBorderWidth : null,
+									plotShadow : false
+								},
+								title : {
+									text : 'Top 5 Products'
+								},
+								tooltip : {
+									pointFormat : '{series.name}: <b>{point.percentage:.1f}%</b>'
+								},
+								plotOptions : {
+									pie : {
+										allowPointSelect : true,
+										cursor : 'pointer',
+										dataLabels : {
+											enabled : true,
+											format : '<b>{point.name}</b>: {point.percentage:.1f} %',
+											style : {
+												color : (Highcharts.theme && Highcharts.theme.contrastTextColor)
+														|| 'black'
+											}
+										}
+									}
+								},
+								series : [ {
+									type : 'pie',
+									name : 'share',
+									data : [ [ 'Ring', 45.0 ],
+											[ 'Heart', 26.8 ], {
+												name : 'Skyline',
+												y : 12.8,
+												sliced : true,
+												selected : true
+											}, [ 'Cross', 8.5 ],
+											[ 'Heart Pendant', 6.9 ], ]
+								} ]
+							});
+		});
+	</script>
+	<script>
+		$(function() {
+			$('#ColorPiece')
+					.highcharts(
+							{
+								chart : {
+									type : 'bar'
+								},
+								title : {
+									text : 'Historic World Population by Region'
+								},
+								subtitle : {
+									text : 'Source: Wikipedia.org'
+								},
+								xAxis : {
+									categories : [ 'Africa', 'America', 'Asia',
+											'Europe', 'Oceania' ],
+									title : {
+										text : null
+									}
+								},
+								yAxis : {
+									min : 0,
+									title : {
+										text : 'Population (millions)',
+										align : 'high'
+									},
+									labels : {
+										overflow : 'justify'
+									}
+								},
+								tooltip : {
+									valueSuffix : ' millions'
+								},
+								plotOptions : {
+									bar : {
+										dataLabels : {
+											enabled : true
+										}
+									}
+								},
+								legend : {
+									layout : 'vertical',
+									align : 'right',
+									verticalAlign : 'top',
+									x : -40,
+									y : 100,
+									floating : true,
+									borderWidth : 1,
+									backgroundColor : ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+									shadow : true
+								},
+								credits : {
+									enabled : false
+								},
+								series : [ {
+									name : 'Year 2008',
+									data : [ 973, 914, 4054, 732, 34 ]
+								} ]
+							});
+		});
+	</script>
 
 	<!-- Bootstrap core JavaScript
     ================================================== -->
