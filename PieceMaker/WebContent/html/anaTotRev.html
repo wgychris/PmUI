@@ -256,6 +256,7 @@
 									<option>Daily Revenue</option>
 									<option>Weekly Revenue</option>
 									<option>Monthly Revenue</option>
+									<option>Annually Revenue</option>
 								</select>
 								</div>
 							</div>
@@ -303,6 +304,11 @@
 		<script type="text/javascript"
 			src="js/bootstrap.daterangepicker/daterangepicker.js"></script>
 
+
+		<script type = "text/javascript">
+			var startDate;
+			var endDate;
+		</script>
 
 		<script type="text/javascript">
 			$(document).ready(
@@ -456,15 +462,39 @@
 				  var myselect = document.getElementById("selectRevenueOpt");
 				  var option = myselect.options[myselect.selectedIndex].label;
 				  switch (option) {
-				  case 'Weekly Revenue': $.getJSON("./getWeeklyRevenue.php", function(json) {
+				  case 'Weekly Revenue': 
+					  var url = "./getWeeklyRevenue.php";
+					  if (startDate != null && endDate != null) {
+					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+					  }
+					  $.getJSON(url, function(json) {
 		                options.series[0].data = json;
 		                chart = new Highcharts.Chart(options);
 		            }); break;
-				  case 'Monthly Revenue': $.getJSON("./getMonthlyRevenue.php", function(json) {
+				  case 'Monthly Revenue': 
+					  var url = "./getMonthlyRevenue.php";
+					  if (startDate != null && endDate != null) {
+					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+					  }
+					  $.getJSON(url, function(json) {
 		                options.series[0].data = json;
 		                chart = new Highcharts.Chart(options);
 		            }); break;
-				  case 'Daily Revenue': $.getJSON("./getRevenue.php", function(json) {
+				  case 'Annually Revenue': 
+					  var url = "./getAnnuallyRevenue.php";
+					  if (startDate != null && endDate != null) {
+					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+					  }
+					  $.getJSON(url, function(json) {
+		                options.series[0].data = json;
+		                chart = new Highcharts.Chart(options);
+		            }); break;
+				  case 'Daily Revenue':
+					  var url = "./getRevenue.php";
+					  if (startDate != null && endDate != null) {
+					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+					  }
+					  $.getJSON(url, function(json) {
 		                options.series[0].data = json;
 		                chart = new Highcharts.Chart(options);
 		            }); break;
@@ -493,7 +523,8 @@
 																	.format('MMMM D, YYYY'));
 									
 									refreshGraph(start.format('YYYY-MM-DD'), end.format('YYYY-MM-DD'));
-									
+									startDate = start.format('YYYY-MM-DD');
+									endDate = end.format('YYYY-MM-DD');
 								}
 
 								var optionSet1 = {
@@ -584,11 +615,51 @@
 		                    data: []
 		                }]
 				};
-				var url = "./getRevenue.php?startDate="+startDate+"&endDate="+endDate;
+				 var myselect = document.getElementById("selectRevenueOpt");
+				  var option = myselect.options[myselect.selectedIndex].label;
+				  switch (option) {
+				  case 'Weekly Revenue': 
+					  var url = "./getWeeklyRevenue.php";
+					  if (startDate != null && endDate != null) {
+					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+					  }
+					  $.getJSON(url, function(json) {
+		                options.series[0].data = json;
+		                chart = new Highcharts.Chart(options);
+		            }); break;
+				  case 'Monthly Revenue': 
+					  var url = "./getMonthlyRevenue.php";
+					  if (startDate != null && endDate != null) {
+					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+					  }
+					  $.getJSON(url, function(json) {
+		                options.series[0].data = json;
+		                chart = new Highcharts.Chart(options);
+		            }); break;
+				  case 'Annually Revenue': 
+					  var url = "./getAnnuallyRevenue.php";
+					  if (startDate != null && endDate != null) {
+					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+					  }
+					  $.getJSON(url, function(json) {
+		                options.series[0].data = json;
+		                chart = new Highcharts.Chart(options);
+		            }); break;
+				  case 'Daily Revenue':
+					  var url = "./getRevenue.php";
+					  if (startDate != null && endDate != null) {
+					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+					  }
+					  $.getJSON(url, function(json) {
+		                options.series[0].data = json;
+		                chart = new Highcharts.Chart(options);
+		            }); break;
+				  }
+			/* 	var url = "./getRevenue.php?startDate="+startDate+"&endDate="+endDate;
 				$.getJSON(url, function(json) {
 	                options.series[0].data = json;
 	                chart = new Highcharts.Chart(options);
-				});
+				}); */
 			}
 		</script>
 
