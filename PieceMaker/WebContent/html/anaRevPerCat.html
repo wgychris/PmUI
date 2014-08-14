@@ -234,9 +234,7 @@
 		});
 	</script>
 
-	<script src="http://code.highcharts.com/highcharts.js"></script>
 	<script src="http://code.highcharts.com/modules/data.js"></script>
-	<script src="http://code.highcharts.com/modules/drilldown.js"></script>
 
 	<div id="container"
 		style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto"></div>
@@ -264,7 +262,7 @@
 				                     click: function() {
 				                    	/* var testobj = this;
 				                    	alert(this.name); */
-				                    	refreshGraph('Lithophanes');
+				                    	refreshGraph(this.name);
 				                     }
 				                 }
 				             }
