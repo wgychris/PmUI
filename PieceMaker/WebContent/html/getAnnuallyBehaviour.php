@@ -1,5 +1,4 @@
 <?php
-
 $rows = array();
 $dateArr = array();
 $coversionArr = array();
@@ -8,7 +7,7 @@ $finalizationArr = array();
 
 $db= new SQLite3("./hello");
 
-$sql_select='SELECT DISTINCT strftime(\'%m-%Y\', Date) as week FROM DailyStatistics';
+$sql_select='SELECT DISTINCT strftime(\'%Y\', Date) as week FROM DailyStatistics';
 
 $startDate = $_GET["startDate"];
 $endDate = $_GET["endDate"];
@@ -23,13 +22,13 @@ $result=$db->query($sql_select);
 while($row = $result->fetchArray()) {
 
 	$weekStr =  $row['week'];
-	$selectRevenue = 'SELECT sum(NumOfOrder) as NumOfOrder, sum(NumOfCustomization) as NumOfCustomization, 
-			sum(NumOfFinalize) as NumOfFinalize, sum(NumOfView) as NumOfView FROM DailyStatistics WHERE strftime(\'%m-%Y\', Date) = \''.$weekStr.'\'';
+	$selectRevenue = 'SELECT sum(NumOfOrder) as NumOfOrder, sum(NumOfCustomization) as NumOfCustomization,
+			sum(NumOfFinalize) as NumOfFinalize, sum(NumOfView) as NumOfView FROM DailyStatistics WHERE strftime(\'%Y\', Date) = \''.$weekStr.'\'';
 
 	if($startDate != null && $endDate != null) {
 		$selectRevenue = $selectRevenue.' AND Date >= \''.$startDate.'\' AND Date <=\''.$endDate.'\'';
 	}
-	
+
 	$tempResult = $db->query($selectRevenue);
 	$tempRow = $tempResult->fetchArray();
 
