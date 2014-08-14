@@ -67,26 +67,6 @@
 				<ul class="nav navbar-nav">
 					<li><a href="#">Home</a></li>
 				</ul>
-				<!-- <ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">Contact <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="dropdown-submenu"><a href="#">Sub menu</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-								</ul></li>
-						</ul></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">Dashboard <b class="caret"></b></a>
-						</li>
-				</ul> -->
 				<ul class="nav navbar-nav navbar-right user-nav">
 					<li><a href="#">Dashboard</a></li>
 					<li class="dropdown profile_menu"><a href="#"
@@ -108,8 +88,9 @@
 	</div>
 
 
-	<div id="cl-wrapper">
-		<div class="cl-sidebar">
+	<div id="cl-wrapper" class="fixed-menu">
+		<div class="cl-sidebar" data-position="right" data-step="1"
+			data-intro="<strong>Fixed Sidebar</strong> <br/> It adjust to your needs.">
 			<div class="cl-toggle">
 				<i class="fa fa-bars"></i>
 			</div>
@@ -122,7 +103,6 @@
 							</div>
 						</div>
 						<ul class="cl-vnavigation">
-
 							<li><a href="#"><i class="fa fa-money"></i><span>Revenue
 								</span></a>
 								<ul class="sub-menu">
@@ -139,7 +119,8 @@
 
 							<li><a href="#"><i class="fa fa-smile-o"></i><span>Popularity</span></a>
 								<ul class="sub-menu">
-									<li><a href="anaPopPiece.html">Popularity of Piece</a></li>
+									<li class="active"><a href="anaPopPiece.html">Popularity
+											of Piece</a></li>
 									<li><a href="anaPopCus.html">Popularity of
 											Customization</a></li>
 								</ul></li>
@@ -150,99 +131,124 @@
 						</ul>
 					</div>
 				</div>
-				<div class="text-right collapse-button" style="padding: 7px 9px;">
-					<input type="text" class="form-control search"
-						placeholder="Search..." />
-					<button id="sidebar-collapse" class="btn btn-default" style="">
-						<i style="color: #fff;" class="fa fa-angle-left"></i>
-					</button>
-				</div>
 			</div>
 		</div>
+
 
 		<div class="container-fluid" id="pcont">
 			<div class="page-head">
 				<ol class="breadcrumb">
-					<li><a href="#">Home</a></li>
-					<li class="active">Popularity</li>
+					<li><a href="anaTotRev.html">Home</a></li>
+					<li>Popularity</li>
+					<li class="active">Popularity of Piece</li>
 				</ol>
 			</div>
 
 
 			<div class="cl-mcont">
 				<div class="row">
-					<div class="col-sm-6 col-md-6">
-
-						<div class="block-flat">
-							<div id="poppie"
-								style="height: 350px; padding: 0px; position: relative;"></div>
-						</div>
-					</div>
-
-					<div class="col-sm-6 col-md-6">
-
-						<div class="content no-padding">
-							<br>
-							<h2>Top 5 Products Analysis</h2>
-							<table class="red">
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th class="right"><span>Percentage</span>View</th>
-										<th class="right"><span>Percentage</span>Customize</th>
-										<th class="right"><span>Percentage</span>Finalize</th>
-									</tr>
-								</thead>
-								<tbody class="no-border-x">
-									<tr>
-										<td style="width: 40%;"><i class="fa fa-sitemap"></i>
-											Ring</td>
-										<td class="text-right">45</td>
-										<td class="text-right">40</td>
-										<td class="text-right">38</td>
-									</tr>
-									<tr>
-										<td><i class="fa fa-tasks"></i> Heart</td>
-										<td class="text-right">43</td>
-										<td class="text-right">40</td>
-										<td class="text-right">35</td>
-									</tr>
-									<tr>
-										<td><i class="fa fa-signal"></i> Skyline</td>
-										<td class="text-right">36</td>
-										<td class="text-right">34</td>
-										<td class="text-right">30</td>
-									</tr>
-									<tr>
-										<td><i class="fa fa-bolt"></i> Cross</td>
-										<td class="text-right">31</td>
-										<td class="text-right">29</td>
-										<td class="text-right">26</td>
-									</tr>
-									<tr>
-										<td><i class="fa fa-bolt"></i> Heart Pendant</td>
-										<td class="text-right">30</td>
-										<td class="text-right">25</td>
-										<td class="text-right">23</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-
 					<div class="col-sm-12 col-md-12">
+						<div class="form-group">
+							<label class="col-sm-2 control-label">Date & Time Picker</label>
+							<div class="col-sm-4">
+								<div id="reportrange" class="pull-left"
+									style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+									<i class="glyphicon glyphicon-calendar fa fa-calendar"></i> <span></span>
+									<b class="caret"></b>
+								</div>
+							</div>
+						</div>
 
-						<div class="block-flat">
-							<div id="PopPiece"
-								style="height: 350px; padding: 0px; position: relative;"></div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label"></label> <label
+								class="col-sm-1 control-label">Select</label>
+							<div class="col-sm-3">
+
+								<select class="form-control"
+									style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc"
+									onChange="selectRevenueChange()" id="selectRevenueOpt">
+									<option>Daily Revenue</option>
+									<option>Weekly Revenue</option>
+									<option>Monthly Revenue</option>
+									<option>Annually Revenue</option>
+								</select>
+							</div>
+						</div>
+
+						<br> <br>
+						<div class="col-sm-6 col-md-6">
+
+							<div class="block-flat">
+								<div id="poppie"
+									style="height: 350px; padding: 0px; position: relative;"></div>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-6">
+
+							<div class="content no-padding">
+								<br>
+								<h2>Top 5 Products Analysis</h2>
+								<table class="red">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th class="right"><span>Percentage</span>View</th>
+											<th class="right"><span>Percentage</span>Customize</th>
+											<th class="right"><span>Percentage</span>Finalize</th>
+										</tr>
+									</thead>
+									<tbody class="no-border-x">
+										<tr>
+											<td style="width: 40%;"><i class="fa fa-sitemap"></i>
+												Ring</td>
+											<td class="text-right">45</td>
+											<td class="text-right">40</td>
+											<td class="text-right">38</td>
+										</tr>
+										<tr>
+											<td><i class="fa fa-tasks"></i> Heart</td>
+											<td class="text-right">43</td>
+											<td class="text-right">40</td>
+											<td class="text-right">35</td>
+										</tr>
+										<tr>
+											<td><i class="fa fa-signal"></i> Skyline</td>
+											<td class="text-right">36</td>
+											<td class="text-right">34</td>
+											<td class="text-right">30</td>
+										</tr>
+										<tr>
+											<td><i class="fa fa-bolt"></i> Cross</td>
+											<td class="text-right">31</td>
+											<td class="text-right">29</td>
+											<td class="text-right">26</td>
+										</tr>
+										<tr>
+											<td><i class="fa fa-bolt"></i> Heart Pendant</td>
+											<td class="text-right">30</td>
+											<td class="text-right">25</td>
+											<td class="text-right">23</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-12">
+
+							<div class="block-flat">
+								<div id="PopPiece"
+									style="height: 350px; padding: 0px; position: relative;"></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
 		</div>
-
 	</div>
-
 	<script
 		src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://code.highcharts.com/highcharts.js"></script>
@@ -272,7 +278,10 @@
 		src="js/jquery.flot/jquery.flot.resize.js"></script>
 	<script type="text/javascript"
 		src="js/jquery.flot/jquery.flot.labels.js"></script>
-
+	<script type="text/javascript"
+		src="js/bootstrap.daterangepicker/moment.min.js"></script>
+	<script type="text/javascript"
+		src="js/bootstrap.daterangepicker/daterangepicker.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -393,7 +402,71 @@
 					});
 		});
 	</script>
-	
+	<script type="text/javascript">
+		$(document).ready(
+				function() {
+					//initialize the javascript
+
+					$('#reservation').daterangepicker();
+					$('#reservationtime').daterangepicker({
+						timePicker : true,
+						timePickerIncrement : 30,
+						format : 'MM/DD/YYYY h:mm A'
+					});
+					var cb = function(start, end) {
+						$('#reportrange span').html(
+								start.format('MMMM D, YYYY') + ' - '
+										+ end.format('MMMM D, YYYY'));
+
+						refreshGraph(start.format('YYYY-MM-DD'), end
+								.format('YYYY-MM-DD'));
+
+					}
+
+					var optionSet1 = {
+						startDate : moment().subtract('days', 29),
+						endDate : moment(),
+						minDate : '01/01/2012',
+						maxDate : '12/31/2014',
+						dateLimit : {
+							days : 60
+						},
+						showDropdowns : true,
+						showWeekNumbers : true,
+						timePicker : false,
+						timePickerIncrement : 1,
+						timePicker12Hour : true,
+						opens : 'left',
+						buttonClasses : [ 'btn' ],
+						applyClass : 'btn-small btn-primary',
+						cancelClass : 'btn-small',
+						format : 'MM/DD/YYYY',
+						separator : ' to ',
+						locale : {
+							applyLabel : 'Submit',
+							cancelLabel : 'Clear',
+							fromLabel : 'From',
+							toLabel : 'To',
+							customRangeLabel : 'Custom',
+							daysOfWeek : [ 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr',
+									'Sa' ],
+							monthNames : [ 'January', 'February', 'March',
+									'April', 'May', 'June', 'July', 'August',
+									'September', 'October', 'November',
+									'December' ],
+							firstDay : 1
+						}
+					};
+
+					$('#reportrange span').html(
+							moment().subtract('days', 29)
+									.format('MMMM D, YYYY')
+									+ ' - ' + moment().format('MMMM D, YYYY'));
+
+					$('#reportrange').daterangepicker(optionSet1, cb);
+
+				});
+	</script>
 
 	<!-- Bootstrap core JavaScript
     ================================================== -->
