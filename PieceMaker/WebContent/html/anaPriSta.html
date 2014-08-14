@@ -7,7 +7,7 @@
 <meta name="author" content="">
 <link rel="shortcut icon" href="images/favicon.png">
 
-<title>Clean Zone</title>
+<title>PieceMaker</title>
 <link
 	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800'
 	rel='stylesheet' type='text/css'>
@@ -19,7 +19,6 @@
 <link href="js/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css"
 	href="js/jquery.gritter/css/jquery.gritter.css" />
-
 <link rel="stylesheet"
 	href="fonts/font-awesome-4/css/font-awesome.min.css">
 
@@ -29,7 +28,6 @@
     <![endif]-->
 <link rel="stylesheet" type="text/css"
 	href="js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css" />
-
 <link rel="stylesheet" type="text/css"
 	href="js/jquery.nanoscroller/nanoscroller.css" />
 <link rel="stylesheet" type="text/css"
@@ -62,8 +60,9 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Home</a></li>
+					<li><a href="anaTotRev.html">Home</a></li>
 				</ul>
+				
 				<ul class="nav navbar-nav navbar-right user-nav">
 					<li><a href="#">Dashboard</a></li>
 					<li class="dropdown profile_menu"><a href="#"
@@ -84,8 +83,10 @@
 		</div>
 	</div>
 
-	<div id="cl-wrapper">
-		<div class="cl-sidebar">
+
+	<div id="cl-wrapper" class="fixed-menu">
+		<div class="cl-sidebar" data-position="right" data-step="1"
+			data-intro="<strong>Fixed Sidebar</strong> <br/> It adjust to your needs.">
 			<div class="cl-toggle">
 				<i class="fa fa-bars"></i>
 			</div>
@@ -98,22 +99,21 @@
 							</div>
 						</div>
 						<ul class="cl-vnavigation">
-
-							<li><a href="#"><i class="fa fa-home"></i><span>Revenue
-										Analysis</span></a>
+							<li><a href="#"><i class="fa fa-money"></i><span>Revenue
+								</span></a>
 								<ul class="sub-menu">
 									<li><a href="anaTotRev.html">Total Revenue</a></li>
 									<li><a href="anaRevPerCat.html">Revenue Per Category</a></li>
 								</ul></li>
 
-							<li><a href="#"><i class="fa fa-home"></i><span>Customer
-										Behaviour Analysis</span></a>
+							<li><a href="#"><i class="fa fa-table"></i><span>Customer
+										Behaviour </span></a>
 								<ul class="sub-menu">
 									<li><a href="anaCBTPer.html">Percentage</a></li>
 									<li><a href="anaAvgTime.html">Average Time</a></li>
 								</ul></li>
 
-							<li><a href="#"><i class="fa fa-home"></i><span>Popularity</span></a>
+							<li><a href="#"><i class="fa fa-smile-o"></i><span>Popularity</span></a>
 								<ul class="sub-menu">
 									<li><a href="anaPopPiece.html">Popularity of Piece</a></li>
 									<li><a href="anaPopCus.html">Popularity of
@@ -121,20 +121,14 @@
 								</ul></li>
 							<li><a href="anaCusInfo.html"><i class="fa fa-eye"></i><span>Customer
 										Info</span></a>
-							<li><a href="anaPriSta.html"><i class="fa fa-cogs"></i><span>Print
-										Station Analysis</span></a>
+							<li class="active"><a href="anaPriSta.html"><i
+									class="fa fa-cogs"></i><span>Print Station Analysis</span></a>
 						</ul>
 					</div>
 				</div>
-				<div class="text-right collapse-button" style="padding: 7px 9px;">
-					<input type="text" class="form-control search"
-						placeholder="Search..." />
-					<button id="sidebar-collapse" class="btn btn-default" style="">
-						<i style="color: #fff;" class="fa fa-angle-left"></i>
-					</button>
-				</div>
 			</div>
 		</div>
+
 
 
 
@@ -142,15 +136,11 @@
 			<div class="page-head">
 				<ol class="breadcrumb">
 					<li><a href="#">Home</a></li>
-					<li><a href="#">Print Station analysis</a></li>
 					<li class="active">Print Station analysis</li>
 				</ol>
 			</div>
 			<div class="cl-mcont">
-
-				
 				<div class="col-sm-6 col-md-6">
-
 					<div class="form-group">
 						<label class="col-sm-4 control-label">Date & Time Picker</label>
 						<div class="col-sm-8">
@@ -162,21 +152,20 @@
 						</div>
 					</div>
 					<br>
+
 					<div class="form-group">
-							<label class="col-sm-4 control-label"></label> <label
-								class="col-sm-2 control-label">Select</label>
-							<div class="col-sm-6">
-
-								<select class="form-control"
-									style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc"
-									onChange="selectRevenueChange()" id="selectRevenueOpt">
-									<option>Daily Revenue</option>
-									<option>Weekly Revenue</option>
-									<option>Monthly Revenue</option>
-								</select>
-							</div>
+						<br> <label class="col-sm-4 control-label">Select </label>
+						<div class="col-sm-6">
+							<select class="form-control"
+								style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc"
+								onChange="selectRevenueChange()" id="selectRevenueOpt">
+								<option>Daily Revenue</option>
+								<option>Weekly Revenue</option>
+								<option>Monthly Revenue</option>
+								<option>Annually Revenue</option>
+							</select>
 						</div>
-
+					</div>
 					<br> <br>
 					<div class="block-flat">
 						<div id="poppie"
@@ -252,19 +241,9 @@
 					</div>
 				</div>
 			</div>
-
-
-			</table>
 		</div>
 	</div>
-	</div>
-	</div>
-	</div>
 
-	</div>
-	</div>
-
-	</div>
 
 	<script src="js/jquery.js"></script>
 	<script src="http://code.highcharts.com/highcharts.js"></script>

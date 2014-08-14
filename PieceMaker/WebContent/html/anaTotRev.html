@@ -66,28 +66,8 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Home</a></li>
+					<li><a href="anaTotRev.html">Home</a></li>
 				</ul>
-				<!-- <ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">Contact <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="dropdown-submenu"><a href="#">Sub menu</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-								</ul></li>
-						</ul></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">Dashboard <b class="caret"></b></a>
-						</li>
-				</ul> -->
 				<ul class="nav navbar-nav navbar-right user-nav">
 					<li><a href="#">Dashboard</a></li>
 					<li class="dropdown profile_menu"><a href="#"
@@ -109,8 +89,9 @@
 	</div>
 
 
-	<div id="cl-wrapper">
-		<div class="cl-sidebar">
+	<div id="cl-wrapper" class="fixed-menu">
+		<div class="cl-sidebar" data-position="right" data-step="1"
+			data-intro="<strong>Fixed Sidebar</strong> <br/> It adjust to your needs.">
 			<div class="cl-toggle">
 				<i class="fa fa-bars"></i>
 			</div>
@@ -123,11 +104,11 @@
 							</div>
 						</div>
 						<ul class="cl-vnavigation">
-
 							<li><a href="#"><i class="fa fa-money"></i><span>Revenue
 								</span></a>
 								<ul class="sub-menu">
-									<li><a href="anaTotRev.html">Total Revenue</a></li>
+									<li class="active"><a href="anaTotRev.html">Total
+											Revenue</a></li>
 									<li><a href="anaRevPerCat.html">Revenue Per Category</a></li>
 								</ul></li>
 
@@ -151,7 +132,6 @@
 						</ul>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 
@@ -159,7 +139,7 @@
 			<div class="page-head">
 				<ol class="breadcrumb">
 					<li><a href="#">Home</a></li>
-					<li><a href="#">Revenue Analytics</a></li>
+					<li>Revenue Analytics</li>
 					<li class="active">Total Store Revenue</li>
 				</ol>
 			</div>
@@ -229,11 +209,6 @@
 				<div class="cl-mcont">
 					<div class="row">
 						<div class="col-sm-12 col-md-12">
-							
-							<div class="form-group">
-								
-							</div>
-							
 							<div class="form-group">
 								<label class="col-sm-2 control-label">Date & Time Picker</label>
 								<div class="col-sm-4">
@@ -247,21 +222,22 @@
 
 
 							<div class="form-group">
-							<label class="col-sm-2 control-label"></label>
-								<label class="col-sm-1 control-label">Select</label>
+								<label class="col-sm-2 control-label"></label> <label
+									class="col-sm-1 control-label">Select</label>
 								<div class="col-sm-3">
-									
-									<select class="form-control" 
-									style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc" onChange="selectRevenueChange()" id="selectRevenueOpt">
-									<option>Daily Revenue</option>
-									<option>Weekly Revenue</option>
-									<option>Monthly Revenue</option>
-									<option>Annually Revenue</option>
-								</select>
+
+									<select class="form-control"
+										style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc"
+										onChange="selectRevenueChange()" id="selectRevenueOpt">
+										<option>Daily Revenue</option>
+										<option>Weekly Revenue</option>
+										<option>Monthly Revenue</option>
+										<option>Annually Revenue</option>
+									</select>
 								</div>
 							</div>
 
-							<br> <br> 
+							<br> <br>
 							<div class="block-flat">
 								<div class="content">
 									<div id="config-graph"
@@ -269,411 +245,411 @@
 								</div>
 							</div>
 						</div>
+					</div>
 				</div>
 			</div>
-
 		</div>
+	</div>
+	<!--  <script src="js/jquery.js"></script> -->
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
 
-		<!--  <script src="js/jquery.js"></script> -->
-		<script
-			src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="http://code.highcharts.com/highcharts.js"></script>
-		<script src="http://code.highcharts.com/modules/exporting.js"></script>
-
-		<script type="text/javascript"
-			src="js/jquery.nanoscroller/jquery.nanoscroller.js"></script>
-		<script type="text/javascript"
-			src="js/jquery.sparkline/jquery.sparkline.min.js"></script>
-		<script type="text/javascript"
-			src="js/jquery.easypiechart/jquery.easy-pie-chart.js"></script>
-		<script type="text/javascript" src="js/behaviour/general.js"></script>
-		<script src="js/jquery.ui/jquery-ui.js" type="text/javascript"></script>
-		<script type="text/javascript"
-			src="js/jquery.nestable/jquery.nestable.js"></script>
-		<script type="text/javascript"
-			src="js/bootstrap.switch/bootstrap-switch.min.js"></script>
-		<script type="text/javascript"
-			src="js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-		<script src="js/jquery.select2/select2.min.js" type="text/javascript"></script>
-		<script src="js/bootstrap.slider/js/bootstrap-slider.js"
-			type="text/javascript"></script>
-		<script type="text/javascript"
-			src="js/jquery.gritter/js/jquery.gritter.js"></script>
-		<script type="text/javascript"
-			src="js/bootstrap.daterangepicker/moment.min.js"></script>
-		<script type="text/javascript"
-			src="js/bootstrap.daterangepicker/daterangepicker.js"></script>
+	<script type="text/javascript"
+		src="js/jquery.nanoscroller/jquery.nanoscroller.js"></script>
+	<script type="text/javascript"
+		src="js/jquery.sparkline/jquery.sparkline.min.js"></script>
+	<script type="text/javascript"
+		src="js/jquery.easypiechart/jquery.easy-pie-chart.js"></script>
+	<script type="text/javascript" src="js/behaviour/general.js"></script>
+	<script src="js/jquery.ui/jquery-ui.js" type="text/javascript"></script>
+	<script type="text/javascript"
+		src="js/jquery.nestable/jquery.nestable.js"></script>
+	<script type="text/javascript"
+		src="js/bootstrap.switch/bootstrap-switch.min.js"></script>
+	<script type="text/javascript"
+		src="js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+	<script src="js/jquery.select2/select2.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.slider/js/bootstrap-slider.js"
+		type="text/javascript"></script>
+	<script type="text/javascript"
+		src="js/jquery.gritter/js/jquery.gritter.js"></script>
+	<script type="text/javascript"
+		src="js/bootstrap.daterangepicker/moment.min.js"></script>
+	<script type="text/javascript"
+		src="js/bootstrap.daterangepicker/daterangepicker.js"></script>
 
 
-		<script type = "text/javascript">
-			var startDate;
-			var endDate;
-		</script>
+	<script type="text/javascript">
+		var startDate;
+		var endDate;
+	</script>
 
-		<script type="text/javascript">
-			$(document).ready(
-					function() {
-						//initialize the javascript
-						App.init();
-						//App.dashBoard();        
-						/*Sparklines*/
-						$(".spk1")
-								.sparkline(
-										[ 2, 4, 3, 6, 7, 5, 8, 9, 4, 2, 6, 8,
-												8, 9, 10 ], {
-											type : 'bar',
-											width : '80px',
-											barColor : '#4A8CF7'
-										});
-						$(".spk2").sparkline(
-								[ 4, 6, 7, 7, 4, 3, 2, 1, 4, 4, 5, 6, 5 ], {
-									type : 'discrete',
-									width : '80',
-									lineColor : '#4A8CF7',
-									thresholdValue : 4,
-									thresholdColor : '#ff0000'
-								});
-						$(".spk4").sparkline(
-								[ 2, 4, 3, 6, 7, 5, 8, 9, 4, 2, 10, ], {
-									type : 'bar',
-									width : '80px',
-									height : '30px',
-									barColor : '#EA6153'
-								});
-						$(".spk5").sparkline(
-								[ 5, 3, 5, 6, 5, 7, 4, 8, 6, 9, 8, ], {
-									type : 'bar',
-									width : '80px',
-									height : '30px',
-									barColor : '#4AA3DF'
-								});
-
-						$(".spk3").sparkline(
-								[ 5, 6, 7, 9, 9, 5, 3, 2, 2, 4, 6, 7 ], {
-									type : 'line',
-									lineColor : '#258FEC',
-									fillColor : '#4A8CF7',
-									spotColor : false,
-									width : '80px',
-									minSpotColor : false,
-									maxSpotColor : false,
-									highlightSpotColor : '#1e7ac6',
-									highlightLineColor : '#1e7ac6'
-								});
-
-						$("table td .legend").each(function() {
-							var el = $(this);
-							var color = el.data("color");
-							el.css("background", color);
-						});
-
-					});
-		</script>
-
-		<script>
-			
-			$(document).ready(function() {
-	            var options = {
-	                chart: {
-	                    renderTo: 'config-graph'
-	                    
-	                },
-	                title : {
-						text : 'Store total revenue'
-					},
-					xAxis : {
-						type : 'category',
-						labels : {
-							rotation : -45,
-							style : {
-								fontSize : '13px',
-								fontFamily : 'Verdana, sans-serif'
-							}
-						}
-					},
-					yAxis : {
-						min : 0,
-						title : {
-							text : 'Revenue ($)'
-						}
-					},
-					legend : {
-						enabled : false
-					},
-					tooltip : {
-						pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
-					},
-	                series: [{
-	                	type : 'column',
-	                    name: 'Date',
-	                    data: []
-	                }]
-	            };
-	            
-	            $.getJSON("./getRevenue.php", function(json) {
-	                options.series[0].data = json;
-	                chart = new Highcharts.Chart(options);
-	            });
-	            
-	            
-	            
-	        }); 
-			
-			
-			function selectRevenueChange(){
-				
-				var options = {
-		                chart: {
-		                    renderTo: 'config-graph'
-		                    
-		                },
-		                title : {
-							text : 'Store total revenue'
-						},
-						xAxis : {
-							type : 'category',
-							labels : {
-								rotation : -45,
-								style : {
-									fontSize : '13px',
-									fontFamily : 'Verdana, sans-serif'
-								}
-							}
-						},
-						yAxis : {
-							min : 0,
-							title : {
-								text : 'Revenue ($)'
-							}
-						},
-						legend : {
-							enabled : false
-						},
-						tooltip : {
-							pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
-						},
-		                series: [{
-		                	type : 'column',
-		                    name: 'Date',
-		                    data: []
-		                }]
-				};
-				
-				  var myselect = document.getElementById("selectRevenueOpt");
-				  var option = myselect.options[myselect.selectedIndex].label;
-				  switch (option) {
-				  case 'Weekly Revenue': 
-					  var url = "./getWeeklyRevenue.php";
-					  if (startDate != null && endDate != null) {
-					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-					  }
-					  $.getJSON(url, function(json) {
-		                options.series[0].data = json;
-		                chart = new Highcharts.Chart(options);
-		            }); break;
-				  case 'Monthly Revenue': 
-					  var url = "./getMonthlyRevenue.php";
-					  if (startDate != null && endDate != null) {
-					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-					  }
-					  $.getJSON(url, function(json) {
-		                options.series[0].data = json;
-		                chart = new Highcharts.Chart(options);
-		            }); break;
-				  case 'Annually Revenue': 
-					  var url = "./getAnnuallyRevenue.php";
-					  if (startDate != null && endDate != null) {
-					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-					  }
-					  $.getJSON(url, function(json) {
-		                options.series[0].data = json;
-		                chart = new Highcharts.Chart(options);
-		            }); break;
-				  case 'Daily Revenue':
-					  var url = "./getRevenue.php";
-					  if (startDate != null && endDate != null) {
-					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-					  }
-					  $.getJSON(url, function(json) {
-		                options.series[0].data = json;
-		                chart = new Highcharts.Chart(options);
-		            }); break;
-				  }
-				}
-		</script>
-		<script type="text/javascript">
-			$(document)
-					.ready(
-							function() {
-								//initialize the javascript
-
-								$('#reservation').daterangepicker();
-								$('#reservationtime').daterangepicker({
-									timePicker : true,
-									timePickerIncrement : 30,
-									format : 'MM/DD/YYYY h:mm A'
-								});
-								var cb = function(start, end) {
-									$('#reportrange span')
-											.html(
-													start
-															.format('MMMM D, YYYY')
-															+ ' - '
-															+ end
-																	.format('MMMM D, YYYY'));
-									
-									refreshGraph(start.format('YYYY-MM-DD'), end.format('YYYY-MM-DD'));
-									startDate = start.format('YYYY-MM-DD');
-									endDate = end.format('YYYY-MM-DD');
-								}
-
-								var optionSet1 = {
-									startDate : moment().subtract('days', 29),
-									endDate : moment(),
-									minDate : '01/01/2012',
-									maxDate : '12/31/2014',
-									dateLimit : {
-										days : 60
-									},
-									showDropdowns : true,
-									showWeekNumbers : true,
-									timePicker : false,
-									timePickerIncrement : 1,
-									timePicker12Hour : true,
-									opens : 'left',
-									buttonClasses : [ 'btn' ],
-									applyClass : 'btn-small btn-primary',
-									cancelClass : 'btn-small',
-									format : 'MM/DD/YYYY',
-									separator : ' to ',
-									locale : {
-										applyLabel : 'Submit',
-										cancelLabel : 'Clear',
-										fromLabel : 'From',
-										toLabel : 'To',
-										customRangeLabel : 'Custom',
-										daysOfWeek : [ 'Su', 'Mo', 'Tu', 'We',
-												'Th', 'Fr', 'Sa' ],
-										monthNames : [ 'January', 'February',
-												'March', 'April', 'May',
-												'June', 'July', 'August',
-												'September', 'October',
-												'November', 'December' ],
-										firstDay : 1
-									}
-								};
-
-							
-								$('#reportrange span').html(
-										moment().subtract('days', 29).format(
-												'MMMM D, YYYY')
-												+ ' - '
-												+ moment().format(
-														'MMMM D, YYYY'));
-
-								$('#reportrange').daterangepicker(optionSet1,
-										cb);
-
+	<script type="text/javascript">
+		$(document).ready(
+				function() {
+					//initialize the javascript
+					App.init();
+					//App.dashBoard();        
+					/*Sparklines*/
+					$(".spk1").sparkline(
+							[ 2, 4, 3, 6, 7, 5, 8, 9, 4, 2, 6, 8, 8, 9, 10 ], {
+								type : 'bar',
+								width : '80px',
+								barColor : '#4A8CF7'
 							});
-			
-			
-			function refreshGraph(startDate, endDate) {
+					$(".spk2").sparkline(
+							[ 4, 6, 7, 7, 4, 3, 2, 1, 4, 4, 5, 6, 5 ], {
+								type : 'discrete',
+								width : '80',
+								lineColor : '#4A8CF7',
+								thresholdValue : 4,
+								thresholdColor : '#ff0000'
+							});
+					$(".spk4").sparkline([ 2, 4, 3, 6, 7, 5, 8, 9, 4, 2, 10, ],
+							{
+								type : 'bar',
+								width : '80px',
+								height : '30px',
+								barColor : '#EA6153'
+							});
+					$(".spk5").sparkline([ 5, 3, 5, 6, 5, 7, 4, 8, 6, 9, 8, ],
+							{
+								type : 'bar',
+								width : '80px',
+								height : '30px',
+								barColor : '#4AA3DF'
+							});
 
-				var options = {
-		                chart: {
-		                    renderTo: 'config-graph'
-		                    
-		                },
-		                title : {
-							text : 'Store total revenue'
+					$(".spk3").sparkline(
+							[ 5, 6, 7, 9, 9, 5, 3, 2, 2, 4, 6, 7 ], {
+								type : 'line',
+								lineColor : '#258FEC',
+								fillColor : '#4A8CF7',
+								spotColor : false,
+								width : '80px',
+								minSpotColor : false,
+								maxSpotColor : false,
+								highlightSpotColor : '#1e7ac6',
+								highlightLineColor : '#1e7ac6'
+							});
+
+					$("table td .legend").each(function() {
+						var el = $(this);
+						var color = el.data("color");
+						el.css("background", color);
+					});
+
+				});
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			var options = {
+				chart : {
+					renderTo : 'config-graph'
+
+				},
+				title : {
+					text : 'Store total revenue'
+				},
+				xAxis : {
+					type : 'category',
+					labels : {
+						rotation : -45,
+						style : {
+							fontSize : '13px',
+							fontFamily : 'Verdana, sans-serif'
+						}
+					}
+				},
+				yAxis : {
+					min : 0,
+					title : {
+						text : 'Revenue ($)'
+					}
+				},
+				legend : {
+					enabled : false
+				},
+				tooltip : {
+					pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
+				},
+				series : [ {
+					type : 'column',
+					name : 'Date',
+					data : []
+				} ]
+			};
+
+			$.getJSON("./getRevenue.php", function(json) {
+				options.series[0].data = json;
+				chart = new Highcharts.Chart(options);
+			});
+
+		});
+
+		function selectRevenueChange() {
+
+			var options = {
+				chart : {
+					renderTo : 'config-graph'
+
+				},
+				title : {
+					text : 'Store total revenue'
+				},
+				xAxis : {
+					type : 'category',
+					labels : {
+						rotation : -45,
+						style : {
+							fontSize : '13px',
+							fontFamily : 'Verdana, sans-serif'
+						}
+					}
+				},
+				yAxis : {
+					min : 0,
+					title : {
+						text : 'Revenue ($)'
+					}
+				},
+				legend : {
+					enabled : false
+				},
+				tooltip : {
+					pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
+				},
+				series : [ {
+					type : 'column',
+					name : 'Date',
+					data : []
+				} ]
+			};
+
+			var myselect = document.getElementById("selectRevenueOpt");
+			var option = myselect.options[myselect.selectedIndex].label;
+			switch (option) {
+			case 'Weekly Revenue':
+				var url = "./getWeeklyRevenue.php";
+				if (startDate != null && endDate != null) {
+					url = url + "?startDate=" + startDate + "&endDate="
+							+ endDate;
+				}
+				$.getJSON(url, function(json) {
+					options.series[0].data = json;
+					chart = new Highcharts.Chart(options);
+				});
+				break;
+			case 'Monthly Revenue':
+				var url = "./getMonthlyRevenue.php";
+				if (startDate != null && endDate != null) {
+					url = url + "?startDate=" + startDate + "&endDate="
+							+ endDate;
+				}
+				$.getJSON(url, function(json) {
+					options.series[0].data = json;
+					chart = new Highcharts.Chart(options);
+				});
+				break;
+			case 'Annually Revenue':
+				var url = "./getAnnuallyRevenue.php";
+				if (startDate != null && endDate != null) {
+					url = url + "?startDate=" + startDate + "&endDate="
+							+ endDate;
+				}
+				$.getJSON(url, function(json) {
+					options.series[0].data = json;
+					chart = new Highcharts.Chart(options);
+				});
+				break;
+			case 'Daily Revenue':
+				var url = "./getRevenue.php";
+				if (startDate != null && endDate != null) {
+					url = url + "?startDate=" + startDate + "&endDate="
+							+ endDate;
+				}
+				$.getJSON(url, function(json) {
+					options.series[0].data = json;
+					chart = new Highcharts.Chart(options);
+				});
+				break;
+			}
+		}
+	</script>
+	<script type="text/javascript">
+		$(document).ready(
+				function() {
+					//initialize the javascript
+
+					$('#reservation').daterangepicker();
+					$('#reservationtime').daterangepicker({
+						timePicker : true,
+						timePickerIncrement : 30,
+						format : 'MM/DD/YYYY h:mm A'
+					});
+					var cb = function(start, end) {
+						$('#reportrange span').html(
+								start.format('MMMM D, YYYY') + ' - '
+										+ end.format('MMMM D, YYYY'));
+
+						refreshGraph(start.format('YYYY-MM-DD'), end
+								.format('YYYY-MM-DD'));
+						startDate = start.format('YYYY-MM-DD');
+						endDate = end.format('YYYY-MM-DD');
+					}
+
+					var optionSet1 = {
+						startDate : moment().subtract('days', 29),
+						endDate : moment(),
+						minDate : '01/01/2012',
+						maxDate : '12/31/2014',
+						dateLimit : {
+							days : 60
 						},
-						xAxis : {
-							type : 'category',
-							labels : {
-								rotation : -45,
-								style : {
-									fontSize : '13px',
-									fontFamily : 'Verdana, sans-serif'
-								}
-							}
-						},
-						yAxis : {
-							min : 0,
-							title : {
-								text : 'Revenue ($)'
-							}
-						},
-						legend : {
-							enabled : false
-						},
-						tooltip : {
-							pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
-						},
-		                series: [{
-		                	type : 'column',
-		                    name: 'Date',
-		                    data: []
-		                }]
-				};
-				 var myselect = document.getElementById("selectRevenueOpt");
-				  var option = myselect.options[myselect.selectedIndex].label;
-				  switch (option) {
-				  case 'Weekly Revenue': 
-					  var url = "./getWeeklyRevenue.php";
-					  if (startDate != null && endDate != null) {
-					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-					  }
-					  $.getJSON(url, function(json) {
-		                options.series[0].data = json;
-		                chart = new Highcharts.Chart(options);
-		            }); break;
-				  case 'Monthly Revenue': 
-					  var url = "./getMonthlyRevenue.php";
-					  if (startDate != null && endDate != null) {
-					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-					  }
-					  $.getJSON(url, function(json) {
-		                options.series[0].data = json;
-		                chart = new Highcharts.Chart(options);
-		            }); break;
-				  case 'Annually Revenue': 
-					  var url = "./getAnnuallyRevenue.php";
-					  if (startDate != null && endDate != null) {
-					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-					  }
-					  $.getJSON(url, function(json) {
-		                options.series[0].data = json;
-		                chart = new Highcharts.Chart(options);
-		            }); break;
-				  case 'Daily Revenue':
-					  var url = "./getRevenue.php";
-					  if (startDate != null && endDate != null) {
-					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-					  }
-					  $.getJSON(url, function(json) {
-		                options.series[0].data = json;
-		                chart = new Highcharts.Chart(options);
-		            }); break;
-				  }
+						showDropdowns : true,
+						showWeekNumbers : true,
+						timePicker : false,
+						timePickerIncrement : 1,
+						timePicker12Hour : true,
+						opens : 'left',
+						buttonClasses : [ 'btn' ],
+						applyClass : 'btn-small btn-primary',
+						cancelClass : 'btn-small',
+						format : 'MM/DD/YYYY',
+						separator : ' to ',
+						locale : {
+							applyLabel : 'Submit',
+							cancelLabel : 'Clear',
+							fromLabel : 'From',
+							toLabel : 'To',
+							customRangeLabel : 'Custom',
+							daysOfWeek : [ 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr',
+									'Sa' ],
+							monthNames : [ 'January', 'February', 'March',
+									'April', 'May', 'June', 'July', 'August',
+									'September', 'October', 'November',
+									'December' ],
+							firstDay : 1
+						}
+					};
+
+					$('#reportrange span').html(
+							moment().subtract('days', 29)
+									.format('MMMM D, YYYY')
+									+ ' - ' + moment().format('MMMM D, YYYY'));
+
+					$('#reportrange').daterangepicker(optionSet1, cb);
+
+				});
+
+		function refreshGraph(startDate, endDate) {
+
+			var options = {
+				chart : {
+					renderTo : 'config-graph'
+
+				},
+				title : {
+					text : 'Store total revenue'
+				},
+				xAxis : {
+					type : 'category',
+					labels : {
+						rotation : -45,
+						style : {
+							fontSize : '13px',
+							fontFamily : 'Verdana, sans-serif'
+						}
+					}
+				},
+				yAxis : {
+					min : 0,
+					title : {
+						text : 'Revenue ($)'
+					}
+				},
+				legend : {
+					enabled : false
+				},
+				tooltip : {
+					pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
+				},
+				series : [ {
+					type : 'column',
+					name : 'Date',
+					data : []
+				} ]
+			};
+			var myselect = document.getElementById("selectRevenueOpt");
+			var option = myselect.options[myselect.selectedIndex].label;
+			switch (option) {
+			case 'Weekly Revenue':
+				var url = "./getWeeklyRevenue.php";
+				if (startDate != null && endDate != null) {
+					url = url + "?startDate=" + startDate + "&endDate="
+							+ endDate;
+				}
+				$.getJSON(url, function(json) {
+					options.series[0].data = json;
+					chart = new Highcharts.Chart(options);
+				});
+				break;
+			case 'Monthly Revenue':
+				var url = "./getMonthlyRevenue.php";
+				if (startDate != null && endDate != null) {
+					url = url + "?startDate=" + startDate + "&endDate="
+							+ endDate;
+				}
+				$.getJSON(url, function(json) {
+					options.series[0].data = json;
+					chart = new Highcharts.Chart(options);
+				});
+				break;
+			case 'Annually Revenue':
+				var url = "./getAnnuallyRevenue.php";
+				if (startDate != null && endDate != null) {
+					url = url + "?startDate=" + startDate + "&endDate="
+							+ endDate;
+				}
+				$.getJSON(url, function(json) {
+					options.series[0].data = json;
+					chart = new Highcharts.Chart(options);
+				});
+				break;
+			case 'Daily Revenue':
+				var url = "./getRevenue.php";
+				if (startDate != null && endDate != null) {
+					url = url + "?startDate=" + startDate + "&endDate="
+							+ endDate;
+				}
+				$.getJSON(url, function(json) {
+					options.series[0].data = json;
+					chart = new Highcharts.Chart(options);
+				});
+				break;
+			}
 			/* 	var url = "./getRevenue.php?startDate="+startDate+"&endDate="+endDate;
 				$.getJSON(url, function(json) {
-	                options.series[0].data = json;
-	                chart = new Highcharts.Chart(options);
+			        options.series[0].data = json;
+			        chart = new Highcharts.Chart(options);
 				}); */
-			}
-		</script>
+		}
+	</script>
 
 
-		<!-- Bootstrap core JavaScript
+	<!-- Bootstrap core JavaScript
     ================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="js/behaviour/voice-commands.js"></script>
-		<script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/jquery.flot/jquery.flot.js"></script>
-		<script type="text/javascript" src="js/jquery.flot/jquery.flot.pie.js"></script>
-		<script type="text/javascript"
-			src="js/jquery.flot/jquery.flot.resize.js"></script>
-		<script type="text/javascript"
-			src="js/jquery.flot/jquery.flot.labels.js"></script>
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/behaviour/voice-commands.js"></script>
+	<script src="js/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flot/jquery.flot.js"></script>
+	<script type="text/javascript" src="js/jquery.flot/jquery.flot.pie.js"></script>
+	<script type="text/javascript"
+		src="js/jquery.flot/jquery.flot.resize.js"></script>
+	<script type="text/javascript"
+		src="js/jquery.flot/jquery.flot.labels.js"></script>
 </body>
 </html>

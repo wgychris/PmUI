@@ -90,8 +90,9 @@
 	</div>
 
 
-	<div id="cl-wrapper">
-		<div class="cl-sidebar">
+<div id="cl-wrapper" class="fixed-menu">
+		<div class="cl-sidebar" data-position="right" data-step="1"
+			data-intro="<strong>Fixed Sidebar</strong> <br/> It adjust to your needs.">
 			<div class="cl-toggle">
 				<i class="fa fa-bars"></i>
 			</div>
@@ -104,18 +105,18 @@
 							</div>
 						</div>
 						<ul class="cl-vnavigation">
-
 							<li><a href="#"><i class="fa fa-money"></i><span>Revenue
 								</span></a>
 								<ul class="sub-menu">
-									<li><a href="anaTotRev.html">Total Revenue</a></li>
+									<li><a href="anaTotRev.html">Total
+											Revenue</a></li>
 									<li><a href="anaRevPerCat.html">Revenue Per Category</a></li>
 								</ul></li>
 
 							<li><a href="#"><i class="fa fa-table"></i><span>Customer
 										Behaviour </span></a>
 								<ul class="sub-menu">
-									<li><a href="anaCBTPer.html">Percentage</a></li>
+									<li class="active"><a href="anaCBTPer.html">Percentage</a></li>
 									<li><a href="anaAvgTime.html">Average Time</a></li>
 								</ul></li>
 
@@ -132,17 +133,17 @@
 						</ul>
 					</div>
 				</div>
-				
 			</div>
 		</div>
+
 
 
 
 		<div class="container-fluid" id="pcont">
 			<div class="page-head">
 				<ol class="breadcrumb">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Customer Behavior Analytics</a></li>
+					<li><a href="anaTotRev.html">Home</a></li>
+					<li>Customer Behavior Analytics</li>
 					<li class="active">Customer Behavior</li>
 				</ol>
 			</div>
@@ -179,7 +180,6 @@
 									<option>Daily Status</option>
 									<option>Weekly Status</option>
 									<option>Monthly Status</option>
-									<option>Annually Revenue</option>
 								</select>
 								</div>
 							</div>
@@ -227,11 +227,6 @@
 		<script type="text/javascript"
 			src="js/bootstrap.daterangepicker/daterangepicker.js"></script>
 
-<script type = "text/javascript">
-			var startDate;
-			var endDate;
-		</script>
-		
 <script type="text/javascript">
 		$(document).ready(function() {
 			//initialize the javascript
@@ -378,48 +373,21 @@
 		  var myselect = document.getElementById("selectRevenueOpt");
 		  var option = myselect.options[myselect.selectedIndex].label;
 		  switch (option) {
-		  case 'Weekly Status': 
-			  var url = "./getWeeklyBehaviour.php";
-			  if (startDate != null && endDate != null) {
-			  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-			  }
-			  $.getJSON(url, function(result) {
+		  case 'Weekly Status': $.getJSON("./getWeeklyBehaviour.php", function(result) {
 			  options.xAxis.categories = result.dateArr;
 	  			options.series[0].data = result.coversionArr;
 	            options.series[1].data = result.customizationArr;
 	            options.series[2].data = result.finalizationArr;
                 chart = new Highcharts.Chart(options);
             }); break;
-		  case 'Monthly Status': 
-			  var url = "./getMonthlyBehaviour.php";
-			  if (startDate != null && endDate != null) {
-			  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-			  }
-			  $.getJSON(url, function(result) {
+		  case 'Monthly Status': $.getJSON("./getMonthlyBehaviour.php", function(result) {
 			  options.xAxis.categories = result.dateArr;
 	  			options.series[0].data = result.coversionArr;
 	            options.series[1].data = result.customizationArr;
 	            options.series[2].data = result.finalizationArr;
                 chart = new Highcharts.Chart(options);
             }); break;
-		  case 'Annually Status': 
-			  var url = "./getAnnuallyBehaviour.php";
-			  if (startDate != null && endDate != null) {
-			  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-			  }
-			  $.getJSON(url, function(result) {
-			  options.xAxis.categories = result.dateArr;
-	  			options.series[0].data = result.coversionArr;
-	            options.series[1].data = result.customizationArr;
-	            options.series[2].data = result.finalizationArr;
-                chart = new Highcharts.Chart(options);
-            }); break;
-		  case 'Daily Status': 
-			  var url = "./getBehaviour.php";
-			  if (startDate != null && endDate != null) {
-			  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-			  }
-			  $.getJSON(url, function(result) {
+		  case 'Daily Status': $.getJSON("./getBehaviour.php", function(result) {
 			  options.xAxis.categories = result.dateArr;
 	  			options.series[0].data = result.coversionArr;
 	            options.series[1].data = result.customizationArr;
@@ -453,8 +421,7 @@
 																	.format('MMMM D, YYYY'));
 									
 									refreshGraph(start.format('YYYY-MM-DD'), end.format('YYYY-MM-DD'));
-									startDate = start.format('YYYY-MM-DD');
-									endDate = end.format('YYYY-MM-DD');
+									
 								}
 
 								var optionSet1 = {
@@ -566,67 +533,14 @@
 				        }]
 				   
 				};
-				
-				var myselect = document.getElementById("selectRevenueOpt");
-				  var option = myselect.options[myselect.selectedIndex].label;
-				  switch (option) {
-				  case 'Weekly Status': 
-					  var url = "./getWeeklyBehaviour.php";
-					  if (startDate != null && endDate != null) {
-					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-					  }
-					  $.getJSON(url, function(result) {
-					  options.xAxis.categories = result.dateArr;
-			  			options.series[0].data = result.coversionArr;
-			            options.series[1].data = result.customizationArr;
-			            options.series[2].data = result.finalizationArr;
-		                chart = new Highcharts.Chart(options);
-		            }); break;
-				  case 'Monthly Status': 
-					  var url = "./getMonthlyBehaviour.php";
-					  if (startDate != null && endDate != null) {
-					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-					  }
-					  $.getJSON(url, function(result) {
-					  options.xAxis.categories = result.dateArr;
-			  			options.series[0].data = result.coversionArr;
-			            options.series[1].data = result.customizationArr;
-			            options.series[2].data = result.finalizationArr;
-		                chart = new Highcharts.Chart(options);
-		            }); break;
-				  case 'Annually Status': 
-					  var url = "./getAnnuallyBehaviour.php";
-					  if (startDate != null && endDate != null) {
-					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-					  }
-					  $.getJSON(url, function(result) {
-					  options.xAxis.categories = result.dateArr;
-			  			options.series[0].data = result.coversionArr;
-			            options.series[1].data = result.customizationArr;
-			            options.series[2].data = result.finalizationArr;
-		                chart = new Highcharts.Chart(options);
-		            }); break;
-				  case 'Daily Status': 
-					  var url = "./getBehaviour.php";
-					  if (startDate != null && endDate != null) {
-					  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-					  }
-					  $.getJSON(url, function(result) {
-					  options.xAxis.categories = result.dateArr;
-			  			options.series[0].data = result.coversionArr;
-			            options.series[1].data = result.customizationArr;
-			            options.series[2].data = result.finalizationArr;
-		                chart = new Highcharts.Chart(options);
-		            }); break;
-				  }
-			/* 	var url = "./getBehaviour.php?startDate="+startDate+"&endDate="+endDate;
+				var url = "./getBehaviour.php?startDate="+startDate+"&endDate="+endDate;
 				$.getJSON(url, function(result) {
 					options.xAxis.categories = result.dateArr;
 		  			options.series[0].data = result.coversionArr;
 		            options.series[1].data = result.customizationArr;
 		            options.series[2].data = result.finalizationArr;
 	                chart = new Highcharts.Chart(options);
-				}); */
+				});
 			}
 		</script>
 
