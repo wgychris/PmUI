@@ -203,7 +203,6 @@
 							var tableDataJson;
 							$.getJSON("./getCustomerInfo.php", function(json) {
 								tableDataJson = json;
-								alert(tableDataJson);
 								//Horizontal Icons dataTable
 								$('#example').dataTable({
 							        "data" : tableDataJson,
