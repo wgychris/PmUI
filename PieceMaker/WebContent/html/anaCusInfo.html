@@ -145,48 +145,9 @@
 							</div>
 							<div class="content">
 								<div class="table-responsive">
-									<table class="table table-bordered" id="datatable">
-										<thead>
-											<tr>
-
-												<th>Customer Name</th>
-												<th>Email Address</th>
-												<th>Tel</th>
-												<th>Order Numbers</th>
-												<th>Total Amount
-											</tr>
-										</thead>
-										<tbody>
-											<tr class="odd gradeX">
-												<td>Trident</td>
-												<td>Internet Explorer 4.0</td>
-												<td>Win 95+</td>
-												<td class="center">4</td>
-												<td class="center"></td>
-											</tr>
-											<tr class="even gradeC">
-												<td>Trident</td>
-												<td>Internet Explorer 5.0</td>
-												<td>Win 95+</td>
-												<td class="center">5</td>
-												<td class="center">C</td>
-											</tr>
-											<tr class="odd gradeA">
-												<td>Trident</td>
-												<td>Internet Explorer 5.5</td>
-												<td>Win 95+</td>
-												<td class="center">5.5</td>
-												<td class="center">A</td>
-											</tr>
-											<tr class="even gradeA">
-												<td>Trident</td>
-												<td>Internet Explorer 6</td>
-												<td>Win 98+</td>
-												<td class="center">6</td>
-												<td class="center">A</td>
-											</tr>
-
-										</tbody>
+									<table class="table table-bordered" id="example">
+										
+										
 									</table>
 								</div>
 							</div>
@@ -225,103 +186,36 @@
 	<script type="text/javascript"
 		src="js/jquery.gritter/js/jquery.gritter.js"></script>
 	<script type="text/javascript"
-		src="js/jquery.datatables/jquery.datatables.min.js"></script>
+		src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript"
 		src="js/jquery.datatables/bootstrap-adapter/js/datatables.js"></script>
 
 
 	<script type="text/javascript">
-		//Add dataTable Functions
-
-		//Add dataTable Icons
-		var functions = $('<a class="btn btn-default btn-xs" href="#" data-original-title="Open" data-toggle="tooltip"><i class="fa fa-file"></i></a> <a class="btn btn-primary btn-xs" href="#" data-original-title="Edit" data-toggle="tooltip"><i class="fa fa-pencil"></i></a> <a class="btn btn-danger btn-xs" href="#" data-original-title="Remove" data-toggle="tooltip"><i class="fa fa-times"></i></a>');
-		$("#datatable-icons tbody tr td:last-child").each(function() {
-			$(this).html("");
-			functions.clone().appendTo(this);
-		});
 
 		$(document)
 				.ready(
 						function() {
 							//initialize the javascript
 							App.init();
-							App.dataTables();
+							/* App.dataTables(); */
 
-							/* Formating function for row details */
-							function fnFormatDetails(oTable, nTr) {
-								var aData = oTable.fnGetData(nTr);
-								var sOut = '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">';
-								sOut += '<tr><td>Rendering engine:</td><td>'
-										+ aData[1] + ' ' + aData[4]
-										+ '</td></tr>';
-								sOut += '<tr><td>Link to source:</td><td>Could provide a link here</td></tr>';
-								sOut += '<tr><td>Extra info:</td><td>And any further details here (images etc)</td></tr>';
-								sOut += '</table>';
+							var tableDataJson;
+							$.getJSON("./getCustomerInfo.php", function(json) {
+								tableDataJson = json;
+								//Horizontal Icons dataTable
+								$('#example').dataTable({
+							        "data" : tableDataJson,
+							        "columns": [
+							                    { "title": "OrderNum" },
+							                    { "title": "Name" },
+							                    { "title": "Email" },
+							                    { "title": "Price" },
+							                    { "title": "Date" }
+							                ]
+								});
+				            });
 
-								return sOut;
-							}
-
-							/*
-							 * Insert a 'details' column to the table
-							 */
-							var nCloneTh = document.createElement('th');
-							var nCloneTd = document.createElement('td');
-							nCloneTd.innerHTML = '<img class="toggle-details" src="images/plus.png" />';
-							nCloneTd.className = "center";
-
-							$('#datatable2 thead tr').each(
-									function() {
-										this.insertBefore(nCloneTh,
-												this.childNodes[0]);
-									});
-
-							$('#datatable2 tbody tr').each(
-									function() {
-										this.insertBefore(nCloneTd
-												.cloneNode(true),
-												this.childNodes[0]);
-									});
-
-							/*
-							 * Initialse DataTables, with no sorting on the 'details' column
-							 */
-							var oTable = $('#datatable2').dataTable({
-								"aoColumnDefs" : [ {
-									"bSortable" : false,
-									"aTargets" : [ 0 ]
-								} ],
-								"aaSorting" : [ [ 1, 'asc' ] ]
-							});
-
-							/* Add event listener for opening and closing details
-							 * Note that the indicator for showing which row is open is not controlled by DataTables,
-							 * rather it is done here
-							 */
-							$('#datatable2').delegate(
-									'tbody td img',
-									'click',
-									function() {
-										var nTr = $(this).parents('tr')[0];
-										if (oTable.fnIsOpen(nTr)) {
-											/* This row is already open - close it */
-											this.src = "images/plus.png";
-											oTable.fnClose(nTr);
-										} else {
-											/* Open this row */
-											this.src = "images/minus.png";
-											oTable.fnOpen(nTr, fnFormatDetails(
-													oTable, nTr), 'details');
-										}
-									});
-
-							$('.dataTables_filter input').addClass(
-									'form-control').attr('placeholder',
-									'Search');
-							$('.dataTables_length select').addClass(
-									'form-control');
-
-							//Horizontal Icons dataTable
-							$('#datatable-icons').dataTable();
 						});
 	</script>
 
