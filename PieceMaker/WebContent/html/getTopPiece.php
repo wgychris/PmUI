@@ -19,7 +19,7 @@ $selectDate = $selectDate . $dateRangeStr;
 
 $selectDate = $selectDate . ' ORDER BY Date ASC';
 
-error_log($selectDate);
+// error_log($selectDate);
 
 $result = $db->query ( $selectDate );
 
@@ -31,7 +31,7 @@ if ($startDate != null && $endDate != null) {
 	$selectQuery = $selectQuery .' WHERE Date >= \'' . $startDate . '\' AND Date <=\'' . $endDate . '\'';
 }
 
-// error_log($selectQuery);
+//  error_log($selectQuery);
 
 $result=$db->query($selectQuery);
 $piece = $_GET['piece'];
@@ -40,8 +40,11 @@ while($row = $result->fetchArray()) {
 	$type = $row['ActionType'];
 	$pieceData = array();
 	foreach ($dateArr as $date){
-		$selectPiece = 'SELECT count(*) as count FROM PopularityOfPiece WHERE PieceName=\''.$piece.'\' AND ActionType= \''.$type. '\' AND Date >= \'' . $startDate . '\' AND Date <=\'' . $endDate . '\' AND Date=\''.$date.'\'';
-// 		error_log($selectPiece);
+		$selectPiece = 'SELECT count(*) as count FROM PopularityOfPiece WHERE PieceName=\''.$piece.'\' AND ActionType= \''.$type. '\' AND Date=\''.$date.'\' ';
+		if ($startDate != null && $endDate != null) {
+			$selectPiece = $selectPiece .' AND Date >= \'' . $startDate . '\' AND Date <=\'' . $endDate.'\'';
+		}
+//  		error_log($selectPiece);
 		$tempResult = $db->query($selectPiece);
 		if($tempRow = $tempResult->fetchArray()){
 			if($tempRow['count']!=null){

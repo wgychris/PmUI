@@ -15,14 +15,16 @@ if ($startDate != null && $endDate != null) {
 
 $sql_select = $sql_select . ' GROUP BY PieceName Order by OrderNumbers DESC LIMIT 5;';
 
-error_log($sql_select);
+// error_log($sql_select);
 
 $result = $db->query ( $sql_select );
 
 $sql_total = 'SELECT count(*) as total FROM "PopularityOfPiece" WHERE ActionType="VIEWED" ';
 if ($startDate != null && $endDate != null) {
-	$sql_total = $sql_select . 'AND Date >= \'' . $startDate . '\' AND Date <=\'' . $endDate . '\'';
+	$sql_total = $sql_total . 'AND Date >= \'' . $startDate . '\' AND Date <=\'' . $endDate . '\'';
 }
+
+// error_log($sql_total);
 
 $result2 = $db->query ( $sql_total );
 $row2 = $result2->fetchArray ();

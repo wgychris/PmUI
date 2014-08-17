@@ -505,30 +505,6 @@
 		}
 		</script>
 		
-		<script type="text/javascript">
-			$(document)
-					.ready(
-							function() {
-								$('.image-zoom').magnificPopup({
-									type : 'image',
-									mainClass : 'mfp-with-zoom', // this class is for CSS animation below
-									zoom : {
-										enabled : true, // By default it's false, so don't forget to enable it
-										duration : 300, // duration of the effect, in milliseconds
-										easing : 'ease-in-out', // CSS transition easing function 
-										opener : function(openerElement) {
-											var parent = $(openerElement);
-											return parent;
-										}
-									}
-								});
-
-								//Nifty Modals Init
-								$('.md-trigger').modalEffects();
-							});
-
-								
-		</script>
 		<!-- Bootstrap core JavaScript
     ================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
