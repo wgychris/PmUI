@@ -19,12 +19,20 @@ $selectDate = $selectDate . $dateRangeStr;
 
 $selectDate = $selectDate . ' ORDER BY Date ASC';
 
+error_log($selectDate);
+
 $result = $db->query ( $selectDate );
 
 while ( $row = $result->fetchArray () ) {
 	array_push ( $dateArr, $row ['Date'] );
 }
 $selectQuery ='SELECT DISTINCT ActionType FROM PopularityOfPiece' ;
+if ($startDate != null && $endDate != null) {
+	$selectQuery = $selectQuery .' WHERE Date >= \'' . $startDate . '\' AND Date <=\'' . $endDate . '\'';
+}
+
+// error_log($selectQuery);
+
 $result=$db->query($selectQuery);
 $piece = $_GET['piece'];
 
@@ -32,12 +40,11 @@ while($row = $result->fetchArray()) {
 	$type = $row['ActionType'];
 	$pieceData = array();
 	foreach ($dateArr as $date){
-		$selectPiece = 'SELECT count(*) as count FROM PopularityOfPiece WHERE PieceName=\''.$piece.'\' AND ActionType= \''.$type.'\' AND Date=\''.$date.'\'';
-		error_log($selectPiece);
+		$selectPiece = 'SELECT count(*) as count FROM PopularityOfPiece WHERE PieceName=\''.$piece.'\' AND ActionType= \''.$type. '\' AND Date >= \'' . $startDate . '\' AND Date <=\'' . $endDate . '\' AND Date=\''.$date.'\'';
+// 		error_log($selectPiece);
 		$tempResult = $db->query($selectPiece);
 		if($tempRow = $tempResult->fetchArray()){
 			if($tempRow['count']!=null){
-				error_log("enter not null");
 				array_push($pieceData, $tempRow['count']);
 			}else {
 				array_push($pieceData, 0);

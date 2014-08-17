@@ -161,22 +161,6 @@
 						</div>
 
 
-						<div class="form-group">
-							<label class="col-sm-2 control-label"></label> <label
-								class="col-sm-1 control-label">Select</label>
-							<div class="col-sm-3">
-
-								<select class="form-control"
-									style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc"
-									onChange="selectRevenueChange()" id="selectRevenueOpt">
-									<option>Daily Revenue</option>
-									<option>Weekly Revenue</option>
-									<option>Monthly Revenue</option>
-									<option>Annually Revenue</option>
-								</select>
-							</div>
-						</div>
-
 						<br> <br>
 						
 		<div class="col-sm-3 col-md-3">
@@ -314,6 +298,13 @@
 			src="js/bootstrap.daterangepicker/daterangepicker.js"></script>
 		<script type="text/javascript"
 			src="js/jquery.niftymodals/js/jquery.modalEffects.js"></script>
+		
+		
+		<script type = "text/javascript">
+			var startDate;
+			var endDate;
+		</script>
+		
 		<script type="text/javascript">
 			$(document).ready(function() {
 				//initialize the javascript
@@ -348,7 +339,7 @@
 						point : {
 							events : {
 								click : function() {
-									//alert(this.name);
+									/* alert(this.name); */
 								refreshGraph(this.name);
 								}
 							}
@@ -368,8 +359,15 @@
 				} ],
 
 			};
-
-			$.getJSON("./getTop5Piece.php", function(result) {
+			
+			var url;
+			if (startDate != null && endDate != null) {
+				url = "./getTop5Piece.php?startDate="+startDate+"&endDate="+endDate;
+			}else {
+				url = "./getTop5Piece.php";
+			}
+			
+			$.getJSON(url, function(result) {
 				options.series[0].data = result;
 				chart = new Highcharts.Chart(options);
 			});
@@ -410,7 +408,11 @@
 				},
 				series : []
 			} 
-		$.getJSON("./getTopPiece.php?piece="+piece, function(result) {
+		 	var url = "./getTopPiece.php?piece=" + piece;
+		 	if (startDate != null && endDate != null) {
+		 		url = url + "&startDate="+startDate+"&endDate="+endDate;
+		 	}
+			$.getJSON(url, function(result) {
             option.xAxis.categories = result.dateArr;
             option.series = result.data;
             chart = new Highcharts.Chart(option);
@@ -437,8 +439,10 @@
 									start.format('MMMM D, YYYY') + ' - '
 											+ end.format('MMMM D, YYYY'));
 
-							refreshGraph(start.format('YYYY-MM-DD'), end
+							refreshGraphDate(start.format('YYYY-MM-DD'), end
 									.format('YYYY-MM-DD'));
+							startDate = start.format('YYYY-MM-DD');
+							endDate = end.format('YYYY-MM-DD');
 
 						}
 
@@ -488,6 +492,20 @@
 					});
 		</script>
 		<script type="text/javascript">
+		function refreshGraphDate(startDate, endDate) {
+			var url = "./getTop5Piece.php";
+			if (startDate != null && endDate != null) {
+				url = "./getTop5Piece.php?startDate="+startDate+"&endDate="+endDate;
+			}
+			
+			$.getJSON(url, function(result) {
+				options.series[0].data = result;
+				chart = new Highcharts.Chart(options);
+			});
+		}
+		</script>
+		
+		<script type="text/javascript">
 			$(document)
 					.ready(
 							function() {
@@ -507,6 +525,7 @@
 
 								//Nifty Modals Init
 								$('.md-trigger').modalEffects();
+							});
 
 								
 		</script>
