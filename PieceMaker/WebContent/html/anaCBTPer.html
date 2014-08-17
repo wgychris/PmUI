@@ -237,6 +237,10 @@
 
 
 	<script>
+	var startDate;
+	var endDate;
+	
+	
 	$(function () {
 		
 		var options = {
@@ -372,22 +376,26 @@
 		
 		  var myselect = document.getElementById("selectRevenueOpt");
 		  var option = myselect.options[myselect.selectedIndex].label;
+		  var timeStr = "";
+		  if (startDate != null && endDate != null) {
+			  var timeStr = "?startDate="+startDate+"&endDate="+endDate;
+		  }
 		  switch (option) {
-		  case 'Weekly Status': $.getJSON("./getWeeklyBehaviour.php", function(result) {
+		  case 'Weekly Status': $.getJSON("./getWeeklyBehaviour.php"+timeStr, function(result) {
 			  options.xAxis.categories = result.dateArr;
 	  			options.series[0].data = result.coversionArr;
 	            options.series[1].data = result.customizationArr;
 	            options.series[2].data = result.finalizationArr;
                 chart = new Highcharts.Chart(options);
             }); break;
-		  case 'Monthly Status': $.getJSON("./getMonthlyBehaviour.php", function(result) {
+		  case 'Monthly Status': $.getJSON("./getMonthlyBehaviour.php"+timeStr, function(result) {
 			  options.xAxis.categories = result.dateArr;
 	  			options.series[0].data = result.coversionArr;
 	            options.series[1].data = result.customizationArr;
 	            options.series[2].data = result.finalizationArr;
                 chart = new Highcharts.Chart(options);
             }); break;
-		  case 'Daily Status': $.getJSON("./getBehaviour.php", function(result) {
+		  case 'Daily Status': $.getJSON("./getBehaviour.php"+timeStr, function(result) {
 			  options.xAxis.categories = result.dateArr;
 	  			options.series[0].data = result.coversionArr;
 	            options.series[1].data = result.customizationArr;
@@ -421,6 +429,8 @@
 																	.format('MMMM D, YYYY'));
 									
 									refreshGraph(start.format('YYYY-MM-DD'), end.format('YYYY-MM-DD'));
+									startDate = start.format('YYYY-MM-DD');
+									endDate = end.format('YYYY-MM-DD');
 									
 								}
 
@@ -533,14 +543,44 @@
 				        }]
 				   
 				};
-				var url = "./getBehaviour.php?startDate="+startDate+"&endDate="+endDate;
+				/* var url = "./getBehaviour.php?startDate="+startDate+"&endDate="+endDate;
 				$.getJSON(url, function(result) {
 					options.xAxis.categories = result.dateArr;
 		  			options.series[0].data = result.coversionArr;
 		            options.series[1].data = result.customizationArr;
 		            options.series[2].data = result.finalizationArr;
 	                chart = new Highcharts.Chart(options);
-				});
+				}); */
+				var myselect = document.getElementById("selectRevenueOpt");
+				  var option = myselect.options[myselect.selectedIndex].label;
+				  var timeStr = "";
+				  if (startDate != null && endDate != null) {
+					  var timeStr = "?startDate="+startDate+"&endDate="+endDate;
+				  }
+				  switch (option) {
+				  case 'Weekly Status': $.getJSON("./getWeeklyBehaviour.php"+timeStr, function(result) {
+					  options.xAxis.categories = result.dateArr;
+			  			options.series[0].data = result.coversionArr;
+			            options.series[1].data = result.customizationArr;
+			            options.series[2].data = result.finalizationArr;
+		                chart = new Highcharts.Chart(options);
+		            }); break;
+				  case 'Monthly Status': $.getJSON("./getMonthlyBehaviour.php"+timeStr, function(result) {
+					  options.xAxis.categories = result.dateArr;
+			  			options.series[0].data = result.coversionArr;
+			            options.series[1].data = result.customizationArr;
+			            options.series[2].data = result.finalizationArr;
+		                chart = new Highcharts.Chart(options);
+		            }); break;
+				  case 'Daily Status': $.getJSON("./getBehaviour.php"+timeStr, function(result) {
+					  options.xAxis.categories = result.dateArr;
+			  			options.series[0].data = result.coversionArr;
+			            options.series[1].data = result.customizationArr;
+			            options.series[2].data = result.finalizationArr;
+		                chart = new Highcharts.Chart(options);
+		            }); break;
+				  }
+
 			}
 		</script>
 
