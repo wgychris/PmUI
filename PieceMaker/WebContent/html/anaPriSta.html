@@ -153,7 +153,7 @@
 					</div>
 					<br>
 
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<br> <label class="col-sm-4 control-label">Select </label>
 						<div class="col-sm-6">
 							<select class="form-control"
@@ -165,7 +165,7 @@
 								<option>Annually Revenue</option>
 							</select>
 						</div>
-					</div>
+					</div> -->
 					<br> <br>
 					<div class="block-flat">
 						<div id="poppie"
@@ -179,8 +179,8 @@
 						</div>
 						<div class="content">
 							<div class="table-responsive">
-								<table class="table table-bordered" id="datatable">
-									<thead>
+								<table class="table table-bordered" id="example">
+									<!-- <thead>
 										<tr>
 											<th>Piece name</th>
 											<th>Catogery</th>
@@ -234,7 +234,7 @@
 											<td class="center">1.8</td>
 										</tr>
 
-									</tbody>
+									</tbody> -->
 								</table>
 							</div>
 						</div>
@@ -270,7 +270,7 @@
 	<script type="text/javascript"
 		src="js/jquery.gritter/js/jquery.gritter.js"></script>
 	<script type="text/javascript"
-		src="js/jquery.datatables/jquery.datatables.min.js"></script>
+		src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript"
 		src="js/jquery.datatables/bootstrap-adapter/js/datatables.js"></script>
 	<script type="text/javascript"
@@ -279,6 +279,9 @@
 		src="js/bootstrap.daterangepicker/daterangepicker.js"></script>
 
 	<script type="text/javascript">
+	
+		var startDate;
+		var endDate;
 		//Add dataTable Functions
 
 		//Add dataTable Icons
@@ -294,6 +297,20 @@
 							//initialize the javascript
 							App.init();
 							App.dataTables();
+							
+							var tableDataJson;
+							$.getJSON("./getAvePrintTime.php", function(json) {
+								tableDataJson = json;
+								//Horizontal Icons dataTable
+								$('#example').dataTable({
+							        "data" : tableDataJson,
+							        "columns": [
+							                    { "title": "Piece" },
+							                    { "title": "Category" },
+							                    { "title": "Ave Print Time" }
+							                ]
+								});
+				            });
 
 							/* Formating function for row details */
 							function fnFormatDetails(oTable, nTr) {
@@ -389,46 +406,61 @@
 			}());
 
 			// Build the chart
-			$('#poppie')
-					.highcharts(
-							{
-								chart : {
-									plotBackgroundColor : null,
-									plotBorderWidth : null,
-									plotShadow : false
-								},
-								title : {
-									text : 'Failed %'
-								},
-								tooltip : {
-									pointFormat : '{series.name}: <b>{point.percentage:.1f}%</b>'
-								},
-								plotOptions : {
-									pie : {
-										allowPointSelect : true,
-										cursor : 'pointer',
-										dataLabels : {
-											enabled : true,
-											format : '<b>{point.name}</b>: {point.percentage:.1f} %',
-											style : {
-												color : (Highcharts.theme && Highcharts.theme.contrastTextColor)
-														|| 'black'
-											}
-										}
-									}
-								},
-								series : [ {
-									type : 'pie',
-									name : 'share',
-									data : [ [ 'Fail', 1.0 ], {
-										name : 'Success',
-										y : 12.8,
-										sliced : true,
-										selected : true
-									} ]
-								} ]
-							});
-		});
+			
+		refresfFailure();
+		
+		})
+		
+		function refresfFailure(){
+			var failureOption = {
+					chart : {
+						renderTo : 'poppie',
+						plotBackgroundColor : null,
+						plotBorderWidth : null,
+						plotShadow : false
+					},
+					title : {
+						text : 'Failed %'
+					},
+					tooltip : {
+						pointFormat : '{series.name}: <b>{point.percentage:.1f}%</b>'
+					},
+					plotOptions : {
+						pie : {
+							allowPointSelect : true,
+							cursor : 'pointer',
+							dataLabels : {
+								enabled : true,
+								format : '<b>{point.name}</b>: {point.percentage:.1f} %',
+								style : {
+									color : (Highcharts.theme && Highcharts.theme.contrastTextColor)
+											|| 'black'
+								}
+							}
+						}
+					},
+					series : [ {
+						type : 'pie',
+						name : 'share',
+						data : [ [ 'Fail', 1.0 ], {
+							name : 'Success',
+							y : 12.8,
+							sliced : true,
+							selected : true
+						} ]
+					} ]
+				}
+				var dateStr = "";
+				if (startDate != null && endDate != null) {
+					dateStr = "?startDate="+startDate+"&endDate="+endDate	;	
+			  	}
+				 $.getJSON("./getFailureInfo.php" + dateStr, function(json) {
+					 failureOption.series[0].data[0][1] = json.failureCount;
+					 failureOption.series[0].data[1].y = json.printedCount;
+		             chart = new Highcharts.Chart(failureOption);
+		         });
+		}
+		
 	</script>
 	<script type="text/javascript">
 		$(document).ready(
@@ -445,10 +477,10 @@
 						$('#reportrange span').html(
 								start.format('MMMM D, YYYY') + ' - '
 										+ end.format('MMMM D, YYYY'));
-
-						refreshGraph(start.format('YYYY-MM-DD'), end
-								.format('YYYY-MM-DD'));
-
+	
+						startDate = start.format('YYYY-MM-DD');
+						endDate = end.format('YYYY-MM-DD');
+						refresfFailure();
 					}
 
 					var optionSet1 = {
