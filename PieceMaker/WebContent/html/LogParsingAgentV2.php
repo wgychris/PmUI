@@ -43,7 +43,8 @@
 	$filename = "daily-".date('j-n-Y').".txt";
 	//for debugging
 	$filename = "daily-6-8-2014.txt";
-	$currDate = date('m-d-y');
+	$currDate = date('Y-m-d');
+// 	$currDate = "2014-07-30";
 	
 	if(!file_exists($filename)) {
 		error_log("Today's log file does not exist!", 0);
@@ -131,11 +132,14 @@
 				updateOrderInfo($tempStrArray[1], $tempStrArray[3], $tempStrArray[5], $strArray[2]);
 				
 				//update daily
-				if (!isRevenueRecordExist(date('m-d-y'))) {
+				if (!isRevenueRecordExist($currDate)) {
 					createRecordForToday();
 				}
 				addRevenue($currPrice);
 				addOne($puchaseStr);
+				addOne($finalizedStr);
+				addOne($customizedStr);
+				addOne($viewStr);
 				
 			} else if (strpos($strArray[3], $backButtonStr) !== false) {
 				echo "click back button";
@@ -147,9 +151,12 @@
 					if($isFinalized) {
 						updatePopularityOfPiece($currDate, $strArray[2], $currPiece, $currPiece, $currCategory, $finalizedStr);
 						addOne($finalizedStr);
+						addOne($customizedStr);
+						addOne($viewStr);
 					} else if($isCustomized) {
 						updatePopularityOfPiece($currDate, $strArray[2], $currPiece, $currPiece, $currCategory, $customizedStr);
 						addOne($customizedStr);
+						addOne($viewStr);
 					} else if ($isView) {
 						addOne($viewStr);
 					}
@@ -248,8 +255,8 @@
 		
 		$currStencil = "test stencil".$currPiece;
 		
-		$insertQuery = "INSERT INTO OrderInfo (Piece, Category, Price, Color, Stencil, OrderNum, CustomerName, CustomerEmail, Date, Timestamp) VALUES
-							(:piece, :category, :price, :color, :stencil, :orderNum, :customerName, :customerEmail, :date, :timestamp)";
+		$insertQuery = "INSERT INTO OrderInfo (Piece, Category, Price, Color, Stencil, OrderNum, CustomerName, CustomerEmail, Date, Timestamp, OrderStatus, IsPrinted) VALUES
+							(:piece, :category, :price, :color, :stencil, :orderNum, :customerName, :customerEmail, :date, :timestamp, \"PENDING\", 0)";
 		
 		$db= new SQLite3("./hello");
 		$stmt = $db->prepare($insertQuery);
@@ -271,12 +278,13 @@
 	function isRevenueRecordExist($dateStr) {
 		$db= new SQLite3("./hello");
 		
-		$sql_select='SELECT Date FROM DailyStatistics ORDER BY Date DESC LIMIT 1';
+		$sql_select="SELECT Date FROM DailyStatistics WHERE Date = \"".$dateStr."\";";
+		error_log($sql_select);
 		
 		$result=$db->query($sql_select);
 		$row = $result->fetchArray(SQLITE3_NUM);
+
 		$timestamp = $row[0];
-		
 		$db = null;
 		
 		if (strcmp($timestamp, $dateStr) == 0) {
@@ -346,6 +354,8 @@
 		
 		$db= new SQLite3("./hello");
 		
+		error_log($type);
+		
 		$updateQuery = "UPDATE DailyStatistics SET ";
 		if (strcmp($type, $puchaseStr) == 0) {
 			$updateQuery = $updateQuery."NumOfOrder = NumOfOrder + 1";
@@ -353,15 +363,15 @@
 			$updateQuery = $updateQuery."NumOfFinalize = NumOfFinalize + 1";
 		} else if (strcmp($type, $customizedStr) == 0) {
 			$updateQuery = $updateQuery."NumOfCustomization = NumOfCustomization + 1";
-		} else if (strcmp($type, $puchaseStr) == 0) {
-			$updateQuery = $viewStr."NumOfView = NumOfView + 1";
+		} else if (strcmp($type, $viewStr) == 0) {
+			$updateQuery = $updateQuery."NumOfView = NumOfView + 1";
 		}
 		
 		$updateQuery = $updateQuery." WHERE Date = '".$currDate."';";
 		
 		$result = $db->exec($updateQuery);
 		if ($result) {
-			error_log("number of rows modified ".$db->changes(), 0);
+			error_log("number of rows modified ".$type.$db->changes(), 0);
 		}
 	}
 	
