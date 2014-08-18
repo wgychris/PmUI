@@ -45,7 +45,7 @@ while($row = $result->fetchArray()) {
 	$tempResult = $db->query($selectPieceRevenue);
 	if($tempRow = $tempResult->fetchArray()){
 		if($tempRow['revenue']!=null){
- 			echo $piece.' '.$date.' '.$tempRow['revenue'];
+//  			echo $piece.' '.$date.' '.$tempRow['revenue'];
 			array_push($pieceData, $tempRow['revenue']);
 		}else {
 // 			echo $piece.' '.$date.' 0';
