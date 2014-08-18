@@ -237,28 +237,8 @@
 					<div class="form-group">
 						<label class="col-sm-4 control-label">Select Piece</label>
 						<div class="col-sm-5">
-							<select class="select2">
-								<optgroup label="Alaskan/Hawaiian Time Zone">
-									<option value="AK">Alaska</option>
-									<option value="HI">Hawaii</option>
-								</optgroup>
-								<optgroup label="Pacific Time Zone">
-									<option value="CA">California</option>
-									<option value="NV">Nevada</option>
-									<option value="OR">Oregon</option>
-									<option value="WA">Washington</option>
-								</optgroup>
-								<optgroup label="Mountain Time Zone">
-									<option value="AZ">Arizona</option>
-									<option value="CO">Colorado</option>
-									<option value="ID">Idaho</option>
-									<option value="MT">Montana</option>
-									<option value="NE">Nebraska</option>
-									<option value="NM">New Mexico</option>
-									<option value="ND">North Dakota</option>
-									<option value="UT">Utah</option>
-									<option value="WY">Wyoming</option>
-								</optgroup>
+							<select class="select2" onChange="selectPieceChange()" id="selectPieceOpt">
+								
 							</select>
 						</div>
 					</div>
@@ -324,10 +304,30 @@
 					$("#selectCate").append('<option value="' + result[i] + '">' + result[i] + '</option>');
 				}
 			});				
+			
+			$.getJSON("./getPieceListByCategory.php", function(result) {
+				for (var i in result) {
+
+					/*  console.log(result[i].category);  */
+					$("#selectPieceOpt").append('<optgroup label=\''+result[i].category+'\' id=\'categoryGroup'+i+'\'></optgroup>');
+					
+					for (var j in result[i].piece) {
+						$("#categoryGroup"+i).append('<option value="' + result[i].piece[j] + '">' + result[i].piece[j] + '</option>');
+					}
+				}
+			});	 
 		});
 	</script>
 	
 	<script>
+	function selectPieceChange() {
+		var myselect = document.getElementById("selectPieceOpt");
+		  var option = myselect.options[myselect.selectedIndex].label;
+		  refreshPieceGraph(startDate, endDate, option);
+		  /* refreshGraph(option); */
+	}
+	
+	
 	function refreshGraph (startDate,endDate) {
 		var options = {
 				chart : {
@@ -450,7 +450,7 @@
 					data : []
 				} ]
 			};
-			var url = "./getColor.php?category=Household: Coasters";
+			var url = "./getColor.php?category=Jewelry: Pendants With Stencil";
 			if (startDate != null && endDate != null) {
 				url = url + "?startDate="+startDate+"&endDate="+endDate;
 			}
@@ -481,6 +481,7 @@
 		
 	<script>
 		function selectCategoryChange() {
+			
 			var myselect = document.getElementById("selectCate");
 			var selectedStr = myselect.options[myselect.selectedIndex].value;
 			var url = "./getColor.php?category=" + selectedStr;
@@ -515,34 +516,37 @@
 			// 		fontFamily : 'Verdana, sans-serif'
 			// 	}
 			// }
-			categories : [ '1', '2',
-						'3']
+			categories : ["Purple","Yellow"]
 		},
 		yAxis : {
 			min : 0,
 			title : {
-				text : 'Revenue ($)'
+				text : 'Number'
 			}
 		},
 		legend : {
 			enabled : false
 		},
 		tooltip : {
-			pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
+			pointFormat : 'Num: <b>{point.y:.1f}</b>',
 		},
-        series: []
+        series: [{
+        					
+        					name : 'Color',
+        					data : []
+        					}]
 
 };
-var url = "./pieceColor.php";
+var url = "./pieceColor.php?pieceName="+pieceName;
 	if (startDate != null && endDate != null) {
-		  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+		  		url = url + "&startDate="+startDate+"&endDate="+endDate	;	
 		  }
 	$.getJSON(url, function(json) {
 		
 		 
 		  
 		options.xAxis.categories = json.colorNames;
-        options.series = json.colorNum;
+        options.series[0].data = json.colorNum;
 
        
        

@@ -2,14 +2,14 @@
 
 	
 $db= new SQLite3("./hello");
-// $startDate = $_GET["startDate"];
-// $endDate = $_GET["endDate"];
-// $piece = $_GET["pieceName"];
-$startDate = '2014-08-05';
-$endDate = '2014-08-13';
-$piece = "Guitar Pick Earrings";
+$startDate = $_GET["startDate"];
+$endDate = $_GET["endDate"];
+$piece = $_GET["pieceName"];
+// $startDate = '2014-08-05';
+// $endDate = '2014-08-13';
+// $piece = "Guitar Pick Earrings";
 
-$getColor = "SELECT DISTINCT OptionValue FROM CustomizableOption WHERE pieceName = '".$piece."' AND Date >= '".$startDate."' AND Date <= '".$endDate."'";
+$getColor = 'SELECT DISTINCT OptionValue FROM CustomizableOption WHERE pieceName = \''.$piece.'\'';
 
 $colors = $db->query($getColor);
 
@@ -41,8 +41,8 @@ $colorNum = array();
 
 while ($row = $colors->fetchArray()) {
 	$colorName = $row['OptionValue'];
-	echo $colorName;
-	$sql_countNum = "SELECT COUNT(OptionValue) AS colorNum FROM CustomizableOption WHERE OptionValue = '".$colorName."' AND pieceName = '".$piece."' AND Date >= '".$startDate."' AND Date <= '".$endDate."'";
+// 	echo $colorName;
+	$sql_countNum = "SELECT COUNT(OptionValue) AS colorNum FROM CustomizableOption WHERE OptionValue = '".$colorName."' AND pieceName = '".$piece."'";
 	
 	$result = $db->query($sql_countNum);
 	$row1 = $result->fetchArray();
