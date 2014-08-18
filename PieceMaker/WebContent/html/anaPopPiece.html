@@ -144,126 +144,97 @@
 					<li class="active">Popularity of Piece</li>
 				</ol>
 			</div>
-			
+
 
 			<div class="cl-mcont">
 				<div class="row">
 					<div class="col-sm-12 col-md-12">
+
+
+
+
+
+						<div class="col-sm-3 col-md-3">
+
+							<!-- Nifty Modal -->
+							<div class="md-modal colored-header  md-effect-9"
+								id="reply-ticket">
+								<div class="md-content">
+									<div class="modal-header">
+										<button type="button" class="close md-close"
+											data-dismiss="modal" aria-hidden="true">&times;</button>
+									</div>
+									<div class="modal-body">
+										<!-- <div id="PopPiece"
+								style="height: 350px; padding: 0px; position: relative;"></div>
+ -->
+
+									</div>
+
+								</div>
+							</div>
+							<div class="md-overlay"></div>
+						</div>
+
+
+						<div class="col-sm-12 col-md-12">
+
+							<div class="block-flat">
+								<div id="poppie"
+									style="height: 350px; padding: 0px; position: relative;"></div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-1 control-label">Piece</label>
+							<div class="col-sm-3">
+
+								<select class="select2"
+									onChange="selectPieceChange()" id="selectPieceOpt">
+									
+								</select>
+							</div>
+						</div>
 						<div class="form-group">
 							<label class="col-sm-2 control-label">Date & Time Picker</label>
-							<div class="col-sm-4">
-								<div id="reportrange" class="pull-left"
+							<div class="col-sm-3">
+								<div id="reportrange" class="form-control"
 									style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
 									<i class="glyphicon glyphicon-calendar fa fa-calendar"></i> <span></span>
 									<b class="caret"></b>
 								</div>
 							</div>
 						</div>
+						<div class="form-group">
 
+							<label class="col-sm-1 control-label">Range</label>
+							<div class="col-sm-2">
 
-						<br> <br>
-						
-		<div class="col-sm-3 col-md-3">
-			<div class="text-center">
-			
-				<button class="btn btn-success btn-flat btn-rad md-trigger"
-					data-modal="reply-ticket">Reply Last</button>
-			
-				<button class="btn btn-success btn-flat btn-rad md-trigger"
-					data-modal="reply-ticket">Reply Last</button>
-			</div>
-				<!-- Nifty Modal -->
-				<div class="md-modal colored-header  md-effect-9"
-					id="reply-ticket">
-					<div class="md-content">
-						<div class="modal-header">
-							<button type="button" class="close md-close"
-								data-dismiss="modal" aria-hidden="true">&times;</button>
-						</div>
-						 <div class="modal-body">
-							<!-- <div id="PopPiece"
-								style="height: 350px; padding: 0px; position: relative;"></div>
- -->
-
-						</div>
- 
-					</div>
-				</div>
-				<div class="md-overlay"></div>
-</div>
-							<div class="col-sm-9 col-md-9">
-
-								<div class="block-flat">
-									<div id="poppie"
-										style="height: 350px; padding: 0px; position: relative;"></div>
-								</div>
+								<select class="form-control"
+									style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc"
+									onChange="selectRevenueChange()" id="selectRevenueOpt">
+									<option>Daily </option>
+									<option>Weekly </option>
+									<option>Monthly </option>
+									<option>Annually </option>
+								</select>
 							</div>
+						</div>
 
-							<!-- <div class="col-sm-6 col-md-6">
 
-							<div class="content no-padding">
-								<br>
-								<h2>Top 5 Products Analysis</h2>
-								<table class="red">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th class="right"><span>Percentage</span>View</th>
-											<th class="right"><span>Percentage</span>Customize</th>
-											<th class="right"><span>Percentage</span>Finalize</th>
-										</tr>
-									</thead>
-									<tbody class="no-border-x">
-										<tr>
-											<td style="width: 40%;"><i class="fa fa-sitemap"></i>
-												Ring</td>
-											<td class="text-right">45</td>
-											<td class="text-right">40</td>
-											<td class="text-right">38</td>
-										</tr>
-										<tr>
-											<td><i class="fa fa-tasks"></i> Heart</td>
-											<td class="text-right">43</td>
-											<td class="text-right">40</td>
-											<td class="text-right">35</td>
-										</tr>
-										<tr>
-											<td><i class="fa fa-signal"></i> Skyline</td>
-											<td class="text-right">36</td>
-											<td class="text-right">34</td>
-											<td class="text-right">30</td>
-										</tr>
-										<tr>
-											<td><i class="fa fa-bolt"></i> Cross</td>
-											<td class="text-right">31</td>
-											<td class="text-right">29</td>
-											<td class="text-right">26</td>
-										</tr>
-										<tr>
-											<td><i class="fa fa-bolt"></i> Heart Pendant</td>
-											<td class="text-right">30</td>
-											<td class="text-right">25</td>
-											<td class="text-right">23</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div> -->
-
-							<div class="col-sm-12 col-md-12">
-
-								<div class="block-flat">
-									<div id="PopPiece"
-										style="height: 350px; padding: 0px; position: relative;"></div>
-								</div>
+						<div class="col-sm-12 col-md-12">
+<br> <br>
+							<div class="block-flat">
+								<div id="PopPiece"
+									style="height: 350px; padding: 0px; position: relative;"></div>
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
+
 		</div>
-		<script
+	</div>
+	<script
 			src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="http://code.highcharts.com/highcharts.js"></script>
 		<script src="http://code.highcharts.com/modules/exporting.js"></script>
@@ -310,7 +281,27 @@
 				//initialize the javascript
 				App.init();
 				App.charts();
+				
+				$.getJSON("./getPieceListByCategory.php", function(result) {
+					for (var i in result) {
+
+						/*  console.log(result[i].category);  */
+						$("#selectPieceOpt").append('<optgroup label=\''+result[i].category+'\' id=\'categoryGroup'+i+'\'></optgroup>');
+						
+						for (var j in result[i].piece) {
+							$("#categoryGroup"+i).append('<option value="' + result[i].piece[j] + '">' + result[i].piece[j] + '</option>');
+						}
+					}
+				});	 
 			});
+			
+			
+			function selectPieceChange() {
+				var myselect = document.getElementById("selectPieceOpt");
+				  var option = myselect.options[myselect.selectedIndex].label;
+				  console.log(option);
+				  refreshGraph(option);
+			}
 		</script>
 
 
