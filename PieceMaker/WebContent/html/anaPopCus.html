@@ -174,20 +174,52 @@
 			<div class="cl-mcont">
 				<div class="row">
 					<div class="col-sm-12 col-md-12">
+						<div class="form-group">
+								
+							</div>
+							
+							<div class="form-group">
+								<label class="col-sm-2 control-label">Date & Time Picker</label>
+								<div class="col-sm-4">
+									<div id="reportrange" class="pull-left"
+										style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+										<i class="glyphicon glyphicon-calendar fa fa-calendar"></i> <span></span>
+										<b class="caret"></b>
+									</div>
+								</div>
+							</div>
+							
+						<div class="form-group">
+							<label class="col-sm-2 control-label"></label>
+								<label class="col-sm-1 control-label">Select</label>
+								<div class="col-sm-3">
+									
+									<select class="form-control" 
+									style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc" onChange="selectRevenueChange()" id="selectRevenueOpt">
+									<option>Daily Revenue</option>
+									<option>Weekly Revenue</option>
+									<option>Monthly Revenue</option>
+									<option>Annually Revenue</option>
+								</select>
+								</div>
+							</div>
+
+							<br> <br> 
+					
+					
 						<div id="colorPop"></div>
 					</div>
 
 				</div>
 			</div>
+			
+			
 			<div class="col-sm-12 col-md-12">
 				<div class="col-sm-6 col-md-6">
 					<div class="form-group">
-						<label class="col-sm-4 control-label">Slect Category</label>
+						<label class="col-sm-4 control-label">Select Category</label>
 						<div class="col-sm-5">
-							<select class="form-control">
-								<option>Weekly Revenue</option>
-								<option>Monthly Revenue</option>
-								<option>Annually Revenue</option>
+							<select id = "selectCate" class="form-control" onChange="selectCategoryChange()">
 							</select>
 						</div>
 					</div>
@@ -197,7 +229,8 @@
 							style="height: 350px; padding: 0px; position: relative;"></div>
 					</div>
 				</div>
-
+			
+			
 
 
 				<div class="col-sm-6 col-md-6">
@@ -268,94 +301,168 @@
 	<script type="text/javascript"
 		src="js/jquery.gritter/js/jquery.gritter.js"></script>
 
+	<script type = "text/javascript">
+			var startDate;
+			var endDate;
+			var optionsPie;
+	</script>
+		
 	<script type="text/javascript">
 		$(document).ready(function() {
 			//initialize the javascript
 			App.init();
 			App.charts();
 		});
+		
+		
 	</script>
 
-	<script>
+	<script type="text/javascript">
 		$(function() {
-			$('#colorPop')
-					.highcharts(
-							{
-								chart : {
-									type : 'column'
-								},
-								title : {
-									text : 'Popularity of color option'
-								},
-								xAxis : {
-									categories : [ '07-15-14', '07-16-14',
-											'07-17-14', '07-18-14', '07-19-14',
-											'07-20-14', '07-21-14' ]
-								},
-								yAxis : {
-									min : 0,
-									title : {
-										text : 'Total fruit consumption'
-									},
-									stackLabels : {
-										enabled : true,
-										style : {
-											fontWeight : 'bold',
-											color : (Highcharts.theme && Highcharts.theme.textColor)
-													|| 'gray'
-										}
-									}
-								},
-								legend : {
-									align : 'right',
-									x : -70,
-									verticalAlign : 'top',
-									y : 20,
-									floating : true,
-									backgroundColor : (Highcharts.theme && Highcharts.theme.background2)
-											|| 'white',
-									borderColor : '#CCC',
-									borderWidth : 1,
-									shadow : false
-								},
-								tooltip : {
-									formatter : function() {
-										return '<b>' + this.x + '</b><br/>'
-												+ this.series.name + ': '
-												+ this.y + '<br/>' + 'Total: '
-												+ this.point.stackTotal;
-									}
-								},
-								plotOptions : {
-									column : {
-										stacking : 'normal',
-										dataLabels : {
-											enabled : true,
-											color : (Highcharts.theme && Highcharts.theme.dataLabelsColor)
-													|| 'white',
-											style : {
-												textShadow : '0 0 3px black, 0 0 3px black'
-											}
-										}
-									}
-								},
-								series : [ {
-									name : 'Blue',
-									data : [ 5, 3, 4, 7, 2, 4, 2 ]
-								}, {
-									name : 'Black',
-									data : [ 2, 2, 3, 2, 1, 0, 5 ]
-								}, {
-									name : 'Green',
-									data : [ 3, 4, 4, 2, 5, 4, 2 ]
-								} ]
-							});
+			$.getJSON("./getCategory.php", function(result) {
+				for (var i in result) {
+					$("#selectCate").append('<option value="' + result[i] + '">' + result[i] + '</option>');
+				}
+			});				
 		});
 	</script>
+	
+	<script>
+	function refreshGraph (startDate,endDate) {
+		var options = {
+				chart : {
+					type : 'column',
+					renderTo: 'colorPop'
+				},
+				title : {
+					text : 'Popularity of color option'
+				},
+				xAxis : {
+					categories : [ '07-15-14', '07-16-14',
+							'07-17-14', '07-18-14', '07-19-14',
+							'07-20-14', '07-21-14' ]
+				},
+				yAxis : {
+					min : 0,
+					title : {
+						text : 'Total fruit consumption'
+					},
+					stackLabels : {
+						enabled : true,
+						style : {
+							fontWeight : 'bold',
+							color : (Highcharts.theme && Highcharts.theme.textColor)
+									|| 'gray'
+						}
+					}
+				},
+				legend : {
+					align : 'right',
+					x : -70,
+					verticalAlign : 'top',
+					y : 20,
+					floating : true,
+					backgroundColor : (Highcharts.theme && Highcharts.theme.background2)
+							|| 'white',
+					borderColor : '#CCC',
+					borderWidth : 1,
+					shadow : false
+				},
+				tooltip : {
+					formatter : function() {
+						return '<b>' + this.x + '</b><br/>'
+								+ this.series.name + ': '
+								+ this.y + '<br/>' + 'Total: '
+								+ this.point.stackTotal;
+					}
+				},
+				plotOptions : {
+					column : {
+						stacking : 'normal',
+						dataLabels : {
+							enabled : true,
+							color : (Highcharts.theme && Highcharts.theme.dataLabelsColor)
+									|| 'white',
+							style : {
+								textShadow : '0 0 3px black, 0 0 3px black'
+							}
+						}
+					}
+				},
+				series: []
+
+		};
+		var url = "./color.php";
+		if (startDate != null && endDate != null) {
+			  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+			  }
+		$.getJSON(url, function(json) {
+			
+			options.xAxis.categories = json.dateArr;
+            options.series = json.colors;
+
+            chart = new Highcharts.Chart(options);
+        });
+	}
+		
+	</script>
+	
 	<script>
 		$(function() {
-
-			// Make monochrome colors and set them as default for all pies
+			
+			// mengdi**************************
+			refreshGraph('2014-08-01', '2014-08-10');
+			refreshPieceGraph('2014-08-01', '2014-08-10','Guitar Pick Earrings');
+			// mengdi*************/
+			
+			// Build the chart
+		 optionsPie = {
+				chart : {
+					renderTo : 'poppie',
+					type : 'pie',
+					plotBackgroundColor : null,
+					plotBorderWidth : null,
+					plotShadow : false
+				},
+				title : {
+					text : 'Color Option for Category'
+				},
+				tooltip : {
+					pointFormat : '{series.name}: <b>{point.percentage:.1f}%</b>'
+				},
+				plotOptions : {
+					series : {
+						allowPointSelect : true,
+						cursor : 'pointer',
+						dataLabels : {
+							enabled : true,
+							format : '<b>{point.name}</b>: {point.percentage:.2f} %',
+							style : {
+								color : (Highcharts.theme && Highcharts.theme.contrastTextColor)
+										|| 'black'
+							}
+						}
+					}
+				},
+				series : [ {
+					type : 'pie',
+					name : 'Color',
+					data : []
+				} ]
+			};
+			var url = "./getColor.php?category=Household: Coasters";
+			if (startDate != null && endDate != null) {
+				url = url + "?startDate="+startDate+"&endDate="+endDate;
+			}
+			$.getJSON(url, function(result) {
+				optionsPie.series[0].data = result;
+				Highcharts.getOptions().plotOptions.pie.colors = result[0];
+				chart = new Highcharts.Chart(optionsPie);
+			});
+			
+			// 求改颜色！！！！
+			
+	/* 		// Make monochrome colors and set them as default for all pies
 			Highcharts.getOptions().plotOptions.pie.colors = (function() {
 				var colors = [], base = Highcharts.getOptions().colors[0], i
 
@@ -366,91 +473,84 @@
 							.get());
 				}
 				return colors;
-			}());
+			}()); */
 
-			// Build the chart
-			$('#poppie')
-					.highcharts(
-							{
-								chart : {
-									plotBackgroundColor : null,
-									plotBorderWidth : null,
-									plotShadow : false
-								},
-								title : {
-									text : 'Color Option for Category'
-								},
-								tooltip : {
-									pointFormat : '{series.name}: <b>{point.percentage:.1f}%</b>'
-								},
-								plotOptions : {
-									pie : {
-										allowPointSelect : true,
-										cursor : 'pointer',
-										dataLabels : {
-											enabled : true,
-											format : '<b>{point.name}</b>: {point.percentage:.1f} %',
-											style : {
-												color : (Highcharts.theme && Highcharts.theme.contrastTextColor)
-														|| 'black'
-											}
-										}
-									}
-								},
-								series : [ {
-									type : 'pie',
-									name : 'share',
-									data : [ [ 'Blue', 45.0 ],
-											[ 'Yellow', 26.8 ], {
-												name : 'Red',
-												y : 12.8,
-												sliced : true,
-												selected : true
-											}, [ 'Green', 8.5 ],
-											[ 'Purple', 6.9 ], ]
-								} ]
-							});
 			
-
-    $('#ColorPiece').highcharts(
-			{
-				chart: {
-					type: 'column'
-                    
-                },
-                title : {
-					text : 'Color Option for Piece'
-				},
-				xAxis : {
-					type : 'category',
-					labels : {
-						rotation : -45,
-						style : {
-							fontSize : '13px',
-							fontFamily : 'Verdana, sans-serif'
-						}
-					}
-				},
-				yAxis : {
-					min : 0,
-					title : {
-						text : 'Revenue ($)'
-					}
-				},
-				legend : {
-					enabled : false
-				},
-				tooltip : {
-					pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
-				},
-                series: [{
-                    name: 'Date',
-                    data: [1,2,3,4,5]
-                }]
-
-		});
 		});
 	</script>
+		
+	<script>
+		function selectCategoryChange() {
+			var myselect = document.getElementById("selectCate");
+			var selectedStr = myselect.options[myselect.selectedIndex].value;
+			var url = "./getColor.php?category=" + selectedStr;
+			$.getJSON(url, function(result) {
+				optionsPie.series[0].data = result;
+				chart = new Highcharts.Chart(optionsPie);
+			});
+		}
+	
+	</script>
+			
+			
+	<script>
+	// mengdi ~*********  要改
+	function refreshPieceGraph (startDate,endDate,pieceName)
+	{
+		var options = {
+		chart: {
+			type: 'column',
+			renderTo: 'ColorPiece'
+            
+        },
+        title : {
+			text : 'Color Option for Piece'
+		},
+		xAxis : {
+			// type : 'category',
+			// labels : {
+			// 	rotation : -45,
+			// 	style : {
+			// 		fontSize : '13px',
+			// 		fontFamily : 'Verdana, sans-serif'
+			// 	}
+			// }
+			categories : [ '1', '2',
+						'3']
+		},
+		yAxis : {
+			min : 0,
+			title : {
+				text : 'Revenue ($)'
+			}
+		},
+		legend : {
+			enabled : false
+		},
+		tooltip : {
+			pointFormat : 'Revenue: <b>${point.y:.1f}</b>',
+		},
+        series: []
+
+};
+var url = "./pieceColor.php";
+	if (startDate != null && endDate != null) {
+		  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+		  }
+	$.getJSON(url, function(json) {
+		
+		 
+		  
+		options.xAxis.categories = json.colorNames;
+        options.series = json.colorNum;
+
+       
+       
+        chart = new Highcharts.Chart(options);
+    });	
+}
+// ************************************************************//
+</script>
 
 
 	<!-- Bootstrap core JavaScript
