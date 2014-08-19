@@ -1,6 +1,6 @@
 <!-- - 有问题的
-1. 初始化时上面大图显示不出
-2. weekly、monthly、annually的filter没加
+1. 初始化时上面大图显示不出 finished
+2. weekly、monthly、annually的filter没加 finished
 3. 下面2个图的显示color要改
 4. select piece下拉框的默认选项写一个？
  -->
@@ -422,8 +422,8 @@
 				url = url + "?startDate="+startDate+"&endDate="+endDate;
 			}
 			$.getJSON(url, function(result) {
-				optionsPie.series[0].data = result;
-				Highcharts.getOptions().plotOptions.pie.colors = result[0];
+				optionsPie.series[0].data = result.data;
+				Highcharts.getOptions().plotOptions.pie.colors = result.color;
 				chart = new Highcharts.Chart(optionsPie);
 			});
 			
@@ -528,6 +528,54 @@
 			selectedStr = myselect.options[myselect.selectedIndex].value;
 			refreshPieGraph (startDate,endDate,selectedStr);
 		}
+		
+		
+		function selectPopularityChange() {
+			  var myselect = document.getElementById("selectPopularityOpt");
+			  var option = myselect.options[myselect.selectedIndex].label;
+			  switch (option) {
+			  case 'Weekly Popularity': 
+				  var url = "./colorWeeklyData.php";
+				  if (startDate != null && endDate != null) {
+				  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+				  }
+				  $.getJSON(url, function(json) {
+					  options.xAxis.categories = json.dateArr;
+			            options.series = json.colors;
+			            chart = new Highcharts.Chart(options);
+	            }); break;
+			  case 'Monthly Popularity': 
+				  var url = "./colorMonthlyData.php";
+				  if (startDate != null && endDate != null) {
+				  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+				  }
+				  $.getJSON(url, function(json) {
+					  options.xAxis.categories = json.dateArr;
+			            options.series = json.colors;
+			            chart = new Highcharts.Chart(options);
+	            }); break;
+			  case 'Annually Popularity': 
+				  var url = "./colorAnnuallyData.php";
+				  if (startDate != null && endDate != null) {
+				  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+				  }
+				  $.getJSON(url, function(json) {
+					  options.xAxis.categories = json.dateArr;
+			            options.series = json.colors;
+			            chart = new Highcharts.Chart(options);
+	            }); break;
+			  case 'Daily Popularity':
+				  var url = "./color.php";
+				  if (startDate != null && endDate != null) {
+				  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+				  }
+				  $.getJSON(url, function(json) {
+					  options.xAxis.categories = json.dateArr;
+			            options.series = json.colors;
+			            chart = new Highcharts.Chart(options);
+	            }); break;
+			  }
+		}
 	</script>
 	
 	<script type="text/javascript">
@@ -537,7 +585,8 @@
 	  		url = url + "&startDate="+startDate+"&endDate="+endDate	;	
 	  	}
 		$.getJSON(url, function(result) {
-			optionsPie.series[0].data = result;
+			optionsPie.series[0].data = result.data;
+			Highcharts.getOptions().plotOptions.pie.colors = result.color;
 			chart = new Highcharts.Chart(optionsPie);
 		});
 	}
@@ -592,9 +641,10 @@
 													+ end
 															.format('MMMM D, YYYY'));
 							
-							refreshGraph(start.format('YYYY-MM-DD'), end.format('YYYY-MM-DD'));
+							/* refreshGraph(start.format('YYYY-MM-DD'), end.format('YYYY-MM-DD')); */
 							startDate = start.format('YYYY-MM-DD');
 							endDate = end.format('YYYY-MM-DD');
+							selectPopularityChange();
 						};
 
 						var optionSet1 = {

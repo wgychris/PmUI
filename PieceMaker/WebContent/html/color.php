@@ -9,7 +9,7 @@ $getColor = 'SELECT DISTINCT OptionValue FROM CustomizableOption WHERE OptionTyp
 
 if($startDate != null && $endDate != null) {
 	$getColor = $getColor.' AND Date >= \''.$startDate.'\' AND Date <=\''.$endDate.'\'';
-}
+} 
 
 $colors = $db->query($getColor);
 $sql_select='SELECT * FROM CustomizableOption ';
@@ -17,11 +17,21 @@ $dateArray = array();
 
 
 
-date_default_timezone_set('UTC');
-
-$begin = new DateTime($startDate);
-$end = new DateTime( $endDate);
-$end = $end->modify( '+1 day' );
+date_default_timezone_set ( 'UTC' );
+$begin;
+$end;
+if ($startDate != null) {
+	$begin = new DateTime ( $startDate );
+} else {
+	$begin = new DateTime('2014-07-30');
+}
+if ($endDate != null) {
+	$end = new DateTime ( $endDate );
+} else {
+	$tempStr = date ( 'Y-m-d' ).'';
+	$end = new DateTime($tempStr);
+}
+$end = $end->modify ( '+1 day' );
 
 $interval = new DateInterval('P1D');
 $daterange = new DatePeriod($begin, $interval ,$end);

@@ -16,8 +16,11 @@ $colors = $db->query($getColor);
 
 $result1 = array();
 $putColor = array();
+$colorArr = array();
+
 while ($row = $colors->fetchArray()) {
 	$color[0] = $row['Color'];
+	array_push($colorArr, $color[0]);
 
 	$sql_countNum = 'SELECT COUNT(Color) AS colorNum FROM OrderInfo WHERE Category = \''.$category.'\' AND Color = \''.$color[0].'\'';
 
@@ -32,6 +35,6 @@ while ($row = $colors->fetchArray()) {
 }
 
 
-echo json_encode($result1);
+echo json_encode(array('data'=>$result1, 'color'=>$colorArr));
 
 ?>
