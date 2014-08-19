@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="shortcut icon" href="images/PieceMaker.jpg">
+<link rel="shortcut icon" href="images/favicon.png">
 <link rel="stylesheet" type="text/css"
 	href="js/bootstrap.daterangepicker/daterangepicker-bs3.css" />
 
@@ -62,7 +62,7 @@
 					data-target=".navbar-collapse">
 					<span class="fa fa-gear"></span>
 				</button>
-				<a class="navbar-brand" href="#">&nbsp<span>PieceMaker</span></a>
+				<a class="navbar-brand" href="#"><span>PieceMaker</span></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
@@ -168,6 +168,7 @@
 									<option>Daily Status</option>
 									<option>Weekly Status</option>
 									<option>Monthly Status</option>
+									<option>Annually Status</option>
 								</select>
 								</div>
 							</div>
@@ -383,6 +384,13 @@
 	            options.series[2].data = result.finalizationArr;
                 chart = new Highcharts.Chart(options);
             }); break;
+		  case 'Annually Status': $.getJSON("./getAnnuallyBehaviour.php"+timeStr, function(result) {
+			  options.xAxis.categories = result.dateArr;
+	  			options.series[0].data = result.coversionArr;
+	            options.series[1].data = result.customizationArr;
+	            options.series[2].data = result.finalizationArr;
+                chart = new Highcharts.Chart(options);
+            }); break;
 		  case 'Daily Status': $.getJSON("./getBehaviour.php"+timeStr, function(result) {
 			  options.xAxis.categories = result.dateArr;
 	  			options.series[0].data = result.coversionArr;
@@ -554,6 +562,13 @@
 		                chart = new Highcharts.Chart(options);
 		            }); break;
 				  case 'Monthly Status': $.getJSON("./getMonthlyBehaviour.php"+timeStr, function(result) {
+					  options.xAxis.categories = result.dateArr;
+			  			options.series[0].data = result.coversionArr;
+			            options.series[1].data = result.customizationArr;
+			            options.series[2].data = result.finalizationArr;
+		                chart = new Highcharts.Chart(options);
+		            }); break;
+				  case 'Annually Status': $.getJSON("./getAnnuallyBehaviour.php"+timeStr, function(result) {
 					  options.xAxis.categories = result.dateArr;
 			  			options.series[0].data = result.coversionArr;
 			            options.series[1].data = result.customizationArr;
