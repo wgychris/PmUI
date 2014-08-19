@@ -1,3 +1,11 @@
+<!-- - 有问题的
+1. 初始化时上面大图显示不出
+2. weekly、monthly、annually的filter没加
+3. 下面2个图的显示color要改
+4. select piece下拉框的默认选项写一个？
+ -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -195,11 +203,11 @@
 								<div class="col-sm-3">
 									
 									<select class="form-control" 
-									style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc" onChange="selectRevenueChange()" id="selectRevenueOpt">
-									<option>Daily Revenue</option>
-									<option>Weekly Revenue</option>
-									<option>Monthly Revenue</option>
-									<option>Annually Revenue</option>
+									style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc" onChange="selectPopularityChange()" id="selectPopularityOpt">
+									<option>Daily Popularity</option>
+									<option>Weekly Popularity</option>
+									<option>Monthly Popularity</option>
+									<option>Annually Popularity</option>
 								</select>
 								</div>
 							</div>
@@ -280,11 +288,19 @@
 		type="text/javascript"></script>
 	<script type="text/javascript"
 		src="js/jquery.gritter/js/jquery.gritter.js"></script>
+		<script type="text/javascript"
+			src="js/bootstrap.daterangepicker/moment.min.js"></script>
+		<script type="text/javascript"
+			src="js/bootstrap.daterangepicker/daterangepicker.js"></script>
 
 	<script type = "text/javascript">
 			var startDate;
 			var endDate;
 			var optionsPie;
+			var optionPiece;
+			var options;
+			var selectedStr;
+			var selePiece;
 	</script>
 		
 	<script type="text/javascript">
@@ -319,103 +335,54 @@
 		});
 	</script>
 	
-	<script>
-	function selectPieceChange() {
-		var myselect = document.getElementById("selectPieceOpt");
-		  var option = myselect.options[myselect.selectedIndex].label;
-		  refreshPieceGraph(startDate, endDate, option);
-		  /* refreshGraph(option); */
-	}
-	
-	
-	function refreshGraph (startDate,endDate) {
-		var options = {
-				chart : {
-					type : 'column',
-					renderTo: 'colorPop'
-				},
-				title : {
-					text : 'Popularity of color option'
-				},
-				xAxis : {
-					categories : [ '07-15-14', '07-16-14',
-							'07-17-14', '07-18-14', '07-19-14',
-							'07-20-14', '07-21-14' ]
-				},
-				yAxis : {
-					min : 0,
-					title : {
-						text : 'Total fruit consumption'
-					},
-					stackLabels : {
-						enabled : true,
-						style : {
-							fontWeight : 'bold',
-							color : (Highcharts.theme && Highcharts.theme.textColor)
-									|| 'gray'
-						}
-					}
-				},
-				legend : {
-					align : 'right',
-					x : -70,
-					verticalAlign : 'top',
-					y : 20,
-					floating : true,
-					backgroundColor : (Highcharts.theme && Highcharts.theme.background2)
-							|| 'white',
-					borderColor : '#CCC',
-					borderWidth : 1,
-					shadow : false
-				},
-				tooltip : {
-					formatter : function() {
-						return '<b>' + this.x + '</b><br/>'
-								+ this.series.name + ': '
-								+ this.y + '<br/>' + 'Total: '
-								+ this.point.stackTotal;
-					}
-				},
-				plotOptions : {
-					column : {
-						stacking : 'normal',
-						dataLabels : {
-							enabled : true,
-							color : (Highcharts.theme && Highcharts.theme.dataLabelsColor)
-									|| 'white',
-							style : {
-								textShadow : '0 0 3px black, 0 0 3px black'
-							}
-						}
-					}
-				},
-				series: []
-
-		};
-		var url = "./color.php";
-		if (startDate != null && endDate != null) {
-			  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
-			  }
-		$.getJSON(url, function(json) {
-			
-			options.xAxis.categories = json.dateArr;
-            options.series = json.colors;
-
-            chart = new Highcharts.Chart(options);
-        });
-	}
-		
-	</script>
 	
 	<script>
 		$(function() {
+			// build Piece bar chart
+			optionPiece = {
+		chart: {
+			type: 'column',
+			renderTo: 'ColorPiece'
+            
+        },
+        title : {
+			text : 'Color Option for Piece'
+		},
+		xAxis : {
+			categories : ["Purple","Yellow"]
+		},
+		yAxis : {
+			min : 0,
+			title : {
+				text : 'Number'
+			}
+		},
+		legend : {
+			enabled : false
+		},
+		tooltip : {
+			pointFormat : 'Num: <b>{point.y:.1f}</b>',
+		},
+        series: [{	
+			name : 'Color',
+			data : []
+			}]
+		};
+		//	var piece = document.getElementById("selectPieceOpt").options[0].value;
+			var url = "./pieceColor.php?pieceName=Gyro";
+			if (startDate != null && endDate != null) {
+		  		url = url + "&startDate="+startDate+"&endDate="+endDate	;	
+		  	}
+			$.getJSON(url, function(json) {
+				optionPiece.xAxis.categories = json.colorNames;
+				optionPiece.series[0].data = json.colorNum;
+		        chart = new Highcharts.Chart(optionPiece);
+		    });
+	});	
 			
-			// mengdi**************************
-			refreshGraph('2014-08-01', '2014-08-10');
-			refreshPieceGraph('2014-08-01', '2014-08-10','Guitar Pick Earrings');
-			// mengdi*************/
 			
-			// Build the chart
+		$(function() {	
+			// Build the pie chart
 		 optionsPie = {
 				chart : {
 					renderTo : 'poppie',
@@ -477,85 +444,224 @@
 
 			
 		});
+		
+		// build big color populariy bar chart
+		$(function() {
+			options = {
+					chart : {
+						type : 'column',
+						renderTo: 'colorPop'
+					},
+					title : {
+						text : 'Popularity of color option'
+					},
+					xAxis : {
+						categories : [ '07-15-14', '07-16-14',
+								'07-17-14', '07-18-14', '07-19-14',
+								'07-20-14', '07-21-14' ]
+					},
+					yAxis : {
+						min : 0,
+						title : {
+							text : 'Total fruit consumption'
+						},
+						stackLabels : {
+							enabled : true,
+							style : {
+								fontWeight : 'bold',
+								color : (Highcharts.theme && Highcharts.theme.textColor)
+										|| 'gray'
+							}
+						}
+					},
+					legend : {
+						align : 'right',
+						x : -70,
+						verticalAlign : 'top',
+						y : 20,
+						floating : true,
+						backgroundColor : (Highcharts.theme && Highcharts.theme.background2)
+								|| 'white',
+						borderColor : '#CCC',
+						borderWidth : 1,
+						shadow : false
+					},
+					tooltip : {
+						formatter : function() {
+							return '<b>' + this.x + '</b><br/>'
+									+ this.series.name + ': '
+									+ this.y + '<br/>' + 'Total: '
+									+ this.point.stackTotal;
+						}
+					},
+					plotOptions : {
+						column : {
+							stacking : 'normal',
+							dataLabels : {
+								enabled : true,
+								color : (Highcharts.theme && Highcharts.theme.dataLabelsColor)
+										|| 'white',
+								style : {
+									textShadow : '0 0 3px black, 0 0 3px black'
+								}
+							}
+						}
+					},
+					series: []
+
+			};
+			var url = "./color.php";
+			/* if (startDate != null && endDate != null) {
+				  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+				  } */
+			$.getJSON(url, function(json) {
+				options.xAxis.categories = json.dateArr;
+	            options.series = json.colors;
+	            chart = new Highcharts.Chart(options);
+	        });
+		});
 	</script>
 		
 	<script>
 		function selectCategoryChange() {
-			
 			var myselect = document.getElementById("selectCate");
-			var selectedStr = myselect.options[myselect.selectedIndex].value;
-			var url = "./getColor.php?category=" + selectedStr;
-			$.getJSON(url, function(result) {
-				optionsPie.series[0].data = result;
-				chart = new Highcharts.Chart(optionsPie);
-			});
+			selectedStr = myselect.options[myselect.selectedIndex].value;
+			refreshPieGraph (startDate,endDate,selectedStr);
 		}
-	
 	</script>
-			
+	
+	<script type="text/javascript">
+	function refreshPieGraph (startDate,endDate,pieceName) {
+		var url = "./getColor.php?category=" + selectedStr;
+		if (startDate != null && endDate != null) {
+	  		url = url + "&startDate="+startDate+"&endDate="+endDate	;	
+	  	}
+		$.getJSON(url, function(result) {
+			optionsPie.series[0].data = result;
+			chart = new Highcharts.Chart(optionsPie);
+		});
+	}
+	</script>
+	
+	<script>
+	function selectPieceChange() {
+		var myselect = document.getElementById("selectPieceOpt");
+		  selePiece = myselect.options[myselect.selectedIndex].label;
+		  refreshPieceGraph(startDate, endDate, selePiece);
+		  /* refreshGraph(option); */
+	}
+	</script>
+	
 			
 	<script>
 	// mengdi ~*********  要改
 	function refreshPieceGraph (startDate,endDate,pieceName)
 	{
-		var options = {
-		chart: {
-			type: 'column',
-			renderTo: 'ColorPiece'
-            
-        },
-        title : {
-			text : 'Color Option for Piece'
-		},
-		xAxis : {
-			// type : 'category',
-			// labels : {
-			// 	rotation : -45,
-			// 	style : {
-			// 		fontSize : '13px',
-			// 		fontFamily : 'Verdana, sans-serif'
-			// 	}
-			// }
-			categories : ["Purple","Yellow"]
-		},
-		yAxis : {
-			min : 0,
-			title : {
-				text : 'Number'
-			}
-		},
-		legend : {
-			enabled : false
-		},
-		tooltip : {
-			pointFormat : 'Num: <b>{point.y:.1f}</b>',
-		},
-        series: [{
-        					
-        					name : 'Color',
-        					data : []
-        					}]
-
-};
-var url = "./pieceColor.php?pieceName="+pieceName;
-	if (startDate != null && endDate != null) {
-		  		url = url + "&startDate="+startDate+"&endDate="+endDate	;	
-		  }
-	$.getJSON(url, function(json) {
-		
-		 
-		  
-		options.xAxis.categories = json.colorNames;
-        options.series[0].data = json.colorNum;
-
-       
-       
-        chart = new Highcharts.Chart(options);
-    });	
-}
+		var url = "./pieceColor.php?pieceName="+pieceName;
+		if (startDate != null && endDate != null) {
+	  		url = url + "&startDate="+startDate+"&endDate="+endDate	;	
+	  	}
+		$.getJSON(url, function(json) {
+			optionPiece.xAxis.categories = json.colorNames;
+			optionPiece.series[0].data = json.colorNum;
+	        chart = new Highcharts.Chart(optionPiece);
+	    });	
+	}
 // ************************************************************//
 </script>
 
+
+<script type="text/javascript">
+	$(document)
+			.ready(
+					function() {
+						//initialize the javascript
+
+						$('#reservation').daterangepicker();
+						$('#reservationtime').daterangepicker({
+							timePicker : true,
+							timePickerIncrement : 30,
+							format : 'MM/DD/YYYY h:mm A'
+						});
+						var cb = function(start, end) {
+							$('#reportrange span')
+									.html(
+											start
+													.format('MMMM D, YYYY')
+													+ ' - '
+													+ end
+															.format('MMMM D, YYYY'));
+							
+							refreshGraph(start.format('YYYY-MM-DD'), end.format('YYYY-MM-DD'));
+							startDate = start.format('YYYY-MM-DD');
+							endDate = end.format('YYYY-MM-DD');
+						};
+
+						var optionSet1 = {
+							startDate : moment().subtract('days', 29),
+							endDate : moment(),
+							minDate : '01/01/2012',
+							maxDate : '12/31/2014',
+							dateLimit : {
+								days : 60
+							},
+							showDropdowns : true,
+							showWeekNumbers : true,
+							timePicker : false,
+							timePickerIncrement : 1,
+							timePicker12Hour : true,
+							opens : 'left',
+							buttonClasses : [ 'btn' ],
+							applyClass : 'btn-small btn-primary',
+							cancelClass : 'btn-small',
+							format : 'MM/DD/YYYY',
+							separator : ' to ',
+							locale : {
+								applyLabel : 'Submit',
+								cancelLabel : 'Clear',
+								fromLabel : 'From',
+								toLabel : 'To',
+								customRangeLabel : 'Custom',
+								daysOfWeek : [ 'Su', 'Mo', 'Tu', 'We',
+										'Th', 'Fr', 'Sa' ],
+								monthNames : [ 'January', 'February',
+										'March', 'April', 'May',
+										'June', 'July', 'August',
+										'September', 'October',
+										'November', 'December' ],
+								firstDay : 1
+							}
+						};
+
+					
+						$('#reportrange span').html(
+								moment().subtract('days', 29).format(
+										'MMMM D, YYYY')
+										+ ' - '
+										+ moment().format(
+												'MMMM D, YYYY'));
+
+						$('#reportrange').daterangepicker(optionSet1,
+								cb);
+
+					});
+	
+	
+	function refreshGraph (startDate,endDate) {
+		var url = "./color.php";
+		if (startDate != null && endDate != null) {
+			  		url = url + "?startDate="+startDate+"&endDate="+endDate	;	
+			  }
+		$.getJSON(url, function(json) {
+			options.xAxis.categories = json.dateArr;
+            options.series = json.colors;
+            chart = new Highcharts.Chart(options);
+        });
+		refreshPieGraph (startDate,endDate,selectedStr);
+		refreshPieceGraph(startDate, endDate, selePiece);
+	}
+		
+	</script>
 
 	<!-- Bootstrap core JavaScript
     ================================================== -->

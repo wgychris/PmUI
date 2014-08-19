@@ -4,9 +4,13 @@
 $db= new SQLite3("./hello");
 $startDate = $_GET["startDate"];
 $endDate = $_GET["endDate"];
-// $startDate = '2014-08-05';
-// $endDate = '2014-08-13';
+
 $getColor = 'SELECT DISTINCT OptionValue FROM CustomizableOption WHERE OptionType = "Color"';
+
+if($startDate != null && $endDate != null) {
+	$getColor = $getColor.' AND Date >= \''.$startDate.'\' AND Date <=\''.$endDate.'\'';
+}
+
 $colors = $db->query($getColor);
 $sql_select='SELECT * FROM CustomizableOption ';
 $dateArray = array();
@@ -42,6 +46,10 @@ while ($row = $colors->fetchArray()) {
 	$colorName = $row['OptionValue'];
 
 	$sql_countNum = "SELECT COUNT(OptionValue) AS colorNum FROM CustomizableOption WHERE OptionValue = '".$colorName."' AND Date = '".$date->format("Y-m-d")."'";
+
+	if($startDate != null && $endDate != null) {
+		$sql_countNum = $sql_countNum.' AND Date >= \''.$startDate.'\' AND Date <=\''.$endDate.'\'';
+	}
 	
 	$result = $db->query($sql_countNum);
 	$row1 = $result->fetchArray();
