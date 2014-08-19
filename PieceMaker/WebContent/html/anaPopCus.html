@@ -1,11 +1,3 @@
-<!-- - 有问题的
-1. 初始化时上面大图显示不出 finished
-2. weekly、monthly、annually的filter没加 finished
-3. 下面2个图的显示color要改
-4. select piece下拉框的默认选项写一个？
- -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,41 +64,10 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Home</a></li>
+					<li><a href="anaTotRev.html">Home</a></li>
 				</ul>
-				<!-- <ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">Contact <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="dropdown-submenu"><a href="#">Sub menu</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Action</a></li>
-									<li><a href="#">Another action</a></li>
-									<li><a href="#">Something else here</a></li>
-								</ul></li>
-						</ul></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown">Dashboard <b class="caret"></b></a>
-						</li>
-				</ul> -->
 				<ul class="nav navbar-nav navbar-right user-nav">
 					<li><a href="#">Dashboard</a></li>
-					<li class="dropdown profile_menu"><a href="#"
-						class="dropdown-toggle" data-toggle="dropdown"><img
-							alt="Avatar" src="images/avatar2.jpg"><span>Jeff
-								Hanneman</span> <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">My Account</a></li>
-							<li><a href="#">Profile</a></li>
-							<li><a href="#">Messages</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Sign Out</a></li>
-						</ul></li>
 				</ul>
 
 			</div>
@@ -133,16 +94,13 @@
 							<li><a href="#"><i class="fa fa-money"></i><span>Revenue
 								</span></a>
 								<ul class="sub-menu">
-									<li><a href="anaTotRev.html">Total Revenue</a></li>
+									<li class="active"><a href="anaTotRev.html">Total Revenue</a></li>
 									<li><a href="anaRevPerCat.html">Revenue Per Category</a></li>
 								</ul></li>
 
-							<li><a href="#"><i class="fa fa-table"></i><span>Customer
+							<li><a href="anaCBTPer.html"><i class="fa fa-eye"></i><span>Customer
 										Behaviour </span></a>
-								<ul class="sub-menu">
-									<li><a href="anaCBTPer.html">Percentage</a></li>
-									<li><a href="anaAvgTime.html">Average Time</a></li>
-								</ul></li>
+							</li>
 
 							<li><a href="#"><i class="fa fa-smile-o"></i><span>Popularity</span></a>
 								<ul class="sub-menu">
@@ -150,23 +108,22 @@
 									<li><a href="anaPopCus.html">Popularity of
 											Customization</a></li>
 								</ul></li>
-							<li><a href="anaCusInfo.html"><i class="fa fa-eye"></i><span>Customer
-										Info</span></a>
-							<li><a href="anaPriSta.html"><i class="fa fa-cogs"></i><span>Print
-										Station Analysis</span></a>
+							<li><a href="anaCusInfo.html"><i class="fa fa-table"></i><span>Customer
+										Info</span></a></li>
+							<li><a href="anaPriSta.html"><i class="fa fa-bar-chart-o"></i><span>Print
+										Station Analysis</span></a></li>
 						</ul>
 					</div>
 				</div>
+				
 				<div class="text-right collapse-button" style="padding: 7px 9px;">
-					<input type="text" class="form-control search"
-						placeholder="Search..." />
 					<button id="sidebar-collapse" class="btn btn-default" style="">
 						<i style="color: #fff;" class="fa fa-angle-left"></i>
 					</button>
 				</div>
+				
 			</div>
 		</div>
-
 
 
 		<div class="container-fluid" id="pcont">
