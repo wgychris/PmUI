@@ -253,6 +253,8 @@
 		<script type = "text/javascript">
 			var startDate;
 			var endDate;
+			var fromPieChart = true;
+			var pieceInPie;
 		</script>
 		
 		<script type="text/javascript">
@@ -276,9 +278,9 @@
 			
 			
 			function selectPieceChange() {
+					fromPieChart = false;
 				var myselect = document.getElementById("selectPieceOpt");
 				  var option = myselect.options[myselect.selectedIndex].label;
-				  console.log(option);
 				  refreshGraph(option);
 			}
 		</script>
@@ -310,10 +312,13 @@
 							events : {
 								click : function() {
 									/* alert(this.name); */
-								refreshGraph(this.name);
+									
+									fromPieChart = true;
+									pieceInPie = this.name;
+									refreshGraph(this.name);
 								}
 							}
-						} 
+						}
 
 					}
 				},
@@ -329,14 +334,15 @@
 				} ],
 
 			};
-			
+
 			var url;
 			if (startDate != null && endDate != null) {
-				url = "./getTop5Piece.php?startDate="+startDate+"&endDate="+endDate;
-			}else {
+				url = "./getTop5Piece.php?startDate=" + startDate + "&endDate="
+						+ endDate;
+			} else {
 				url = "./getTop5Piece.php";
 			}
-			
+
 			$.getJSON(url, function(result) {
 				options.series[0].data = result;
 				chart = new Highcharts.Chart(options);
@@ -414,6 +420,14 @@
 									.format('YYYY-MM-DD'));
 							startDate = start.format('YYYY-MM-DD');
 							endDate = end.format('YYYY-MM-DD');
+							
+							if (fromPieChart) {
+								refreshGraph(pieceInPie);
+							}else {
+							var myselect = document.getElementById("selectPieceOpt");
+							  var option = myselect.options[myselect.selectedIndex].label;
+							refreshGraph(option);
+							}
 
 						}
 

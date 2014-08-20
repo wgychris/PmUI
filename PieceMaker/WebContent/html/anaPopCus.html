@@ -564,7 +564,6 @@
 	
 			
 	<script>
-	// mengdi ~*********  要改
 	function refreshPieceGraph (startDate,endDate,pieceName)
 	{
 		var url = "./pieceColor.php?pieceName="+pieceName;
@@ -606,6 +605,12 @@
 							startDate = start.format('YYYY-MM-DD');
 							endDate = end.format('YYYY-MM-DD');
 							selectPopularityChange();
+							var myselect = document.getElementById("selectPieceOpt");
+							  selePiece = myselect.options[myselect.selectedIndex].label;
+							  refreshPieceGraph(startDate, endDate, selePiece);
+							   myselect = document.getElementById("selectCate");
+								selectedStr = myselect.options[myselect.selectedIndex].value;
+								refreshPieGraph (startDate,endDate,selectedStr);
 						};
 
 						var optionSet1 = {
