@@ -34,7 +34,36 @@ while ($row = $colors->fetchArray()) {
 	array_push($result1,$color);
 }
 
+$colorRGBArr = array();
+foreach ($colorArr as $colorName) {
+	$colorRGB = $colorName;
+	
+	if ($colorName == "Blue") {
+		$colorRGB = "#7cb5ec";
+	}
+	if ($colorName == "Purple") {
+		$colorRGB = "#C68DFF";
+	}
+	if ($colorName == "Black") {
+		$colorRGB = "#434348";
+	}
+	if ($colorName == "Yellow") {
+		$colorRGB = "#FFFF94";
+	}
+	if ($colorName == "Red") {
+		$colorRGB = "#FF7171";
+	}
+	if ($colorName == "Green") {
+		$colorRGB = "#90ed7d";
+	}
+	if ($colorName == "Orange") {
+		$colorRGB = "#FFC671";
+	}
+	
+	array_push($colorRGBArr, $colorRGB);
+}
 
-echo json_encode(array('data'=>$result1, 'color'=>$colorArr));
+
+echo json_encode(array('data'=>$result1, 'color'=>$colorRGBArr));
 
 ?>

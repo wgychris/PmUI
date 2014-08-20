@@ -75,8 +75,31 @@ array_push($dateArray,$date->format("Y-m-d"));
 $colorArr = array();
 $i = 0;
 foreach($colorData as $count) {
+	$colorRGB = $colorNames[$i];
 	
-	array_push ($colorArr,array('name' => $colorNames[$i], 'data' => $count,'color' =>$colorNames[$i]));
+	if ($colorNames[$i] == "Blue") {
+		$colorRGB = "#7cb5ec";
+	}
+	if ($colorNames[$i] == "Purple") {
+		$colorRGB = "#C68DFF";
+	}
+	if ($colorNames[$i] == "Black") {
+		$colorRGB = "#434348";
+	}
+	if ($colorNames[$i] == "Yellow") {
+		$colorRGB = "#FFFF94";
+	}
+	if ($colorNames[$i] == "Red") {
+		$colorRGB = "#FF7171";
+	}
+	if ($colorNames[$i] == "Green") {
+		$colorRGB = "#90ed7d";
+	}
+	if ($colorNames[$i] == "Orange") {
+		$colorRGB = "#FFC671";
+	}
+	
+	array_push ($colorArr,array('name' => $colorNames[$i], 'data' => $count,'color' =>$colorRGB));
 	$i ++;
 }
 echo json_encode(array('dateArr' => $dateArray,'colors' => $colorArr));
