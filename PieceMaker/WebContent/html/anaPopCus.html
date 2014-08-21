@@ -493,7 +493,31 @@
 		function selectCategoryChange() {
 			var myselect = document.getElementById("selectCate");
 			selectedStr = myselect.options[myselect.selectedIndex].value;
-			refreshPieGraph (startDate,endDate,selectedStr);
+			/* refreshPieGraph (startDate,endDate,selectedStr); */
+			refreshPieceList(selectedStr);
+		}
+		
+		
+		function refreshPieceList(categoryName) {
+			
+			$("#selectPieceOpt").html("");
+			
+			$("#selectPieceOpt").append('<optgroup label=\''+categoryName+'\' id=\'categoryGroup\'></optgroup>');
+			
+			
+			$.getJSON("./getPieceListByCategory.php", function(result) {
+				for (var i in result) {
+					
+					if(result[i].category == categoryName) {
+					/*  console.log(result[i].category);  */
+					/* $("#selectPieceOpt").append('<optgroup label=\''+result[i].category+'\' id=\'categoryGroup'+i+'\'></optgroup>');
+					 */
+					for (var j in result[i].piece) {
+						$("#categoryGroup").append('<option value="' + result[i].piece[j] + '">' + result[i].piece[j] + '</option>');
+					}
+					}
+				}
+			});	 
 		}
 		
 		
@@ -565,6 +589,9 @@
 		  selePiece = myselect.options[myselect.selectedIndex].label;
 		  refreshPieceGraph(startDate, endDate, selePiece);
 		  /* refreshGraph(option); */
+		  var myselect = document.getElementById("selectCate");
+			selectedStr = myselect.options[myselect.selectedIndex].value;
+			refreshPieGraph (startDate,endDate,selectedStr); 
 	}
 	</script>
 	<script>
