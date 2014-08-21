@@ -119,8 +119,7 @@
 										Station Analysis</span></a></li>
 						</ul>
 					</div>
-				</div>
-				
+				</div>				
 				<div class="text-right collapse-button" style="padding: 7px 9px;">
 					<button id="sidebar-collapse" class="btn btn-default" style="">
 						<i style="color: #fff;" class="fa fa-angle-left"></i>
@@ -213,6 +212,7 @@
 
 		</div>
 	</div>
+	<a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-angle-up"></i></a>
 	<script
 		src="js/googleapis.js"></script>
 	<script src="js/highcharts.js"></script>
@@ -248,13 +248,12 @@
 			src="js/bootstrap.daterangepicker/daterangepicker.js"></script>
 		<script type="text/javascript"
 			src="js/jquery.niftymodals/js/jquery.modalEffects.js"></script>
+
 		
 		
 		<script type = "text/javascript">
 			var startDate;
 			var endDate;
-			var fromPieChart = true;
-			var pieceInPie;
 		</script>
 		
 		<script type="text/javascript">
@@ -278,9 +277,9 @@
 			
 			
 			function selectPieceChange() {
-					fromPieChart = false;
 				var myselect = document.getElementById("selectPieceOpt");
 				  var option = myselect.options[myselect.selectedIndex].label;
+				  console.log(option);
 				  refreshGraph(option);
 			}
 		</script>
@@ -312,13 +311,11 @@
 							events : {
 								click : function() {
 									/* alert(this.name); */
-									
-									fromPieChart = true;
-									pieceInPie = this.name;
-									refreshGraph(this.name);
+								refreshGraph(this.name);
+								scrollWin();
 								}
 							}
-						}
+						} 
 
 					}
 				},
@@ -334,15 +331,14 @@
 				} ],
 
 			};
-
+			
 			var url;
 			if (startDate != null && endDate != null) {
-				url = "./getTop5Piece.php?startDate=" + startDate + "&endDate="
-						+ endDate;
-			} else {
+				url = "./getTop5Piece.php?startDate="+startDate+"&endDate="+endDate;
+			}else {
 				url = "./getTop5Piece.php";
 			}
-
+			
 			$.getJSON(url, function(result) {
 				options.series[0].data = result;
 				chart = new Highcharts.Chart(options);
@@ -361,6 +357,13 @@
 					text : 'Popularity of '+piece,
 				},
 				xAxis : {
+					labels : {
+						rotation : -45,
+						style : {
+							fontSize : '13px',
+							fontFamily : 'Verdana, sans-serif'
+						}
+					},
 					categories : []
 				},
 				yAxis : {
@@ -420,14 +423,6 @@
 									.format('YYYY-MM-DD'));
 							startDate = start.format('YYYY-MM-DD');
 							endDate = end.format('YYYY-MM-DD');
-							
-							if (fromPieChart) {
-								refreshGraph(pieceInPie);
-							}else {
-							var myselect = document.getElementById("selectPieceOpt");
-							  var option = myselect.options[myselect.selectedIndex].label;
-							refreshGraph(option);
-							}
 
 						}
 
@@ -488,8 +483,13 @@
 				chart = new Highcharts.Chart(options);
 			});
 		}
+				</script>
+				<script>
+				function scrollWin()
+		{
+		window.scrollTo(300,500);
+		}
 		</script>
-		
 		<!-- Bootstrap core JavaScript
     ================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
@@ -501,5 +501,7 @@
 			src="js/jquery.flot/jquery.flot.resize.js"></script>
 		<script type="text/javascript"
 			src="js/jquery.flot/jquery.flot.labels.js"></script>
+
+
 </body>
 </html>

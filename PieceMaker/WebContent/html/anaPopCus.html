@@ -17,7 +17,6 @@
 <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100'
 	rel='stylesheet' type='text/css'> -->
 
-
 <!-- Bootstrap core CSS -->
 <link href="js/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css"
@@ -417,6 +416,13 @@
 						text : 'Popularity of color option'
 					},
 					xAxis : {
+						labels : {
+							rotation : -45,
+							style : {
+								fontSize : '10px',
+								fontFamily : 'Verdana, sans-serif'
+							}
+						},
 						categories : [ '07-15-14', '07-16-14',
 								'07-17-14', '07-18-14', '07-19-14',
 								'07-20-14', '07-21-14' ]
@@ -561,9 +567,16 @@
 		  /* refreshGraph(option); */
 	}
 	</script>
-	
+	<script>
+function scrollWin()
+{
+window.scrollTo(300,500);
+}
+</script>
+</head>
 			
 	<script>
+	// mengdi ~*********  要改
 	function refreshPieceGraph (startDate,endDate,pieceName)
 	{
 		var url = "./pieceColor.php?pieceName="+pieceName;
@@ -605,12 +618,6 @@
 							startDate = start.format('YYYY-MM-DD');
 							endDate = end.format('YYYY-MM-DD');
 							selectPopularityChange();
-							var myselect = document.getElementById("selectPieceOpt");
-							  selePiece = myselect.options[myselect.selectedIndex].label;
-							  refreshPieceGraph(startDate, endDate, selePiece);
-							   myselect = document.getElementById("selectCate");
-								selectedStr = myselect.options[myselect.selectedIndex].value;
-								refreshPieGraph (startDate,endDate,selectedStr);
 						};
 
 						var optionSet1 = {
