@@ -8,15 +8,14 @@
 <link rel="shortcut icon" href="images/PieceMaker.jpg">
 
 <title>PieceMaker</title>
-<link
-	href='css/header.css'
-	rel='stylesheet' type='text/css'>
+<link href='css/header.css' rel='stylesheet' type='text/css'>
 <!-- <link
 	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800'
 	rel='stylesheet' type='text/css'> -->
 <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100'
 	rel='stylesheet' type='text/css'> -->
-
+<link rel="stylesheet" type="text/css"
+	href="js/jquery.niftymodals/css/component.css" />
 <!-- Bootstrap core CSS -->
 <link href="js/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css"
@@ -56,7 +55,7 @@
 
 <body>
 
-		<!-- Fixed navbar -->
+	<!-- Fixed navbar -->
 	<div id="head-nav" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -99,12 +98,12 @@
 								</span></a>
 								<ul class="sub-menu">
 									<li><a href="anaTotRev.html">Total Revenue</a></li>
-									<li class="active"><a href="anaRevPerCat.html">Revenue Per Category</a></li>
+									<li class="active"><a href="anaRevPerCat.html">Revenue
+											Per Category</a></li>
 								</ul></li>
 
 							<li><a href="anaCBTPer.html"><i class="fa fa-eye"></i><span>Customer
-										Behaviour </span></a>
-							</li>
+										Behaviour </span></a></li>
 
 							<li><a href="#"><i class="fa fa-smile-o"></i><span>Popularity</span></a>
 								<ul class="sub-menu">
@@ -114,18 +113,19 @@
 								</ul></li>
 							<li><a href="anaCusInfo.html"><i class="fa fa-table"></i><span>Customer
 										Info</span></a></li>
-							<li><a href="anaPriSta.html"><i class="fa fa-bar-chart-o"></i><span>Print
-										Station Analysis</span></a></li>
+							<li><a href="anaPriSta.html"><i
+									class="fa fa-bar-chart-o"></i><span>Print Station
+										Analysis</span></a></li>
 						</ul>
 					</div>
 				</div>
-				
+
 				<div class="text-right collapse-button" style="padding: 7px 9px;">
 					<button id="sidebar-collapse" class="btn btn-default" style="">
 						<i style="color: #fff;" class="fa fa-angle-left"></i>
 					</button>
 				</div>
-				
+
 			</div>
 		</div>
 
@@ -142,39 +142,36 @@
 
 			<div class="cl-mcont">
 				<div class="row">
-
-
 					<div class="col-sm-12 col-md-12">
 
-						<div class="block-flat">
 
-							<div id="revenuePerCat">
-								<p>Chart of Piece</p>
-							</div>
-						</div>
-
-					</div>
-					
 						<div class="col-sm-12 col-md-12">
 
-						<div class="block-flat">
-
-							<div id="revPerPiece">
-								<p>Chart of Piece</p>
+							<div class="block-flat">
+								<div id="revenuePerCat"
+									style="height: 350px; padding: 0px; position: relative;"></div>
 							</div>
 						</div>
 
+
+						<div class="col-sm-12 col-md-12">
+							<br> <br>
+							<div class="block-flat">
+								<div id="revPerPiece"
+									style="height: 350px; padding: 0px; position: relative;"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
+		</div>
 	</div>
-	<script
-		src="js/googleapis.js"></script>
+	<a href="#" class="back-to-top" style="display: inline;"><i
+		class="fa fa-angle-up"></i></a>
+	<script src="js/googleapis.js"></script>
 	<script src="js/highcharts.js"></script>
 	<script src="js/exporting.js"></script>
-
 	<script type="text/javascript"
 		src="js/jquery.nanoscroller/jquery.nanoscroller.js"></script>
 	<script type="text/javascript"
@@ -194,7 +191,18 @@
 		type="text/javascript"></script>
 	<script type="text/javascript"
 		src="js/jquery.gritter/js/jquery.gritter.js"></script>
-
+	<script type="text/javascript" src="js/jquery.flot/jquery.flot.js"></script>
+	<script type="text/javascript" src="js/jquery.flot/jquery.flot.pie.js"></script>
+	<script type="text/javascript"
+		src="js/jquery.flot/jquery.flot.resize.js"></script>
+	<script type="text/javascript"
+		src="js/jquery.flot/jquery.flot.labels.js"></script>
+	<script type="text/javascript"
+		src="js/bootstrap.daterangepicker/moment.min.js"></script>
+	<script type="text/javascript"
+		src="js/bootstrap.daterangepicker/daterangepicker.js"></script>
+	<script type="text/javascript"
+		src="js/jquery.niftymodals/js/jquery.modalEffects.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			//initialize the javascript
@@ -203,71 +211,74 @@
 		});
 	</script>
 
-	<script src="js/database.js"></script>
 
-	<div id="container"
-		style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto"></div>
+	<script type="text/javascript">
+		var startDate;
+		var endDate;
+	</script>
 
-	
+
+
+
 	<script type="text/javascript">
 		var options = {
-				chart : {
-					renderTo: 'revenuePerCat',
-					type : 'pie'
-				},
-				title : {
-					text : 'Revenue Per Category'
-				},
-				plotOptions : {
-					series : {
-						dataLabels : {
-							enabled : true,
-							format : '{point.name}: {point.y:.1f}'
-							
-						},
-						
-				             point: {
-				                 events: {
-				                     click: function() {
-				                    	/* var testobj = this;
-				                    	alert(this.name); */
-				                    	refreshGraph(this.name);
-				                     }
-				                 }
-				             }
-				         
+			chart : {
+				renderTo : 'revenuePerCat',
+				type : 'pie'
+			},
+			title : {
+				text : 'Revenue Per Category'
+			},
+			plotOptions : {
+				series : {
+
+					allowPointSelect : true,
+					cursor : 'pointer',
+					dataLabels : {
+						enabled : true,
+						format : '<b>{point.name}</b>:{point.y:.1f}',
+					},
+					point : {
+						events : {
+							click : function() {
+								/* alert(this.name); */
+								refreshGraph(this.name);
+								scrollWin();
+							}
+						}
 					}
-					
-				},
 
-				tooltip : {
-					headerFormat : '<span style="font-size:11px">{series.name}</span><br>',
-					pointFormat : '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}</b><br/>'
-				},
-
-				series : [ {
-					name : 'Category',
-					colorByPoint : true,
-					data : []
-				} ],
-				drilldown : {
-					series : []
 				}
+			},
+
+			tooltip : {
+				headerFormat : '<span style="font-size:11px">{series.name}</span><br>',
+				pointFormat : '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}</b><br/>'
+			},
+
+			series : [ {
+				name : 'Category',
+				colorByPoint : true,
+				data : []
+			} ],
+			drilldown : {
+				series : []
+			}
+
 		};
-		
+
 		$.getJSON("./getRevenueByCategories.php", function(result) {
-            options.series[0].data = result.categoryArr;
-            options.drilldown.series = result.drilldownArr;
-            chart = new Highcharts.Chart(options);
-        });
+			options.series[0].data = result.categoryArr;
+			options.drilldown.series = result.drilldownArr;
+			chart = new Highcharts.Chart(options);
+		});
 	</script>
 
 	<script>
-		
-		function refreshGraph(categoryName){
-		var option = {
+		function refreshGraph(categoryName) {
+			var option = {
 				chart : {
-					renderTo: 'revPerPiece',
+					renderTo : 'revPerPiece',
 				},
 				title : {
 					text : 'Revenue Per Piece',
@@ -278,7 +289,7 @@
 					categories : []
 				},
 				yAxis : {
-					min:0,
+					min : 0,
 					title : {
 						text : 'Revenue ($)'
 					},
@@ -297,27 +308,116 @@
 					verticalAlign : 'middle',
 					borderWidth : 0
 				},
-				plotOptions: {
-			         pie: {
-			             point: {
-			                 events: {
-			                     click: function() {
-			                        //logic for drill down goes here          
-			                        alert('Hello');
-			                     }
-			                 }
-			             }
-			         }
-			     },
+				plotOptions : {
+					pie : {
+						point : {
+							events : {
+								click : function() {
+									//logic for drill down goes here          
+									alert('Hello');
+								}
+							}
+						}
+					}
+				},
 				series : []
 			}
-		
-		$.getJSON("./getPieceRevenueByCategory.php?category="+categoryName, function(result) {
-            option.xAxis.categories = result.dateArr;
-            option.series = result.data;
-            chart = new Highcharts.Chart(option);
-        });
-		
+
+			$.getJSON("./getPieceRevenueByCategory.php?category="
+					+ categoryName, function(result) {
+				option.xAxis.categories = result.dateArr;
+				option.series = result.data;
+				chart = new Highcharts.Chart(option);
+			});
+
+		}
+	</script>
+
+
+	<script type="text/javascript">
+		$(document).ready(
+				function() {
+					//initialize the javascript
+
+					$('#reservation').daterangepicker();
+					$('#reservationtime').daterangepicker({
+						timePicker : true,
+						timePickerIncrement : 30,
+						format : 'MM/DD/YYYY h:mm A'
+					});
+					var cb = function(start, end) {
+						$('#reportrange span').html(
+								start.format('MMMM D, YYYY') + ' - '
+										+ end.format('MMMM D, YYYY'));
+
+						refreshGraphDate(start.format('YYYY-MM-DD'), end
+								.format('YYYY-MM-DD'));
+						startDate = start.format('YYYY-MM-DD');
+						endDate = end.format('YYYY-MM-DD');
+
+					}
+
+					var optionSet1 = {
+						startDate : moment().subtract('days', 29),
+						endDate : moment(),
+						minDate : '01/01/2012',
+						maxDate : '12/31/2014',
+						dateLimit : {
+							days : 60
+						},
+						showDropdowns : true,
+						showWeekNumbers : true,
+						timePicker : false,
+						timePickerIncrement : 1,
+						timePicker12Hour : true,
+						opens : 'left',
+						buttonClasses : [ 'btn' ],
+						applyClass : 'btn-small btn-primary',
+						cancelClass : 'btn-small',
+						format : 'MM/DD/YYYY',
+						separator : ' to ',
+						locale : {
+							applyLabel : 'Submit',
+							cancelLabel : 'Clear',
+							fromLabel : 'From',
+							toLabel : 'To',
+							customRangeLabel : 'Custom',
+							daysOfWeek : [ 'Su', 'Mo', 'Tu', 'We', 'Th', 'Fr',
+									'Sa' ],
+							monthNames : [ 'January', 'February', 'March',
+									'April', 'May', 'June', 'July', 'August',
+									'September', 'October', 'November',
+									'December' ],
+							firstDay : 1
+						}
+					};
+
+					$('#reportrange span').html(
+							moment().subtract('days', 29)
+									.format('MMMM D, YYYY')
+									+ ' - ' + moment().format('MMMM D, YYYY'));
+
+					$('#reportrange').daterangepicker(optionSet1, cb);
+
+				});
+	</script>
+	<script type="text/javascript">
+		function refreshGraphDate(startDate, endDate) {
+			var url = "./getTop5Piece.php";
+			if (startDate != null && endDate != null) {
+				url = "./getTop5Piece.php?startDate=" + startDate + "&endDate="
+						+ endDate;
+			}
+
+			$.getJSON(url, function(result) {
+				options.series[0].data = result;
+				chart = new Highcharts.Chart(options);
+			});
+		}
+	</script>
+	<script>
+		function scrollWin() {
+			window.scrollTo(300, 500);
 		}
 	</script>
 	<!-- Bootstrap core JavaScript
@@ -331,5 +431,7 @@
 		src="js/jquery.flot/jquery.flot.resize.js"></script>
 	<script type="text/javascript"
 		src="js/jquery.flot/jquery.flot.labels.js"></script>
+
+
 </body>
 </html>
