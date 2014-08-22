@@ -163,13 +163,13 @@
 					</div>
 
 
-					<div class="col-sm-12 col-md-12">
+					<!-- <div class="col-sm-12 col-md-12">
 						<br> <br>
 						<div class="block-flat">
 							<div id="revPerPiece"
 								style="height: 350px; padding: 0px; position: relative;"></div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -211,7 +211,7 @@
 		src="js/bootstrap.daterangepicker/daterangepicker.js"></script>
 	<script type="text/javascript"
 		src="js/jquery.niftymodals/js/jquery.modalEffects.js"></script>
-	
+	<script src="http://code.highcharts.com/modules/drilldown.js"></script>
 
 	<script type="text/javascript">
 		var startDate;
@@ -237,31 +237,17 @@
 			title : {
 				text : 'Revenue Per Category'
 			},
-			plotOptions : {
-				series : {
-
-					allowPointSelect : true,
-					cursor : 'pointer',
-					dataLabels : {
-						enabled : true,
-						format : '<b>{point.name}</b>:{point.y:.1f} $',
-					},
-					point : {
-						events : {
-							click : function() {
-								//alert(this.name);
-								refreshGraph(this.name);
-								scrollWin();
-							}
-						}
-					}
-
-				}
-			},
-
+			plotOptions: {
+                series: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}: {point.y:.1f}% $'
+                    }
+                }
+            },
 			tooltip : {
 				headerFormat : '<span style="font-size:11px">{series.name}</span><br>',
-				pointFormat : '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}</b><br/>'
+				pointFormat : '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}$</b><br/>'
 			},
 
 			series : [ {
@@ -269,9 +255,9 @@
 				colorByPoint : true,
 				data : []
 			} ] ,
-			/* drilldown : {
+			 drilldown : {
 				series : []
-			}  */
+			}  
 
 		};
 		var url;
@@ -284,7 +270,7 @@
 
 		$.getJSON(url, function(result) {
 			options.series[0].data = result.categoryArr;
-			//options.drilldown.series = result.drilldownArr;
+			options.drilldown.series = result.drilldownArr;
 			chart = new Highcharts.Chart(options);
 		});
 	</script>
@@ -439,7 +425,7 @@
 
 			$.getJSON(url, function(result) {
 				options.series[0].data = result.categoryArr;
-				//options.drilldown.series = result.drilldownArr;
+				options.drilldown.series = result.drilldownArr;
 				chart = new Highcharts.Chart(options);
 			});
 		}

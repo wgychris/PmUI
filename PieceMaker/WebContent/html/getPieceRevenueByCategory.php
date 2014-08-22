@@ -1,26 +1,29 @@
 <?php 
 
-$dateArr = array();
-$data = array();
+$dateArr = array ();
+$data = array ();
 
-$db= new SQLite3("./hello");
+$db = new SQLite3 ( "./hello" );
+
 
 $selectDate = 'SELECT DISTINCT Date from OrderInfo ';
 
-$startDate = $_GET["startDate"];
-$endDate = $_GET["endDate"];
+$startDate = $_GET ["startDate"];
+$endDate = $_GET ["endDate"];
 
 $dateRangeStr = '';
 
-if($startDate != null && $endDate != null) {
-	$dateRangeStr = $dateRangeStr.' WHERE Date >= \''.$startDate.'\' AND Date <=\''.$endDate.'\'';
+if ($startDate != null && $endDate != null) {
+	$dateRangeStr = $dateRangeStr . ' WHERE Date >= \'' . $startDate . '\' AND Date <=\'' . $endDate . '\'';
 }
+	
+$selectDate = $selectDate . $dateRangeStr;
 
-$selectDate = $selectDate.$dateRangeStr;
+$selectDate = $selectDate . ' ORDER BY Date ASC';
 
-$selectDate = $selectDate.' ORDER BY Date ASC';
+// error_log($selectDate);
 
-$result=$db->query($selectDate);
+$result = $db->query ( $selectDate );
 
 while($row = $result->fetchArray()) {
 	array_push($dateArr, $row['Date']);
@@ -29,10 +32,12 @@ while($row = $result->fetchArray()) {
 
 $category = $_GET['category'];
 // $category = 'Lithophanes';
-
-$selectQuery = 'SELECT DISTINCT Piece FROM OrderInfo WHERE Category = \''.$category.'\''.$dateRangeStr;
-
-error_log($selectQuery);
+if ($startDate != null && $endDate != null) {
+	$selectQuery = 'SELECT DISTINCT Piece FROM OrderInfo WHERE Category = \''.$category.'\''.' AND Date >= \'' . $startDate . '\' AND Date <=\'' . $endDate . '\'';
+} else {
+	$selectQuery = 'SELECT DISTINCT Piece FROM OrderInfo WHERE Category = \''.$category.'\'';
+}
+// error_log($selectQuery);
 $result=$db->query($selectQuery);
 while($row = $result->fetchArray()) {
 	$piece = $row['Piece'];

@@ -276,11 +276,11 @@
 					data : []
 
 				}, {
-					name : 'Customization Rates',
+					name : 'Finalization Rates',
 					data : []
 
 				}, {
-					name : 'Finalization Rates',
+					name : 'Customization Rates',
 					data : []
 
 				} ]
@@ -290,8 +290,8 @@
 			$.getJSON("./getBehaviour.php", function(result) {
 				options.xAxis.categories = result.dateArr;
 				options.series[0].data = result.coversionArr;
-				options.series[1].data = result.customizationArr;
-				options.series[2].data = result.finalizationArr;
+				options.series[2].data = result.customizationArr;
+				options.series[1].data = result.finalizationArr;
 				chart = new Highcharts.Chart(options);
 			});
 
@@ -338,11 +338,11 @@
 					data : []
 
 				}, {
-					name : 'Customization Rates',
+					name : 'Finalization Rates',
 					data : []
 
 				}, {
-					name : 'Finalization Rates',
+					name : 'Customization Rates',
 					data : []
 
 				} ]
@@ -361,8 +361,8 @@
 						function(result) {
 							options.xAxis.categories = result.dateArr;
 							options.series[0].data = result.coversionArr;
-							options.series[1].data = result.customizationArr;
-							options.series[2].data = result.finalizationArr;
+							options.series[2].data = result.customizationArr;
+							options.series[1].data = result.finalizationArr;
 							chart = new Highcharts.Chart(options);
 						});
 				break;
@@ -371,8 +371,8 @@
 						result) {
 					options.xAxis.categories = result.dateArr;
 					options.series[0].data = result.coversionArr;
-					options.series[1].data = result.customizationArr;
-					options.series[2].data = result.finalizationArr;
+					options.series[2].data = result.customizationArr;
+					options.series[1].data = result.finalizationArr;
 					chart = new Highcharts.Chart(options);
 				});
 				break;
@@ -381,8 +381,8 @@
 						result) {
 					options.xAxis.categories = result.dateArr;
 					options.series[0].data = result.coversionArr;
-					options.series[1].data = result.customizationArr;
-					options.series[2].data = result.finalizationArr;
+					options.series[2].data = result.customizationArr;
+					options.series[1].data = result.finalizationArr;
 					chart = new Highcharts.Chart(options);
 				});
 				break;
@@ -390,8 +390,8 @@
 				$.getJSON("./getBehaviour.php" + timeStr, function(result) {
 					options.xAxis.categories = result.dateArr;
 					options.series[0].data = result.coversionArr;
-					options.series[1].data = result.customizationArr;
-					options.series[2].data = result.finalizationArr;
+					options.series[2].data = result.customizationArr;
+					options.series[1].data = result.finalizationArr;
 					chart = new Highcharts.Chart(options);
 				});
 				break;
@@ -508,11 +508,11 @@
 					data : []
 
 				}, {
-					name : 'Customization Rates',
+					name : 'Finalization Rates',
 					data : []
 
 				}, {
-					name : 'Finalization Rates',
+					name : 'Customization Rates',
 					data : []
 
 				} ]
@@ -538,8 +538,8 @@
 						function(result) {
 							options.xAxis.categories = result.dateArr;
 							options.series[0].data = result.coversionArr;
-							options.series[1].data = result.customizationArr;
-							options.series[2].data = result.finalizationArr;
+							options.series[2].data = result.customizationArr;
+							options.series[1].data = result.finalizationArr;
 							chart = new Highcharts.Chart(options);
 						});
 				break;
@@ -548,8 +548,8 @@
 						result) {
 					options.xAxis.categories = result.dateArr;
 					options.series[0].data = result.coversionArr;
-					options.series[1].data = result.customizationArr;
-					options.series[2].data = result.finalizationArr;
+					options.series[2].data = result.customizationArr;
+					options.series[1].data = result.finalizationArr;
 					chart = new Highcharts.Chart(options);
 				});
 				break;
@@ -558,8 +558,8 @@
 						result) {
 					options.xAxis.categories = result.dateArr;
 					options.series[0].data = result.coversionArr;
-					options.series[1].data = result.customizationArr;
-					options.series[2].data = result.finalizationArr;
+					options.series[2].data = result.customizationArr;
+					options.series[1].data = result.finalizationArr;
 					chart = new Highcharts.Chart(options);
 				});
 				break;
@@ -567,8 +567,8 @@
 				$.getJSON("./getBehaviour.php" + timeStr, function(result) {
 					options.xAxis.categories = result.dateArr;
 					options.series[0].data = result.coversionArr;
-					options.series[1].data = result.customizationArr;
-					options.series[2].data = result.finalizationArr;
+					options.series[2].data = result.customizationArr;
+					options.series[1].data = result.finalizationArr;
 					chart = new Highcharts.Chart(options);
 				});
 				break;

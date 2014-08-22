@@ -7,7 +7,12 @@ $db= new SQLite3("./hello");
 $startDate = $_GET["startDate"];
 $endDate = $_GET["endDate"];
 
+
+
 $selectQuery = "SELECT DISTINCT Category FROM OrderInfo";
+if ($startDate != null && $endDate != null) {	
+	$selectQuery = $selectQuery . ' WHERE Date >= \'' . $startDate . '\' AND Date <=\'' . $endDate . '\'';
+}
 
 $result=$db->query($selectQuery);
 
@@ -30,7 +35,6 @@ while($row = $result->fetchArray()) {
 	while($tempRow = $pieceResult->fetchArray()){
 		$piece = $tempRow['Piece'];
 		$selectPieceRevenue = 'SELECT sum(Price) as revenue FROM OrderInfo WHERE Piece = \''.$piece.'\'';
-		
 		$pieceRevResult = $db->query($selectPieceRevenue);
 		$pieceRevRow = $pieceRevResult->fetchArray();
 		$pieceRevenue = $pieceRevRow['revenue'];
