@@ -145,27 +145,35 @@
 					<div class="col-sm-12 col-md-12">
 
 
-						<div class="col-sm-12 col-md-12">
-
-							<div class="block-flat">
-								<div id="revenuePerCat"
-									style="height: 350px; padding: 0px; position: relative;"></div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">Date & Time Picker</label>
+							<div class="col-sm-4">
+								<div id="reportrange" class="form-control"
+									style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+									<i class="glyphicon glyphicon-calendar fa fa-calendar"></i> <span></span>
+									<b class="caret"></b>
+								</div>
 							</div>
 						</div>
+						<br><br>
+						<div class="block-flat">
+							<div id="revenuePerCat"
+								style="height: 350px; padding: 0px; position: relative;"></div>
+						</div>
+					</div>
 
 
-						<div class="col-sm-12 col-md-12">
-							<br> <br>
-							<div class="block-flat">
-								<div id="revPerPiece"
-									style="height: 350px; padding: 0px; position: relative;"></div>
-							</div>
+					<div class="col-sm-12 col-md-12">
+						<br> <br>
+						<div class="block-flat">
+							<div id="revPerPiece"
+								style="height: 350px; padding: 0px; position: relative;"></div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
+
 	</div>
 	<a href="#" class="back-to-top" style="display: inline;"><i
 		class="fa fa-angle-up"></i></a>
@@ -203,6 +211,13 @@
 		src="js/bootstrap.daterangepicker/daterangepicker.js"></script>
 	<script type="text/javascript"
 		src="js/jquery.niftymodals/js/jquery.modalEffects.js"></script>
+	
+
+	<script type="text/javascript">
+		var startDate;
+		var endDate;
+	</script>
+
 	<script type="text/javascript">
 		$(document).ready(function() {
 			//initialize the javascript
@@ -210,13 +225,6 @@
 			App.charts();
 		});
 	</script>
-
-
-	<script type="text/javascript">
-		var startDate;
-		var endDate;
-	</script>
-
 
 
 
@@ -236,12 +244,12 @@
 					cursor : 'pointer',
 					dataLabels : {
 						enabled : true,
-						format : '<b>{point.name}</b>:{point.y:.1f}',
+						format : '<b>{point.name}</b>:{point.y:.1f} $',
 					},
 					point : {
 						events : {
 							click : function() {
-								/* alert(this.name); */
+								//alert(this.name);
 								refreshGraph(this.name);
 								scrollWin();
 							}
@@ -260,16 +268,23 @@
 				name : 'Category',
 				colorByPoint : true,
 				data : []
-			} ],
-			drilldown : {
+			} ] ,
+			/* drilldown : {
 				series : []
-			}
+			}  */
 
 		};
+		var url;
+		if (startDate != null && endDate != null) {
+			url = "./getRevenueByCategories.php?startDate=" + startDate + "&endDate="
+					+ endDate;
+		} else {
+			url = "./getRevenueByCategories.php";
+		}
 
-		$.getJSON("./getRevenueByCategories.php", function(result) {
+		$.getJSON(url, function(result) {
 			options.series[0].data = result.categoryArr;
-			options.drilldown.series = result.drilldownArr;
+			//options.drilldown.series = result.drilldownArr;
 			chart = new Highcharts.Chart(options);
 		});
 	</script>
@@ -281,12 +296,19 @@
 					renderTo : 'revPerPiece',
 				},
 				title : {
-					text : 'Revenue Per Piece',
+					text : 'Revenue Per Piece ' + categoryName,
 					x : -20
 				//center
 				},
 				xAxis : {
-					categories : []
+					categories : [],
+					labels : {
+						rotation : -45,
+						style : {
+							fontSize : '10px',
+							fontFamily : 'Verdana, sans-serif'
+						}
+					},
 				},
 				yAxis : {
 					min : 0,
@@ -308,7 +330,7 @@
 					verticalAlign : 'middle',
 					borderWidth : 0
 				},
-				plotOptions : {
+				/* plotOptions : {
 					pie : {
 						point : {
 							events : {
@@ -319,12 +341,18 @@
 							}
 						}
 					}
-				},
+				}, */
 				series : []
 			}
+			var url = "./getPieceRevenueByCategory.php?category="
+				+ categoryName; 
+				//var url = "./getTopPiece.php?piece=" + categoryName;
 
-			$.getJSON("./getPieceRevenueByCategory.php?category="
-					+ categoryName, function(result) {
+			if (startDate != null && endDate != null) {
+				url = url + "&startDate=" + startDate + "&endDate=" + endDate;
+			}
+			
+			$.getJSON(url, function(result) {
 				option.xAxis.categories = result.dateArr;
 				option.series = result.data;
 				chart = new Highcharts.Chart(option);
@@ -403,14 +431,15 @@
 	</script>
 	<script type="text/javascript">
 		function refreshGraphDate(startDate, endDate) {
-			var url = "./getTop5Piece.php";
+			var url = "./getRevenueByCategories.php";
 			if (startDate != null && endDate != null) {
-				url = "./getTop5Piece.php?startDate=" + startDate + "&endDate="
+				url = "./getRevenueByCategories.php?startDate=" + startDate + "&endDate="
 						+ endDate;
 			}
 
 			$.getJSON(url, function(result) {
-				options.series[0].data = result;
+				options.series[0].data = result.categoryArr;
+				//options.drilldown.series = result.drilldownArr;
 				chart = new Highcharts.Chart(options);
 			});
 		}
